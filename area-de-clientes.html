@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animal Rooms Área de Clientes</title>
+
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Carga de archivos externos -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--Comienzo de "capaPadre"------------------------------------->
+    <div id="capaPadre">
+      <!--Header/Cabecera----------------------------->
+      <header>
+        <div id="logo">
+          <!--Aquí iría el logo-->
+        </div>
+        <!--Comienzo de Menú-------------->
+        <nav id="navSuperior">
+          <ul>
+            <li>Home</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+            <li>Reservas</li>
+            <li>Área de clientes</li>
+          </ul>
+        </nav>
+        <!--Fin de Menú------------------>
+      </header>
+      <!--Header/Cabecera----------------------------->
+
+      <!--Comienzo de titulo---------->
+      <div id="banner">
+        <div id="imagenPrincipal">
+          <h3>IMAGEN DE ANIMAL</h3>
+        </div>
+
+        <div id="titulo">
+          <h1>¿Ya eres miembro?</h1>
+        </div>
+
+        <div id="descripcionReservas">
+          <p>
+            Únete a nuestra comunidad de Animal Roomers, disfruta de beneficios
+            exclusivos e infórmate de todas las actividades de nuestro centro.
+          </p>
+        </div>
+      </div>
+      <!--Fin de titulo-------------->
+
+      <!-- Comienzo Formulario -->
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Introduce tu Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Contraseña</b></label>
+          <input
+            type="password"
+            placeholder="Introduce tu contraseña"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancelar</button>
+          <span class="psw">¿No recuerdas tu <a href="#">password?</a></span>
+        </div>
+      </form>
+      <!-- Fin de Formulario -->
+
+      <footer>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Contacto</li>
+        </ul>
+
+        <p>C/ Pedro Salinas, 11 28043 Madrid. Tel. 91 538 38 38</p>
+        <p>&copy;Animal Rooms</p>
+      </footer>
+    </div>
+    <!--Fin de "capaPadre"----------------------------------------->
+  </body>
+</html>
