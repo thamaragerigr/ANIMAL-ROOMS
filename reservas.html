@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animal Rooms Reservas</title>
+
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Carga de archivos externos -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!--Comienzo de "capaPadre"-->
+    <div id="capaPadre">
+      <!--Header/Cabecera----------------------------->
+      <header>
+        <div id="logo">
+          <!--Aquí iría el logo-->
+        </div>
+        <!--Comienzo de Menú-------------->
+        <nav id="navSuperior">
+          <ul>
+            <li>Home</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+            <li>Reservas</li>
+            <li>Área de clientes</li>
+          </ul>
+        </nav>
+        <!--Fin de Menú------------------>
+      </header>
+      <!--Header/Cabecera----------------------------->
+
+      <!--Comienzo de titulo---------->
+      <div id="banner">
+        <div id="imagenPrincipal">
+          <h3>IMAGEN DE ANIMAL</h3>
+        </div>
+
+        <div id="titulo">
+          <h1>Reserva con nosotros</h1>
+        </div>
+
+        <div id="descripcionReservas">
+          <p>
+            En Animal Rooms queremos ofrecerte la mejor atención para ti y tu
+            mascota. Si deseas optar por nuestros servicios, rellena el
+            siguiente formulario.
+          </p>
+        </div>
+      </div>
+      <!--Fin de titulo-------------->
+
+      <!--Comienzo de formulario---------->
+      <div id="formularioReservas">
+        <h2>Formulario de Reserva</h2>
+        <form action="">
+          <!--Comienzo de Nombre---------->
+          <div class="controls">
+            <input type="text" id="nombre" name="nombre" />
+            <label for="name">Nombre</label>
+          </div>
+          <!--Fin de Nombre-------------->
+
+          <!--Comienzo de Email---------->
+          <div class="controls">
+            <input type="text" id="email" name="email" />
+            <label for="email">Email</label>
+          </div>
+          <!--Fin de Email-------------->
+
+          <!--Comienzo de Teléfono---------->
+          <div class="controls">
+            <input type="tel" id="phone" name="telefono" />
+            <label for="phone">Teléfono</label>
+          </div>
+          <!--Fin de Teléfono-------------->
+
+          <!--Comienzo de Calle---------->
+          <div class="controls">
+            <input type="text" id="calle" name="calle" />
+            <label for="street">Calle</label>
+          </div>
+          <!--Fin de Calle-------------->
+
+          <!--Comienzo de Número/Calle---------->
+          <div class="controls">
+            <input type="numero" id="numero-calle" name="numero-calle" />
+            <label for="street-number">Número</label>
+          </div>
+          <!--Fin de Número/Calle-------------->
+
+          <!--Comienzo de Ciudad---------->
+          <div class="controls">
+            <input type="text" id="ciudad" name="ciudad" />
+            <label for="city">Ciudad</label>
+          </div>
+          <!--Fin de Ciudad-------------->
+
+          <!--Comienzo de Código Postal---------->
+          <div class="controls">
+            <input type="text" id="codigo-postal" name="codigo-postal" />
+            <label for="post-code">Código postal</label>
+          </div>
+          <!--Fin de Código Posta-------------->
+
+          <!--Comienzo de Detalles de Reserva-------------->
+          <div id="detalles-reserva">
+            <h2 class="heading">Detalles de Reserva</h2>
+
+            <!--Comienzo de Fecha de llegada---------->
+            <div class="controls">
+              <input
+                type="date"
+                id="llegada"
+                name="llegada"
+                value="<?php echo date('Y-m-d'); ?>"
+              />
+              <label for="arrive">Llegada</label>
+            </div>
+            <!--Fin de Fecha de llegada-------------->
+
+            <!--Comienzo de Fecha de salida---------->
+            <div class="controls">
+              <input
+                type="date"
+                id="salida"
+                name="salida"
+                value="<?php echo date('Y-m-d'); ?>"
+              />
+              <label for="depart">Salida</label>
+            </div>
+            <!--Fin de Fecha de salida-------------->
+
+            <!--Comienzo de detalles extra---------->
+            <div class="detalles-reserva">
+              <p class="texto-info">
+                Por favor, describe aquí alguna información extra que debamos
+                saber de tu mascota.
+              </p>
+              <br />
+              <div class="controls">
+                <textarea name="info-extra" id="info-extra"></textarea>
+                <label for="comments">Commentarios</label>
+              </div>
+              <button type="submit" value="Submit">Enviar</button>
+            </div>
+            <!--Fin de detalles extra-------------->
+          </div>
+          <!--Fin de Detalles de Reserva-------------->
+        </form>
+      </div>
+      <!--Fin de formulario-------------->
+    </div>
+
+
+
+    <footer>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>Contacto</li>
+      </ul>
+   
+      <p>C/ Pedro Salinas, 11 28043 Madrid. Tel.  91 538 38 38</p>
+      <p>&copy;Animal Rooms</p>
+     </footer>
+   
+   
+   
+   
+  </body>
+</html>
