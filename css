@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'fragment';
+    src: url('../fonts/fragmentcore-webfont.eot');
+    src: url('../fonts/fragmentcore-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fragmentcore-webfont.woff2') format('woff2'),
+         url('../fonts/fragmentcore-webfont.woff') format('woff'),
+         url('../fonts/fragmentcore-webfont.ttf') format('truetype'),
+         url('../fonts/fragmentcore-webfont.svg#fragment_coreroman') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+/*Estructura básica del site*/
+
+/*Color corporativo: #1C2833; #A3E4D7*/
+
+#capaPadre{
+	height: 100%;
+	width: 100%;}
+
+header{
+	height: 80px;
+	background-color: #A3E4D7;
+
+
+	/*https://www.cssmatic.com/es/box-shadow*/
+	-webkit-box-shadow: 10px 10px 19px 4px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 10px 19px 4px rgba(0,0,0,1);
+	box-shadow: 10px 10px 19px 4px rgba(0,0,0,1);
+	/*box shadow: anchura altura radioSombra radioPropagación;*/}
+
+#contenido{
+	height: 500px;
+	}
+
+/*Header*/
+
+#logo{
+	position: relative;
+	padding: 3px 0 0 0; 
+	/*margin: top right bottom left;*/
+	float: right;}
+	
+
+.menu ul{
+	list-style: none;
+	padding-top: 30px;
+}
+
+.menu ul li a:link, .menu ul li a:visited, .menu ul li a:active{
+	padding-left: 45px;
+	text-decoration: none;
+	float: left;
+	/*font-family: 'Ubuntu Condensed', sans-serif;*/
+	font-family: 'fragment';
+	font-size: 1.75em;
+	cursor: default;
+	/*color: red;*/
+}
+
+a:link, a:visited, a:active{color: #1C2833;font-size: 1.75em; font-weight: bolder;}
+a:hover{color: orange; font-weight: bolder; text-shadow: 6px 6px 5px rgba(150, 150, 150, 1);}
+
+/*.menu ul li a:hover{color: green; font-weight: bolder;}*/
+
+/*SLIDER*/
+
+#slider{
+	display: block;
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 2000px;
+	max-height: 750px;
+	overflow: hidden;
+opacity: .75}
+
+.boton{
+	position: absolute;
+	display: block;
+	bottom: 30px;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.boton:nth-child(1){left: 30px;}
+.boton:nth-child(3){left: 60px;}
+.boton:nth-child(5){left: 90px;}
+.boton:nth-child(7){left: 120px;}
+
+#slider label{
+	position: absolute;
+	bottom: 30px;
+	width: 12px;
+	height: 12px;
+	background: rgba(50,50,50,.5);
+	border-radius: 7px;
+	z-index: 100;
+	border: 1px solid #777;
+}
+
+#slider label:nth-child(2){left: 30px;}
+#slider label:nth-child(4){left: 60px;}
+#slider label:nth-child(6){left: 90px;}
+#slider label:nth-child(8){left: 120px;}
+
+.botom:checked + label{background: rgba(0,0,0,.6); border-color: red;}
+
+.contenedor-img img{display: block; float: left;}
+
+.cuatro-imagenes{width: 400%;} /*tamaño del sitio donde van a estar las imagenes*/
+.cuatro-imagenes img{width: 25%;} /*tamaño de la imagen en ese sitio*/
+
+.contenedor-img{
+	position: relative;
+	left: 0;
+	transition: left .3s ease-in;
+	-ms-transition: left .3s ease-in;
+	-o-transition: left .3s ease-in;
+	-moz-transition: left .3s ease-in;
+	-webkit-transition: left .3s ease-in;
+}
+
+.boton:nth-child(1):checked ~ .contenedor-img{left: 0;}
+.boton:nth-child(3):checked ~ .contenedor-img{left:-100%;}
+.boton:nth-child(5):checked ~ .contenedor-img{left:-200%;}
+.boton:nth-child(7):checked ~ .contenedor-img{left:-300%;}
+
+
+#contenido{
+	background-color: #A3E4D7;
+}
+
+#servicios{
+	background-color: white;
+	text-align: center;
+	font-family: 'fragment';
+	font-size: 2em;
+	padding: 10px 10px 10px 10px;
+	float: left;
+	margin: 30px 45%;
+	font-weight: bolder;
+	text-shadow: 6px 6px 5px rgba(150, 150, 150, 1);
+	border: 1px solid #000;
+	width: 150px;
+}
+
+#textoServicios{
+	text-align: center;
+	font-family: 'fragment';
+	font-size: 1.5em;
+	font-weight: bold;
+	float: left;
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+#Hotel-Resort{
+	background-color: white;
+	text-align: center;
+	font-family: 'fragment';
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 6px 6px 5px rgba(150, 150, 150, 1);
+	padding: 10px 10px 10px 10px;
+	float: left;
+	width: 50%;
+}
+
+#textoHotel{
+	background-color: white;
+	font-family: 'fragment';
+	font-size: 1.5em;
+	padding: 25px 10px 25px 10px;
+	float: left;
+	width: 50%;
+	height: 20%;
+	text-align: center;
+}
+
+/*#fotoHotel{
+	position: absolute;
+	float: right;
+	width: 121%;
+	margin: 13.2% 2% 2% -21%;}*/
+
+/*FOOTER*/
+
+footer{
+	height: 120px;
+	background-color: #1C2833;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoFooter{
+	height: 20%;
+	float: left;
+}
+
+footer p{
+	float: left; 
+	font-size: 26px; 
+	text-shadow: 2px 2px 3px #4a4a4a;
+	color: white;}
+
+.fa{
+	padding: 10px;
+	font-size: 20px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 2px 1px;
+}
+
+.fa:hover {
+	color: grey;
+    opacity: 0.7;
+    text-shadow: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
