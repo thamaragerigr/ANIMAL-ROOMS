@@ -1,70 +1,124 @@
-@font-face {
-    font-family: 'fragment';
-    src: url('../fonts/fragmentcore-webfont.eot');
-    src: url('../fonts/fragmentcore-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/fragmentcore-webfont.woff2') format('woff2'),
-         url('../fonts/fragmentcore-webfont.woff') format('woff'),
-         url('../fonts/fragmentcore-webfont.ttf') format('truetype'),
-         url('../fonts/fragmentcore-webfont.svg#fragment_coreroman') format('svg');
-    font-weight: normal;
-    font-style: normal;}
-
-/*Estructura básica del site*/
 
 /*Color corporativo: #1C2833; #A3E4D7*/
-
-#capaPadre{
-	height: 100%;
-	width: 100%;}
-
-header{
-	height: 80px;
-	background-color: #A3E4D7;
-
-
-	/*https://www.cssmatic.com/es/box-shadow*/
-	-webkit-box-shadow: 10px 10px 19px 4px rgba(0,0,0,1);
-	-moz-box-shadow: 10px 10px 19px 4px rgba(0,0,0,1);
-	box-shadow: 10px 10px 19px 4px rgba(0,0,0,1);
-	/*box shadow: anchura altura radioSombra radioPropagación;*/}
-
-#contenido{
-	height: 500px;
-	}
-
-/*Header*/
-
-#logo{
-	position: relative;
-	padding: 3px 0 0 0; 
-	/*margin: top right bottom left;*/
-	float: right;}
-	
-
-.menu ul{
-	list-style: none;
-	padding-top: 30px;
+/*Estructura básica del site*/
+#capaPadre {
+    height: 100%;
+    width: 100%;
 }
 
-.menu ul li a:link, .menu ul li a:visited, .menu ul li a:active{
-	padding-left: 45px;
-	text-decoration: none;
-	float: left;
-	/*font-family: 'Ubuntu Condensed', sans-serif;*/
-	font-family: 'fragment';
-	font-size: 1.75em;
-	cursor: default;
-	/*color: red;*/
+header {
+    height: 40px;
 }
 
-a:link, a:visited, a:active{color: #1C2833;font-size: 1.75em; font-weight: bolder;}
-a:hover{color: orange; font-weight: bolder; text-shadow: 6px 6px 5px rgba(150, 150, 150, 1);}
+#contenido {
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
-/*.menu ul li a:hover{color: green; font-weight: bolder;}*/
+h2{
+	font-size: 1.8em;
+	text-align: center;
+	margin: 20px;
+}
+
+p{
+  text-align: center;
+  max-width: 550px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+/*Estructura básica del site*/
+
+
+
+
+
+/*Estilo de menu + logo*/
+
+#logo {
+    position: relative;
+    padding: 3px 0 0 0;
+    float: left;
+    display: none;
+}
+
+
+.menu ul {
+  list-style-type: none;
+	float: right;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    transition: .5s;
+    padding: 15px;
+}
+
+.menu ul li a:hover {
+
+}
+
+/*Estilo de menu + logo*/
+
+
+
+
+
+
 
 /*SLIDER*/
+/*estilo de título/slogan------*/
+#titulo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
-#slider{
+#titulo h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: arial;
+    color: white;
+
+}
+
+#titulo p {
+    text-align: center;
+    font-family: arial;
+    font-size: 1em;
+    color: white;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+
+/*estilo de título/slogan------*/
+
+#imgCabecera {
+    object-fit: cover;
+    max-height: 500px;
+    width: 100%;
+    -webkit-filter: brightness(150%);
+    filter: brightness(60%);
+
+}
+
+/*He intentado colocar las imagenes del slider con el nombre/titulo encima pero no lo he logrado. 
+He comentado el slider para preguntar al profesor como hacerlo correctamente*/
+/*#slider{
+	 
 	display: block;
 	position: relative;
 	margin: auto;
@@ -110,8 +164,8 @@ opacity: .75}
 
 .contenedor-img img{display: block; float: left;}
 
-.cuatro-imagenes{width: 400%;} /*tamaño del sitio donde van a estar las imagenes*/
-.cuatro-imagenes img{width: 25%;} /*tamaño de la imagen en ese sitio*/
+.cuatro-imagenes{width: 400%;} /*tamaño del sitio donde van a estar las imagenes
+.cuatro-imagenes img{width: 25%;} /*tamaño de la imagen en ese sitio
 
 .contenedor-img{
 	position: relative;
@@ -126,123 +180,275 @@ opacity: .75}
 .boton:nth-child(1):checked ~ .contenedor-img{left: 0;}
 .boton:nth-child(3):checked ~ .contenedor-img{left:-100%;}
 .boton:nth-child(5):checked ~ .contenedor-img{left:-200%;}
-.boton:nth-child(7):checked ~ .contenedor-img{left:-300%;}
+.boton:nth -child(7):checked ~ .contenedor-img{left:-300%;}*/
+
+/*SLIDER*/
 
 
-#contenido{
-	background-color: #A3E4D7;
-}
 
+
+
+
+
+
+
+/*SERVICIOS*/
+/*Aqui he insertado una grid para posicionar facilmente los tipos de servicios.
+En versiones posteriores sería mejor utilizar bootstrap para agilizar el proceso*/
 #servicios{
-	background-color: white;
-	text-align: center;
-	font-family: 'fragment';
-	font-size: 2em;
-	padding: 10px 10px 10px 10px;
-	float: left;
-	margin: 30px 45%;
-	font-weight: bolder;
-	text-shadow: 6px 6px 5px rgba(150, 150, 150, 1);
-	border: 1px solid #000;
-	width: 150px;
+	margin: 20px;
+	max-width: 950px;
+	position: relative;
+    left: 50%;
+	transform: translate(-50%);
 }
 
-#textoServicios{
-	text-align: center;
-	font-family: 'fragment';
-	font-size: 1.5em;
-	font-weight: bold;
-	float: left;
-	width: 100%;
-	padding-bottom: 40px;
+#servicios-tipos{
+	margin-top:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+      "hotel guarderia clinica";
+      width: 100%;
 }
 
-#Hotel-Resort{
-	background-color: white;
-	text-align: center;
-	font-family: 'fragment';
-	font-size: 1.5em;
-	font-weight: bold;
-	text-shadow: 6px 6px 5px rgba(150, 150, 150, 1);
-	padding: 10px 10px 10px 10px;
-	float: left;
-	width: 50%;
+#hotel-resort{
+	grid-area:hotel;
+  }
+
+#guarderia{
+	grid-area:guarderia;
+  }
+
+#clinica{
+	grid-area:clinica;
+  }
+
+  #servicios-tipos h3{
+	 text-align: center;
+	 font-size: 1.3em;
+	 margin: 7px;
+	 padding: 5px;
+	 border-bottom: 1px #e0dede solid;
+  }
+
+  #servicios-tipos div{
+	border: 1px #e0dede solid;
+	margin: 20px;
+	padding: 20px;
+  }
+  
+/*SERVICIOS*/
+
+
+
+
+
+
+/*BENEFICIOS*/
+#beneficios{
+	margin: 20px;
+	max-width: 950px;
+	position: relative;
+    left: 50%;
+	transform: translate(-50%);
 }
 
-#textoHotel{
-	background-color: white;
-	font-family: 'fragment';
-	font-size: 1.5em;
-	padding: 25px 10px 25px 10px;
-	float: left;
-	width: 50%;
-	height: 20%;
+#beneficios-tipos{
+	margin-top:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+      "uno dos tres";
+    width: 100%;
+}
+
+#beneficios-1{
+	grid-area:uno;
+  }
+
+#beneficios-2{
+	grid-area:dos;
+  }
+
+#beneficios-3{
+	grid-area:tres;
+  }
+ 
+.beneficios-1-2-3 {
+  margin: 30px;
+
+}
+
+.beneficios-1-2-3 p {
+	text-align: justify;
+  
+  }
+
+
+/*BENEFICIOS*/
+
+
+
+
+
+
+
+/*REVIEWS*/
+#reviews{
+	margin: 0px;
+	max-width: 950px;
+	position: relative;
+	left: 55%;
+	transform: translate(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+      "marco nuria miguel";
+
+}
+
+#marco{
+	grid-area:marco;
+}
+
+#nuria{
+	grid-area:nuria;
+}
+
+#miguel{
+	grid-area:miguel;
+}
+
+#reviews div{
+	border: 1px #e0dede solid;
+	padding: 20px;
+	max-width: 170px;
+	height: 250px;
+  }
+
+  #reviews h3{
+	font-size: 1.3em;
+	text-align: center;
+	margin-bottom: 10px;
+  }
+  
+/*REVIEWS*/
+
+
+
+
+
+
+
+/*IMAGEN*/
+#imagen1 img {
+	position: relative;
+	top: -10px;
+	max-width: 100%;
+	margin: 0;
+}
+/*IMAGEN*/
+
+
+
+
+
+/*REGISTRO*/
+#registro{
 	text-align: center;
 }
 
-/*#fotoHotel{
-	position: absolute;
-	float: right;
-	width: 121%;
-	margin: 13.2% 2% 2% -21%;}*/
+#registro button {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 30px;
+	background:linear-gradient(to bottom, #bdbdbd 5%, #a3a3a3 100%);
+	background-color:#bdbdbd;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:19px;
+	padding:11px 20px;
+  text-decoration:none;
+  border: none;
+}
+#registro button:hover {
+	background:linear-gradient(to bottom, #a3a3a3 5%, #bdbdbd 100%);
+	background-color:#a3a3a3;
+}
+#registro button:active {
+	position:relative;
+	top:1px;
+}
+
+/*REGISTRO*/
+
+
+
+
+
 
 /*FOOTER*/
 
-footer{
-	height: 120px;
-	background-color: #1C2833;
-	display: flex;
-    justify-content: center;
-    align-items: center;
+footer {
+	border-top: 1px #e0dede solid;
+    height: 120px;
+    display: flex;
+	align-items: center;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-.logoFooter{
-	height: 20%;
-	float: left;
+.contenidoFooter{
+	margin-left: 20px;
 }
 
-footer p{
-	float: left; 
-	font-size: 26px; 
-	text-shadow: 2px 2px 3px #4a4a4a;
-	color: white;}
+footer p {
+    float: left;
+    font-size: 1em;
+	color: grey;
+}
 
-.fa{
-	padding: 10px;
-	font-size: 20px;
-	width: 30px;
-	text-align: center;
-	text-decoration: none;
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
 	margin: 2px 1px;
+	opacity:.7;
 }
 
 .fa:hover {
-	color: grey;
-    opacity: 0.7;
-    text-shadow: none;
+    color: white;
+    opacity:1;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+    background: #bb0000;
+    color: white;
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+    background: #125688;
+    color: white;
 }
