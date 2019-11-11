@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animal Rooms</title>
+    <!--Metas-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Archivos externos-->
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!--CdNs y otros-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+
+    <!-- esto es para cargar iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--Comienzo de "capaPadre"-->
+    <div id="capaPadre">
+      <!--Header/Cabecera----------------------------->
+      <header>
+        <div id="logo">
+          <a href="indexResi.html">
+            <img src="images/logo1.jpeg" alt="Animals Rooms" width="70px" />
+          </a>
+        </div>
+
+        <!--Comienzo de Menu-->
+        <nav id="navSuperior" class="menu">
+          <ul>
+            <li><a href="indexResi.html">Home</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Área de clientes</a></li>
+          </ul>
+        </nav>
+        <!--Fin de Menu-->
+      </header>
+      <!--Header/Cabecera----------------------------->
+
+      <!--Slider-->
+      <div id="content">
+        <div id="slider">
+          <img
+            id="imgCabecera"
+            src="images/perrito.jpg"
+          />
+          <!--Nombre/slogan-->
+          <div id="titulo">
+            <h1> Reservas </h1>
+              <p>Inicio | Reservas</p>
+            
+            </p>
+          </div>
+        </div>
+        <!--Fin de imagen/nombre-->
+	      
+
+        <!--Comienzo de "contenido"---------------------->
+        <div id="contenido">
+         <h1>Solicitud de reserva <br> </h1>
+         <br>
+          <p>Mediante este formulario puede enviar su solicitud de reserva para su mascota. 
+          Con la mayor brevedad posible, recibirá un correo o llamada indicándole si hay disponibilidad para confirmar su reserva.</p>
+          <br>
+          <br>
+          <form action="/action_page.php">
+              <fieldset>
+                <legend style="color:grey">Los campos marcados con * son obligatorios</legend>
+                <br>
+                Nombre del propietario *  <br>
+                <br>
+                <input type="text" name="firstname" value="">
+                <br><br>
+                Teléfono * <br>
+                <input type="text" name="phone" value="">
+                <br><br>
+                Email * <br>
+                <input type="text" name="email" value="">
+                <br>
+                <br>
+                Preferencia de contacto:<br>
+                <input type="text" name="contact" value="">
+                <br><br>
+
+                <input type="submit" value="Submit">
+              </fieldset>
+            </form>
+
+        </div><!--fin de "contenido"---------------------->
+
+    <footer>
+      <!--Contenido footer------------------------->
+      <div class="contenidoFooter">
+        <!--Seccion info----------------------->
+        <section id="info" class="datos">
+          
+          <div class="title">
+            Animal Rooms
+          </div>
+
+          <div class="direccion">
+            Av. Atenas, 46 - Las Rozas de Madrid <br />91 546 53 57
+          </div>
+           <!--Iconos/redes sociales------>
+          <div id="social">
+            <p class="assistive-text">Encuéntranos en:</p><br>
+
+            <a
+              title="Facebook"
+              href="https://www.facebook.com/misterpetresort/"
+              target="_blank"
+              class="fa fa-facebook"
+            ></a>
+
+            <a
+              title="Twitter"
+              href="https://twitter.com/misterpetresort"
+              target="_blank"
+              class="fa fa-twitter"
+            ></a>
+
+            <a
+              title="YouTube"
+              href="https://www.youtube.com/channel/UC0nd19TLBOKlDDpD5e5oNAQ?disable_polymer=true"
+              target="_blank"
+              class="fa fa-youtube"
+            ></a>
+
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/company/mister-pet/"
+              target="_blank"
+              class=" fa fa-linkedin"
+            ></a>
+
+            <a
+              title="Instagram"
+              href="https://www.instagram.com/misterpet.resort/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+
+          </div>
+          <!--Fin Iconos/redes sociales-------------->
+        </section>
+        <!--Fin Seccion info----------------------------->
+      </div>
+      <!--Fin Contenido footer------------------------------>
+    </footer>
+
+  </body>
+</html>
