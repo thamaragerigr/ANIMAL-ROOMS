@@ -11,7 +11,9 @@ header {
 
 #contenido {
 
-    text-align:center;
+    
+   text-align: center;
+   line-height: 28px;
 	font-family: 'Arial';
 }
 
@@ -93,7 +95,7 @@ p{
 }
 
 #titulo h1 {
-    color: black;
+    color:lightseagreen;
     font-size: 3em;
     text-align: center;
     font-family: arial;
@@ -192,3 +194,112 @@ footer p {
     background: #125688;
     color: white;
 }
+
+/*tabs*/
+.tabs-1 {
+    grid-area: tabone;
+  }
+  .tabs-2 {
+    text-align: center;
+    grid-area: tabtwo;
+    padding-top: 25px;
+  }
+  .tabs-2 p {
+  }
+  ul.tabs {
+    text-align: center;
+    color:lightseagreen;
+    font-size: 1.75em;
+    margin: 0% 5% 0% 5%;
+    list-style: none;
+    background: white;
+  }
+  ul.tabs li { 
+    text-align: center;  
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Source Sans Pro", sans-serif;
+    
+  }
+  ul.tabs li:hover {
+    font-weight: bold;
+  }
+  ul.tabs li.current {
+  
+    text-decoration: underline;
+  }
+  .tab-content {
+    
+    height: 500px;
+    margin-left: 507px;
+    display: none;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    text-align: left;
+    line-height: 1.8;
+  }
+  .tab-content.current {
+    display: inherit;
+    /*margin: 0% 15% 0% 15%;*/
+  }
+
+  /*Boton de siguiente y anterior*/
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: lightseagreen;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }  
+
+  #myBar {
+    width: 10%;
+    height: 30px;
+    background-color: lightseagreen;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+  }
+  #myBar2{
+    width: 30%;
+    height: 30px;
+    background-color: lightseagreen;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+
+
+  }
+
+  #myBar3
+  {
+    width: 50%;
+    height: 30px;
+    background-color: lightseagreen;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+
+  }
