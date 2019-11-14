@@ -11,7 +11,9 @@
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="codigo.js"></script>
     <!--CdNs y otros-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
@@ -69,37 +71,136 @@
         <!--Comienzo de "contenido"---------------------->
         <div id="contenido">
          <h1>Solicitud de reserva <br> </h1>
-         <br>
+         
           <p>Mediante este formulario puede enviar su solicitud de reserva para su mascota. 
           Con la mayor brevedad posible, recibirá un correo o llamada indicándole si hay disponibilidad para confirmar su reserva.</p>
-          <br>
-          <br>
-          <form action="/action_page.php">
-              <fieldset>
-                <legend style="color:grey">Los campos marcados con <span style=" color:red">*</span> son obligatorios</legend>
-                <br>
-                Nombre del propietario <span style=" color:red">*</span><br>
-                <br>
-                <input type="text" name="firstname" value="">
-                <br><br>
-                Teléfono <span style=" color:red">*</span> <br>
-                <input type="text" name="phone" value="">
-                <br><br>
-                Email <span style=" color:red">*</span> <br>
-                <input type="text" name="email" value="">
-                <br>
-                <br>
-		Preferencia de contacto:
-                <br>
-                <br>
-                <input type="checkbox" name="opcion1" value="Por email">Por email<br>
-                <input type="checkbox" name="opcion2" value="Telefono">Por teléfono<br>
-                <br>
-                <input type="submit" value="Enviar">
-              </fieldset>
-            </form>
+          
+          
+          
 
         </div><!--fin de "contenido"---------------------->
+
+        <!---PESTAÑAS DEL FORMULARIO Y FORMULARIO--->
+        <div class="container">
+          <div class="tabs-2">
+          </div>
+          <div class="tabs-1">
+            <ul class="tabs">
+              <li id="one" class="tab-link current" data-tab="tab-1">Datos usuario</li>
+              <li id="2" class="tab-link" data-tab="tab-2">Datos mascota</li>
+              <li id="3" class="tab-link" data-tab="tab-3">Servicio</li>
+              
+             
+            </ul>
+            <br>
+             <p style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: regular; color:grey"> Los campos marcados con <span style=" color:red">*</span> son obligatorios</p>
+            <br>
+             <div id="tab-1" class="tab-content current">
+              <form action="/action_page.php">
+                <div id="myProgress">
+                    <div id="myBar">10%</div>
+                  </div>
+                
+                  <br>
+                  Nombre del propietario <span style=" color:red">*</span><br>
+                  <input type="text" name="firstname" value="">
+                  <br><br>
+                  Teléfono <span style=" color:red">*</span> <br>
+                  <input type="text" name="phone" value="">
+                  <br><br>
+                  Email <span style=" color:red">*</span> <br>
+                  <input type="text" name="email" value="">
+                  <br><br>
+                  Preferencia de contacto:
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Por email &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="opcion2" value="Telefono">Por teléfono<br>
+                  <br>
+              </form>
+              <a href="#" class="next">Siguiente &raquo;</a>
+            </div>
+            <div id="tab-2" class="tab-content">
+              <form action="/action_page.php" method="GET">   
+                <div id="myProgress">
+                    <div id="myBar2">50%</div>
+                  </div>
+                  <br>
+                  Número de mascotas <span style=" color:red">*</span><br>
+                  <input list="browsers" name="browser">
+                  <datalist id="browsers">
+                    <option value="Uno">
+                    <option value="Dos">
+                    <option value="Tres">
+                    <option value="Cuatro">
+                    
+                  </datalist>
+                   
+                  </datalist>
+              </form>
+              
+                  <br>
+                  Nombre de la primera mascota <span style=" color:red">*</span> <br>
+                  <input type="text" name="text" value="">
+                  <br><br>
+                  Raza primera mascota <span style=" color:red">*</span> <br>
+                  <input type="text" name="text" value="">
+                  <br>
+                  <br>
+                  Información adicional <br>
+                  <input type="text" name="text" value="">
+                  
+                
+                  <br>
+                
+               
+              </form><br>
+              <div>
+                <a href="#" class="previous">&laquo; Anterior</a>
+                <a href="#" class="next">Siguiente &raquo;</a>
+              </div>
+            </div>
+            
+            
+            <div id="tab-3" class="tab-content">
+              <form action="/action_page.php">
+                <div id="myProgress">
+                <div id="myBar3"> 100%</div>
+                <BR>
+                </div>
+                  <input type="checkbox" name="opcion1" value="Por email">Hotel (estancia de día y noche)<br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Guardería (día)
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Clínica veterinaria
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Peluquería
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Adiestramiento y etología
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Piscina canina
+
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Paseos
+
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Autolavado
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Transporte
+                  <br>
+                
+                  <br>
+                  <input type="submit" value="Enviar">
+                
+              </form><br>
+              <div>
+                  <a href="#" class="previous">&laquo; Anterior</a>
+                  
+                </div>
+            </div>
+           
+            
+          </div>
+        </div>
+        <!-- container -->
 
     <footer>
       <!--Contenido footer------------------------->
