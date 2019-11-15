@@ -303,3 +303,14 @@ footer p {
     color: white;
 
   }
+  /*FORMULARIO*/
+.errorMessage{
+    color:red !important;
+    font-size: 11px;
+}
+
+.d-none {
+    display: none;
+}
+
+
