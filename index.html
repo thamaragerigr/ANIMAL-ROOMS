@@ -8,10 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!--Archivos externos-->
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleResi.css" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+        <script src="codigo.js"></script>
     <!--CdNs y otros-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
@@ -30,18 +35,23 @@
       <header>
         <div id="logo">
           <a href="indexResi.html">
-            <img src="images/logoResi.png" alt="Animals Rooms" width="70px" />
+            <img src="images/logo1.jpeg" alt="Animals Rooms" width="70px" />
           </a>
         </div>
 
         <!--Comienzo de Menu-->
         <nav id="navSuperior" class="menu">
           <ul>
-            <li><a href="indexResi.html">Home</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">Área de clientes</a></li>
+            <li><a href="indexResi.html">HOME</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#">CONTACTO</a></li>
+            <li><a href="#">RESERVAS</a>
+              <ul>
+                <li><a href="index.html">Reserva Ya</a></li> <!---Cambiar el nombre del index a reservas para que funcione-->
+                <li><a href="cancelar.html">Cancela tu Reserva</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ÁREA DE CLIENTES</a></li>
           </ul>
         </nav>
         <!--Fin de Menu-->
@@ -53,192 +63,155 @@
         <div id="slider">
           <img
             id="imgCabecera"
-            src="https://images.pexels.com/photos/1904105/pexels-photo-1904105.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            src="images/perrito.jpg"
           />
           <!--Nombre/slogan-->
           <div id="titulo">
-            <h1>Nombre y/o Slogan</h1>
-            <p>
-              Nunc sed augue lacus viverra vitae congue eu. Mi bibendum neque
-              egestas congue quisque. Nunc pulvinar sapien et ligula ullamcorper
-              malesuada.
+            <h1> Reservas </h1>
+              <p>Inicio / Reservas</p>
+            
             </p>
           </div>
         </div>
         <!--Fin de imagen/nombre-->
 	      
-	      
-        <!--Aqui he comentado el slider mientras averiguo como colocarle el texto encima-->
-        <!--<img src="images/slider/slider_1.jpg" width="850px">
-          <input type="radio" name="boton" class="boton" checked="checked" />
-          <label></label>
-          <input type="radio" name="boton" class="boton" />
-          <label></label>
-          <input type="radio" name="boton" class="boton" />
-          <label></label>
-          <input type="radio" name="boton" class="boton" />
-          <label></label>
-
-          <div class="contenedor-img cuatro-imagenes">
-            <img src="images/slider/Perro1.jpg" />
-            <img src="images/slider/Perro2.jpg" />
-            <img src="images/slider/Perro3.jpg" />
-            <img src="images/slider/Perro4.jpg" />
-          </div>
-        </div>
-        Fin Slider-->
 
         <!--Comienzo de "contenido"---------------------->
         <div id="contenido">
-
-
-          <!--servicios-------------------->
-          <div id="servicios">
-            <!--servicios/descripcion-->
-            <div id="servicios-descripcion">
-              <h2>Servicios</h2>
-              <p>Animal Rooms ofrece todo tipo de servicios para mascotas, donde
-                buscamos el bienestar de todos los animales que pasan por
-                nuestro centro. Ofrecemos diferentes servicios para la comodidad y necesidad de tu
-                mascota y la tranquilidad de nuestros clientes.
-              </p>
-            </div>
-            <!-- Fin de servicios/descripcion-->
-
-
-
-            <!--servicios/tipos-->
-            <div id="servicios-tipos">
-              <!--Hotel-->
-              <div id="hotel-resort">
-                <h3>Hotel-Resort</h3>
-                <p>Un lugar increíble para traer a tu mascota de vacaciones.Trae a tu mascota de vacaciones a nuestro resort y deja que
-                    disfrute con otros animales en nuestras instalaciones al aire
-                    libre y en interior.</p>
-              </div>
-              <!--Fin de Hotel-->
-
-               <!--Guardería-->
-      	<div id="guarderia">
-            <h3>Guardería</h3>
-            <p>Tu perro estará en las mejores manos, no lo dejes solo mientras estás fuera de casa, reserva nuestro servicio.</p>
-          </div>
-          <!--Fin de Guardería-->
-  
+         <h1>Solicitud de reserva <br> </h1>
+         
+          <p>Mediante este formulario puede enviar su solicitud de reserva para su mascota. 
+          Con la mayor brevedad posible, recibirá un correo o llamada indicándole si hay disponibilidad para confirmar su reserva.</p>
           
-          <!--Clínica-->
-          <div id="clinica">
-             <h3>Clínica</h3>	
-             <p>Disponemos de una clínica veterinaria con la intención de cubrir todas las necesidades de tus mascotas.</p>
+          
+          
+
+        </div><!--fin de "contenido"---------------------->
+
+        <!---PESTAÑAS DEL FORMULARIO Y FORMULARIO--->
+        <div class="container">
+          <div class="tabs-2">
           </div>
-          <!-- Fin de Clínica-->
+          <div class="tabs-1">
+            <ul class="tabs">
+              <li id="one" class="tab-link current" data-tab="tab-1">Datos usuario</li>
+              <li id="2" class="tab-link" data-tab="tab-2">Datos mascota</li>
+              <li id="3" class="tab-link" data-tab="tab-3">Servicio</li>
+              
+             
+            </ul>
+            <br>
+             <p style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: regular; color:grey"> Los campos marcados con <span style=" color:red">*</span> son obligatorios</p>
+            <br>
+             <div id="tab-1" class="tab-content current">
+              <form action="/action_page.php">
+                <div id="myProgress">
+                    <div id="myBar">10%</div>
+                  </div>
+                
+                  <br>
+                  Nombre del propietario <span style=" color:red">*</span><br>
+                  <input type="text" name="firstname" id="firstname" value=""  onkeyup="validarCampos('firstname')">
+                <div class="errorMessage d-none" id="firstnameValidation">El e-mail debe contener al menos una @</div>
+                  <br><br>
+                  Teléfono <span style=" color:red">*</span> <br>
+                  <input type="text" name="phone" id="phone" value=""  onkeyup="validarCampos('phone')">
+                <div class="errorMessage d-none" id="phoneValidation"></div>
+                  <br><br>
+                  Email <span style=" color:red">*</span> <br>
+                  <input type="text" id="email" name="email" value="" onkeyup="validarCampos('email')">
+                <div class="errorMessage d-none" id="emailValidation">El e-mail debe contener al menos una @</div>
+                  <br><br>
+                  Preferencia de contacto:
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Por email &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="opcion2" value="Telefono">Por teléfono<br>
+                  <br>
+              </form>
+              <a href="#" class="next">Siguiente &raquo;</a>
             </div>
-            <!--Fin de servicios/tipos-->
+            <div id="tab-2" class="tab-content">
+              <form action="/action_page.php" method="GET">   
+                <div id="myProgress">
+                    <div id="myBar2">50%</div>
+                  </div>
+                  <br>
+                  Número de mascotas <span style=" color:red">*</span><br>
+                  <input list="browsers" name="browser">
+                  <datalist id="browsers">
+                    <option value="Uno">
+                    <option value="Dos">
+                    <option value="Tres">
+                    <option value="Cuatro">
+                    
+                  </datalist>
+                   
+                  </datalist>
+              </form>
+              
+                  <br>
+                  Nombre de la primera mascota <span style=" color:red">*</span> <br>
+                  <input type="text" name="text" value="">
+                  <br><br>
+                  Raza primera mascota <span style=" color:red">*</span> <br>
+                  <input type="text" name="text" value="">
+                  <br>
+                  <br>
+                  Información adicional <br>
+                  <input type="text" name="text" value="">
+                  
+                
+                  <br>
+                
+               
+              </form><br>
+              <div>
+                <a href="#" class="previous">&laquo; Anterior</a>
+                <a href="#" class="next">Siguiente &raquo;</a>
+              </div>
+            </div>
+            
+            
+            <div id="tab-3" class="tab-content">
+              <form action="/action_page.php">
+                <div id="myProgress">
+                <div id="myBar3"> 100%</div>
+                <BR>
+                </div>
+                  <input type="checkbox" name="opcion1" value="Por email">Hotel (estancia de día y noche)<br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Guardería (día)
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Clínica veterinaria
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Peluquería
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Adiestramiento y etología
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Piscina canina
+
+                  <br>
+                  <input type="checkbox" name="opcion1" value="Por email">Paseos
+
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Autolavado
+                  <br>
+                  <input type="checkbox" name="opcion2" value="Telefono">Transporte
+                  <br>
+                
+                  <br>
+                  <input type="submit" value="Enviar">
+                
+              </form><br>
+              <div>
+                  <a href="#" class="previous">&laquo; Anterior</a>
+                  
+                </div>
+            </div>
+           
+            
           </div>
-          <!-- Fin de servicios------------------->
-
-
-
-
-
-        <!--Beneficios-->
-        <div id="beneficios">
-          <!--Beneficios/descripcion-->
-          <div id="beneficios-descripcion">
-            <h2>Beneficios</h2>
-            <p>
-              Somos una residencia canina en Madrid. Ofrecemos nuestros
-              servicios a todo tipo de mascotas.
-            </p>
-          </div>
-          <!-- Fin de Beneficios/descripcion-->
-
-          <!--Beneficios/tipos-->
-          <div id="beneficios-tipos">
-            <div class="beneficios-1-2-3" id="beneficios-1">
-              <h3>Alimentación natural</h3>
-              <p>
-                En Animal Rooms disponemos de una amplia gama de alimentación
-                natural. Si prefieres que tu mascota se alimente de forma más
-                saludable ponemos a tu disposición los últimos productos de las
-                mejores marcas.
-              </p>
-            </div>
-
-            <div class="beneficios-1-2-3" id="beneficios-2">
-              <h3>24h/ 7 días a la semana.</h3>
-              <p>
-                Estamos a tu disposición y a la de tu mascota para ofrecerte
-                servicios exclusivos que solo encontrarás en Animal Rooms.
-              </p>
-            </div>
-
-            <div class="beneficios-1-2-3" id="beneficios-3">
-              <h3>Especialistas en nutrición</h3>
-              <p>
-                Somos expertos en alimentación para perro, gato, aves, peces,
-                roedores y mucho más. Nuestro objetivo principal con este
-                servicio es conseguir que a tu mascota le guste el pienso que
-                toma y que además sea el adecuado para él.
-              </p>
-            </div>
-          </div>
-          <!--Fin de Beneficios/tipos-->
         </div>
-        <!--Beneficios-->
-
-		
-		
-		
-       <!--Reviews-------------------------------->
-       <div id="reviews">
-        <div id="marco">
-          <h3>Marco</h3>
-          <p>El mejor lugar donde dejar a mi Benito. Amables, atentas y cariñosas con los animales. No es un trabajo más, desprenden 
-          alegría cuidando de ellos. Sin duda, es una casa más para mi perro. </p>
-        </div>
-  
-        <div id="nuria">
-          <h3>Nuria</h3>
-          <p>Sin duda el mejor sitio para dejar a tu perrete!! Buen trato, buen precio, y lo más importante, sales por la puerta con
-          la sensación de que tu mascota está en buenas manos, y que se preocupan por el.</p>
-        </div>
-  
-        <div id="miguel">
-          <h3>Miguel</h3>
-          <p>Llevé a mi mascota y el trato fué increíble, los chicos son majisimos y tratan a tu pequeño como si fuese el suyo. 
-          Recomendadísimo al 100%. El año que viene volvere seguro.</p>
-        </div>
-  
-       </div>
-       <!--Fin de Reviews------------------------->
-  
-
-
-  
-        <!--Imagen 1/perro-->
-        <div id="imagen1">
-          <img src="images/imagen4.jpeg" alt="imagen de perro">
-        </div>
-        <!--Imagen 1/perro-->
-
-
-
-        
-       <!--Registro/Hazte Miembro--------------->
-        <div id="registro">
-          <h2>¡Conviértete en un Animal Roomer!</h2>
-          <p>Entérate de todas nuestras actividades y recibe beneficios exclusivos por ser miembro.</p>
-          <button>Hazte miembro</button>
-       </div>
-      <!--Fin de Registro/Hazte Miembro-------->
-      </div>
-      <!--Fin de "contenido"------------------------->
-    </div>
-    <!--Fin de "capaPadre"------------------------->
-
-
-
+        <!-- container -->
 
     <footer>
       <!--Contenido footer------------------------->
@@ -291,6 +264,7 @@
               target="_blank"
               class="fa fa-instagram"
             ></a>
+
           </div>
           <!--Fin Iconos/redes sociales-------------->
         </section>
