@@ -1,6 +1,9 @@
 
 /*Color corporativo: #1C2833; #A3E4D7*/
 /*Estructura básica del site*/
+body{
+	background: red;
+}
 #capaPadre {
     height: 100%;
     width: 100%;
