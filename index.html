@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
     <!--Archivos externos-->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -15,12 +18,19 @@
     <!--CdNs y otros-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+    
 
-    <!-- esto es para cargar iconos-->
+    <!--Fuentes (ABeeZee/Source Sans Pro)-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--Iconos del footer-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <script src="https://kit.fontawesome.com/afa329d86a.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
@@ -28,23 +38,71 @@
     <div id="capaPadre">
       <!--Header/Cabecera----------------------------->
       <header>
-        <div id="logo">
-          <a href="indexResi.html">
-            <img src="images/logoResi.png" alt="Animals Rooms" width="70px" />
-          </a>
-        </div>
-
         <!--Comienzo de Menu-->
-        <nav id="navSuperior" class="menu">
-          <ul>
-            <li><a href="indexResi.html">Home</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="area-clientes.html">Área de clientes</a></li>
-            <li><a href="mapa.html">Mapa</a></li>
-          </ul>
-        </nav>
+        
+<!--Navbar-->
+<nav class="navbar navbar-expand-md navbar-dark">
+
+    <!-- Navbar logo/icono -->
+    
+  
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span>
+          <i class="fas fa-bars"></i>
+      </span>
+    </button>
+  
+    <!-- contenido colapsable-->
+    <div class="collapse navbar-collapse " id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav auto">
+
+        <li class="nav-item active">
+          <a href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+       
+         <!-- Dropdown -->
+         <li class="dropdown nav-item">
+            <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="servicios.html">Hotel</a>
+              <a class="dropdown-item" href="#">Guardería</a>
+              <a class="dropdown-item" href="#">Peluquería</a>
+              <a class="dropdown-item" href="#">Tienda</a>
+              <a class="dropdown-item" href="#">Adiestramiento</a>
+              <a class="dropdown-item" href="#">Club</a>
+              <a class="dropdown-item" href="#">Eventos</a>
+              <a class="dropdown-item" href="#">Clínica</a>
+            </div>
+          </li>
+
+        <li class="nav-item">
+          <a href="contacto.html">Contacto</a>
+        </li>
+  
+        <li class="nav-item">
+            <a  href="reservas.html">Reservas</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="area-clientes.html">Área de clientes</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="mapa.html">Mapa</a>
+          </li>
+      </ul>
+      <!-- Links -->
+    </div>
+    <!-- contenido colapsable -->
+  </nav>
+  <!--/.Navbar-->
         <!--Fin de Menu-->
       </header>
       <!--Header/Cabecera----------------------------->
@@ -54,175 +112,44 @@
         <div id="slider">
           <img
             id="imgCabecera"
-            src="https://images.pexels.com/photos/1904105/pexels-photo-1904105.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            src="https://images.unsplash.com/photo-1568483720721-2f5e5e0db2ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
           />
           <!--Nombre/slogan-->
+        
           <div id="titulo">
-            <h1>Nombre y/o Slogan</h1>
+              <div id="logo">
+                  <a href="index.html">
+                      <i id="logo" class="fas fa-paw"></i>
+                  </a>
+                </div>
+            <h1>Animal Rooms</h1>
+            <h4>Un hogar más para tu mascota</h4>
             <p>
-              Nunc sed augue lacus viverra vitae congue eu. Mi bibendum neque
-              egestas congue quisque. Nunc pulvinar sapien et ligula ullamcorper
-              malesuada.
+                Somos un centro de mascotas que cuenta con todo lo que necesites para cuidar de tu mejor amigo.
             </p>
           </div>
         </div>
         <!--Fin de imagen/nombre-->
-	      
-	      
-        <!--Aqui he comentado el slider mientras averiguo como colocarle el texto encima-->
-        <!--<img src="images/slider/slider_1.jpg" width="850px">
-          <input type="radio" name="boton" class="boton" checked="checked" />
-          <label></label>
-          <input type="radio" name="boton" class="boton" />
-          <label></label>
-          <input type="radio" name="boton" class="boton" />
-          <label></label>
-          <input type="radio" name="boton" class="boton" />
-          <label></label>
-
-          <div class="contenedor-img cuatro-imagenes">
-            <img src="images/slider/Perro1.jpg" />
-            <img src="images/slider/Perro2.jpg" />
-            <img src="images/slider/Perro3.jpg" />
-            <img src="images/slider/Perro4.jpg" />
-          </div>
-        </div>
-        Fin Slider-->
+	     
 
         <!--Comienzo de "contenido"---------------------->
         <div id="contenido">
 
-
-          <!--servicios-------------------->
-          <div id="servicios">
-            <!--servicios/descripcion-->
-            <div id="servicios-descripcion">
-              <h2>Servicios</h2>
-              <p>Animal Rooms ofrece todo tipo de servicios para mascotas, donde
-                buscamos el bienestar de todos los animales que pasan por
-                nuestro centro. Ofrecemos diferentes servicios para la comodidad y necesidad de tu
-                mascota y la tranquilidad de nuestros clientes.
-              </p>
-            </div>
-            <!-- Fin de servicios/descripcion-->
-
-
-
-            <!--servicios/tipos-->
-            <div id="servicios-tipos">
-              <!--Hotel-->
-              <div id="hotel-resort">
-                <h3>Hotel-Resort</h3>
-                <p>Un lugar increíble para traer a tu mascota de vacaciones.Trae a tu mascota de vacaciones a nuestro resort y deja que
-                    disfrute con otros animales en nuestras instalaciones al aire
-                    libre y en interior.</p>
-              </div>
-              <!--Fin de Hotel-->
-
-               <!--Guardería-->
-      	<div id="guarderia">
-            <h3>Guardería</h3>
-            <p>Tu perro estará en las mejores manos, no lo dejes solo mientras estás fuera de casa, reserva nuestro servicio.</p>
-          </div>
-          <!--Fin de Guardería-->
-  
-          
-          <!--Clínica-->
-          <div id="clinica">
-             <h3>Clínica</h3>	
-             <p>Disponemos de una clínica veterinaria con la intención de cubrir todas las necesidades de tus mascotas.</p>
-          </div>
-          <!-- Fin de Clínica-->
-            </div>
-            <!--Fin de servicios/tipos-->
-          </div>
-          <!-- Fin de servicios------------------->
-
-
-
-
-
-        <!--Beneficios-->
-        <div id="beneficios">
-          <!--Beneficios/descripcion-->
-          <div id="beneficios-descripcion">
-            <h2>Beneficios</h2>
-            <p>
-              Somos una residencia canina en Madrid. Ofrecemos nuestros
-              servicios a todo tipo de mascotas.
-            </p>
-          </div>
-          <!-- Fin de Beneficios/descripcion-->
-
-          <!--Beneficios/tipos-->
-          <div id="beneficios-tipos">
-            <div class="beneficios-1-2-3" id="beneficios-1">
-              <h3>Alimentación natural</h3>
-              <p>
-                En Animal Rooms disponemos de una amplia gama de alimentación
-                natural. Si prefieres que tu mascota se alimente de forma más
-                saludable ponemos a tu disposición los últimos productos de las
-                mejores marcas.
-              </p>
-            </div>
-
-            <div class="beneficios-1-2-3" id="beneficios-2">
-              <h3>24h/ 7 días a la semana.</h3>
-              <p>
-                Estamos a tu disposición y a la de tu mascota para ofrecerte
-                servicios exclusivos que solo encontrarás en Animal Rooms.
-              </p>
-            </div>
-
-            <div class="beneficios-1-2-3" id="beneficios-3">
-              <h3>Especialistas en nutrición</h3>
-              <p>
-                Somos expertos en alimentación para perro, gato, aves, peces,
-                roedores y mucho más. Nuestro objetivo principal con este
-                servicio es conseguir que a tu mascota le guste el pienso que
-                toma y que además sea el adecuado para él.
-              </p>
-            </div>
-          </div>
-          <!--Fin de Beneficios/tipos-->
-        </div>
-        <!--Beneficios-->
+         
+         
 
 		
 		
 		
-       <!--Reviews-------------------------------->
-       <div id="reviews">
-        <div id="marco">
-          <h3>Marco</h3>
-          <p>El mejor lugar donde dejar a mi Benito. Amables, atentas y cariñosas con los animales. No es un trabajo más, desprenden 
-          alegría cuidando de ellos. Sin duda, es una casa más para mi perro. </p>
-        </div>
+
+          <div id="reviews">
+
+          </div>
+
   
-        <div id="nuria">
-          <h3>Nuria</h3>
-          <p>Sin duda el mejor sitio para dejar a tu perrete!! Buen trato, buen precio, y lo más importante, sales por la puerta con
-          la sensación de que tu mascota está en buenas manos, y que se preocupan por el.</p>
-        </div>
-  
-        <div id="miguel">
-          <h3>Miguel</h3>
-          <p>Llevé a mi mascota y el trato fué increíble, los chicos son majisimos y tratan a tu pequeño como si fuese el suyo. 
-          Recomendadísimo al 100%. El año que viene volvere seguro.</p>
-        </div>
-  
+       <div id="showroom">
+         <img id="showroom" src="images/showroom.png" alt="Showroom" srcset="">
        </div>
-       <!--Fin de Reviews------------------------->
-  
-
-
-  
-        <!--Imagen 1/perro-->
-        <div id="imagen1">
-          <img src="images/imagen4.jpeg" alt="imagen de perro">
-        </div>
-        <!--Imagen 1/perro-->
-
 
 
         
@@ -230,7 +157,7 @@
         <div id="registro">
           <h2>¡Conviértete en un Animal Roomer!</h2>
           <p>Entérate de todas nuestras actividades y recibe beneficios exclusivos por ser miembro.</p>
-          <button>Hazte miembro</button>
+          <a  id="hazte-miembro" href="area-clientes.html" class="boton-general">Hazte miembro</a>
        </div>
       <!--Fin de Registro/Hazte Miembro-------->
       </div>
@@ -239,66 +166,74 @@
     <!--Fin de "capaPadre"------------------------->
 
 
-
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#56c596" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,250.7C672,245,768,203,864,170.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
 
     <footer>
+
       <!--Contenido footer------------------------->
-      <div class="contenidoFooter">
+        <div class="contenidoFooter">
         <!--Seccion info----------------------->
-        <section id="info" class="datos">
-          
-          <div class="title">
-            Animal Rooms
-          </div>
+        
 
-          <div class="direccion">
-            Av. Atenas, 46 - Las Rozas de Madrid <br />91 546 53 57
-          </div>
-           <!--Iconos/redes sociales------>
-          <div id="social">
-            <p class="assistive-text">Encuéntranos en:</p><br>
-
+            <div class="iconos-footer">
             <a
               title="Facebook"
               href="https://www.facebook.com/misterpetresort/"
               target="_blank"
-              class="fa fa-facebook"
-            ></a>
+            ><i class="fab fa-facebook-f"></i></a>
 
             <a
               title="Twitter"
               href="https://twitter.com/misterpetresort"
               target="_blank"
-              class="fa fa-twitter"
-            ></a>
+            ><i class="fab fa-twitter"></i></a>
 
             <a
               title="YouTube"
               href="https://www.youtube.com/channel/UC0nd19TLBOKlDDpD5e5oNAQ?disable_polymer=true"
               target="_blank"
-              class="fa fa-youtube"
-            ></a>
+            ><i class="fab fa-youtube"></i></a>
 
             <a
               title="Linkedin"
               href="https://www.linkedin.com/company/mister-pet/"
               target="_blank"
-              class=" fa fa-linkedin"
-            ></a>
+            ><i class="fab fa-linkedin-in"></i></a>
 
             <a
               title="Instagram"
               href="https://www.instagram.com/misterpet.resort/"
               target="_blank"
-              class="fa fa-instagram"
-            ></a>
-          </div>
+            ><i class="fab fa-instagram"></i></a>
+          </div><!--Iconos/redes sociales------>
           <!--Fin Iconos/redes sociales-------------->
-        </section>
+
+
+          <div class="info-footer">
+          <div class="direccion">
+            <p>C/ Pedro Salinas 11 , Madrid | 91 546 53 57</p>
+          </div>
+
+          <div class="title">
+              <p>&copy; Animal Rooms</p>
+          </div>
+
+        </div> 
+           
+        
         <!--Fin Seccion info----------------------------->
       </div>
       <!--Fin Contenido footer------------------------------>
     </footer>
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
   </body>
 </html>
