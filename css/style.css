@@ -318,10 +318,52 @@ footer {
 
 
 /*HOME*/
+/*general*/
+#contenido{
+    margin-top: -150px;
+}
+.info{
+  text-align: center;
+  margin: 20px;
+}
+
+.info span{
+  color: #7be495;
+}
+
+/*servicios*/
+#home-servicios{
+
+}
+/*beneficios*/
+#beneficios{
+
+}
+/*reviews*/
+#reviews{
+    text-align: center;
+    margin: 80px;
+    z-index: 10;
+}
+.card{
+  max-width: 300px;
+}
+
+.card-title{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.2em;
+    color: rgb(50, 50, 50);
+    text-align: center;
+    font-weight: 900;
+    margin: 20px;
+}
+/*showroom*/
 #showroom{
     width: 100%;
+    position: relative;
+    top: 30px;
 }
-/*REGISTRO*/
+/*registro*/
 #registro {
     text-align: center;
     margin-top: 100px;
@@ -337,7 +379,6 @@ footer {
     text-decoration: none;
 }
 
-/*REGISTRO(HOME)*/
 
 
 
