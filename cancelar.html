@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS, JS y otros par que funcione el modal de "enviar" -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    
     <!--Archivos externos-->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -112,7 +115,7 @@
       <div id="slider">
         <img
           id="imgCabecera"
-          src="https://images.unsplash.com/photo-1568483720721-2f5e5e0db2ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          src="https://images.pexels.com/photos/209037/pexels-photo-209037.jpeg?cs=srgb&dl=adorable-animal-animal-world-209037.jpg&fm=jpg"
         />
         <!--Nombre/slogan-->
       
@@ -122,50 +125,73 @@
                     <i id="logo" class="fas fa-paw"></i>
                 </a>
               </div>
+        
           <h1>Reservas</h1>
+          <h2 style="font-family:  'ABeeZee', sans-serif; font-weight:bold; color:white"> Cancelar reserva</h2>
           <br>
-          
         </div>
+        
       </div>
       <!--Fin de imagen/nombre-->
-  
-
- 
-
         <!--Comienzo de "contenido"---------------------->
         <div id="contenido">
-         <h1>Cancelar reserva <br> </h1>
-            <p style="font-family: Arial, Helvetica, sans-serif;" >Mediante este formulario puede cancelar su solicitud de reserva para su mascota. 
+            <p>Mediante este formulario puede cancelar su solicitud de reserva para su mascota.<br>
                 Con la mayor brevedad posible, recibirá un correo o llamada para confirmar su cancelación.</p>
         </div><!--fin de "contenido"---------------------->
 
-        
-            <br>
+        <h1 style="font-family: 'AbeeZee'; text-align: center; color: lightseagreen;">Cancele su reserva</h1>
              <p style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: regular; color:grey"> Los campos marcados con <span style=" color:red">*</span> son obligatorios</p>
             <br>
-            <div id="tab-1" class="tab-content current">
+            <div id="tab-1" class="tab-content current" style="margin-left:300px; margin-right:300px; text-align: left; height: 30%;">
                     <form action="/action_page.php">
                       <!--<div id="myProgress">
                           <div id="myBar">10%</div>
                         </div>--> 
                         Nombre de la mascota <span style=" color:red">*</span><br>
-                        <input type="text" name="firstname" id="firstname" value=""  onkeyup="validarCampos('firstname')">
+                        <input type="text" name="firstname" id="firstname" class="form-control form-control-sm" value=""  onkeyup="validarCampos('firstname')">
                       <div class="errorMessage d-none" id="firstnameValidation">El e-mail debe contener al menos una @</div>
-                        <br><br>
+                        <br>
                         Nombre del propietario <span style=" color:red">*</span> <br>
-                        <input type="text" name="phone" id="phone" value=""  onkeyup="validarCampos('phone')">
+                        <input type="text" name="phone" id="phone" class="form-control form-control-sm" value=""  onkeyup="validarCampos('phone')">
                       <div class="errorMessage d-none" id="phoneValidation"></div>
-                        <br><br>
+                        <br>
                         Fecha de la reserva <span style=" color:red">*</span> <br>
-                        <input type="text" id="email" name="email" value="" onkeyup="validarCampos('email')">
-                      <div class="errorMessage d-none" id="emailValidation">El e-mail debe contener al menos una @</div>
+                        <input type="text" id="email" name="email" class="form-control form-control-sm" value="">
                       <br><br>
                       Email de la reserva <span style=" color:red">*</span> <br>
-                      <input type="text" id="email" name="email" value="" onkeyup="validarCampos('email')">
+                      <input type="text" id="email" name="email" class="form-control form-control-sm" value="" onkeyup="validarCampos('email')">
                     <div class="errorMessage d-none" id="emailValidation">El e-mail debe contener al menos una @</div>
                     <br>
-                    <br>
-                  <input type="submit" value="Enviar">
+                    
+                  <!--<button type="submit" class="btn btn-outline-info">Enviar</button>-->
+                                    <!-- Button to Open the Modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                      Enviar
+                                    </button>
+                
+                                    <!-- The Modal -->
+                                    <div class="modal fade" id="myModal">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        
+                                          <!-- Modal Header -->
+                                          <div class="modal-header"style="text-align:center;">
+                                            
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>
+                                          
+                                          <!-- Modal body -->
+                                          <div class="modal-body" style="text-align: center; font-size: 1em;">
+                                            La reserva se ha cancelado correctamente.<br>
+                                            En breve le llegará un correo de confirmación.
+                                          </div>
+                                          
+                                         
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                 
                       <br><br>
                       <br><br>
                       <br><br>
@@ -238,11 +264,11 @@
   
   
       <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-       <script src="js/reservas.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+         <script src="js/reservas.js"></script>
 </body>
 </html>
 
