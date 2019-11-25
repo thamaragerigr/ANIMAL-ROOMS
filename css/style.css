@@ -200,9 +200,10 @@ nav ul li a:hover {
 
 #contenido {
     text-align: center;
+    margin-top:-140px;
 }
 .container{
-    
+    width:100%;
 }
 
 /*FOOTER GENERAL*/
@@ -420,7 +421,7 @@ footer {
   }
   
   .previous {
-    background-color: #f1f1f1;
+    background-color:lightseagreen;
     color: black;
   }
   
