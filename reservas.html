@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS, JS y otros par que funcione el modal de "enviar" -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Archivos externos-->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!---Archivos de Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--CdNs y otros-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -123,7 +128,8 @@
                 </a>
               </div>
           <h1>Reservas</h1>
-          <br>
+          <h2 style="font-family:  'ABeeZee', sans-serif; font-weight:bold; color:white"> Solicitud de reserva</h2>
+          
           
         </div>
       </div>
@@ -132,33 +138,29 @@
 
         <!--Comienzo de "contenido"---------------------->
         <div id="contenido">
-         <h1 style="font-family:  'ABeeZee', sans-serif; font-weight:bold; color:lightseagreen"> Solicitud de reserva</h1>
-         
+
           <p>Mediante este formulario puede enviar su solicitud de reserva para su mascota. <br> 
           Con la mayor brevedad posible, recibirá un correo o llamada indicándole si hay disponibilidad para confirmar su reserva.</p>
-          <br>
-          <br>
-          <br>
-          
+        
           
 
         </div><!--fin de "contenido"---------------------->
 
         <!---PESTAÑAS DEL FORMULARIO Y FORMULARIO--->
-        <div class="container">
+        <div class="container" style="margin-left:-100px; text-align: left"> 
           <div class="tabs-2">
           </div>
           <div class="tabs-1">
-            <ul class="tabs">
+            <ul class="tabs" style="margin-left:480px">
               <li id="one" class="tab-link current" data-tab="tab-1">Datos usuario</li>
               <li id="2" class="tab-link" data-tab="tab-2">Datos mascota</li>
               <li id="3" class="tab-link" data-tab="tab-3">Servicio</li>
               
              
             </ul>
-            <br>
-             <p style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: regular; color:grey"> Los campos marcados con <span style=" color:red">*</span> son obligatorios</p>
-            <br>
+            
+             <p style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: regular; color:grey; text-align:center;"> Los campos marcados con <span style=" color:red">*</span> son obligatorios</p>
+            
              <div id="tab-1" class="tab-content current">
               <form action="/action_page.php">
                 <div id="myProgress">
@@ -166,18 +168,21 @@
                   </div>
                 
                   <br>
+                  <div class="form-group">
                   Nombre del propietario <span style=" color:red">*</span><br>
-                  <input type="text" name="firstname" id="firstname" value=""  onkeyup="validarCampos('firstname')">
+                  <input type="text" name="firstname" id="firstname" class="form-control form-control-sm" value=""  onkeyup="validarCampos('firstname')">
                 <div class="errorMessage d-none" id="firstnameValidation">El e-mail debe contener al menos una @</div>
-                  <br><br>
+                  </div>
+                  <div class="form-group">
                   Teléfono <span style=" color:red">*</span> <br>
-                  <input type="text" name="phone" id="phone" value=""  onkeyup="validarCampos('phone')">
+                  <input type="text" name="phone" id="phone"  class="form-control form-control-sm"  value=""  onkeyup="validarCampos('phone')">
                 <div class="errorMessage d-none" id="phoneValidation"></div>
-                  <br><br>
+                  </div>
+                  <div class="form-group">
                   Email <span style=" color:red">*</span> <br>
-                  <input type="text" id="email" name="email" value="" onkeyup="validarCampos('email')">
+                  <input type="text" id="email"  class="form-control form-control-sm" name="email" value="" onkeyup="validarCampos('email')">
                 <div class="errorMessage d-none" id="emailValidation">El e-mail debe contener al menos una @</div>
-                  <br><br>
+                </div>
                   Preferencia de contacto:
                   <br>
                   <input type="checkbox" name="opcion1" value="Por email">&nbsp; Por email &nbsp;&nbsp;&nbsp;&nbsp;
@@ -192,38 +197,35 @@
                     <div id="myBar2">50%</div>
                   </div>
                   <br>
-                  Número de mascotas <span style=" color:red">*</span><br>
-                  <input list="browsers" name="browser">
-                  <datalist id="browsers">
-                    <option value="Uno">
-                    <option value="Dos">
-                    <option value="Tres">
-                    <option value="Cuatro">
-                    
-                  </datalist>
-                   
-                  </datalist>
+                  <div class="form-group">
+                    <label>Número de mascotas: <span style=" color:red">*</span><br></label>
+                    <select class="form-control" id="control1" name="control1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+
+                    </select>
+                </div>
+
               </form>
               
                   <br>
                   Nombre de la primera mascota <span style=" color:red">*</span> <br>
-                  <input type="text" name="text" value="">
+                  <input type="text"  class="form-control form-control-sm"  name="text" value="">
                   <br><br>
                   Raza primera mascota <span style=" color:red">*</span> <br>
-                  <input type="text" name="text" value="">
+                  <input type="text"  class="form-control form-control-sm" name="text" value="">
                   <br>
                   <br>
                   Información adicional <br>
-                  <input type="text" name="text" value="">
-                  
-                
+                  <input type="text"  class="form-control form-control-sm"  name="text" value="">
                   <br>
-                
                
               </form><br>
               <div>
-                <a href="#" class="previous">&laquo; Anterior</a>
-                <a href="#" class="next">Siguiente &raquo;</a>
+                <a href="reservas.html" class="previous" id="boton-reservas">&laquo;Anterior </a>
+                <a href="reservas.html" class="next" id="boton-reservas">Siguiente &raquo;</a>
               </div>
             </div>
             
@@ -234,37 +236,61 @@
                 <div id="myBar3"> 100%</div>
                 <BR>
                 </div>
-                  <input type="checkbox" name="opcion1" value="Por email">Hotel (estancia de día y noche)<br>
-                  <input type="checkbox" name="opcion2" value="Telefono">Guardería (día)
+                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Hotel (estancia de día y noche)<br>
+                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Guardería (día)
                   <br>
-                  <input type="checkbox" name="opcion1" value="Por email">Clínica veterinaria
+                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Clínica veterinaria
                   <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">Peluquería
+                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Peluquería
                   <br>
-                  <input type="checkbox" name="opcion1" value="Por email">Adiestramiento y etología
+                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Adiestramiento y etología
                   <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">Piscina canina
+                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Piscina canina
 
                   <br>
-                  <input type="checkbox" name="opcion1" value="Por email">Paseos
+                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Paseos
 
                   <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">Autolavado
+                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Autolavado
                   <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">Transporte
+                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Transporte
                   <br>
                 
                   <br>
-                  <input type="submit" value="Enviar">
-                
+                  <!--<button type="submit" class="btn btn-outline-info">Enviar</button>-->
+                                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                      Enviar
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header"style="text-align:center;">
+                            <h2 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¡Muchas gracias!</h2>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body" style="text-align: center; font-size: 1em;">
+                            Tus datos se han enviado correctamente.<BR>
+                            En menos de 24 horas nos pondremos en contacto contigo.
+                          </div>
+                          
+                         
+                          
+                        </div>
+                      </div>
+                    </div>
+ 
               </form><br>
               <div>
-                  <a href="#" class="previous">&laquo; Anterior</a>
-                  
+                <a href="reservas.html" class="previous" id="boton-reservas">&laquo;Anterior </a>
                 </div>
             </div>
-           
-            
           </div>
         </div>
         <!-- container -->
@@ -338,5 +364,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
          <script src="js/reservas.js"></script>
+         
   </body>
 </html>
