@@ -147,7 +147,7 @@ nav ul li a:hover {
 /*'titulo' Incluye logo/Nombre/slogan*/
 #titulo {
     position: relative;
-    top: 0%;
+    top: -100px;
     left: 50%;
 	transform: translate(-50%, -110%);
 	font-family: 'ABeeZee', sans-serif;
@@ -194,6 +194,15 @@ nav ul li a:hover {
 	top: 30px;
     -webkit-filter: brightness(150%);
     filter: brightness(60%);
+}
+
+/*CONTENIDO*/
+
+#contenido {
+    text-align: center;
+}
+.container{
+    
 }
 
 /*FOOTER GENERAL*/
@@ -402,6 +411,7 @@ footer {
     margin: 0% 5% 0% 5%;
     list-style: none;
     background: white;
+    font-family:  'ABeeZee', sans-serif;
   }
   ul.tabs li { 
     text-align: center;  
@@ -409,7 +419,7 @@ footer {
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family:  'ABeeZee', sans-serif;
     
   }
   ul.tabs li:hover {
@@ -430,6 +440,7 @@ footer {
     color: black;
     text-align: left;
     line-height: 1.8;
+    font-family:  'ABeeZee', sans-serif;
   }
   .tab-content.current {
     display: inherit;

@@ -30,7 +30,7 @@ function validarCampos(x) {
 			phoneValidation.textContent = 'El número de teléfono no puede contener letras';
 			phoneValidation.classList.remove('d-none');
 		}
-		else if (phone.length === 9) {
+		else if (phone.length >= 9) {
 			phoneValidation.textContent = 'El número de teléfono debe contener 9 dígitos';
 			phoneValidation.classList.remove('d-none');
 		}
