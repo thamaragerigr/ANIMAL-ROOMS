@@ -20,7 +20,7 @@ header {
 }
 
 
-h2 {
+h3 {
     font-family: 'ABeeZee', sans-serif;
     font-size: 1.8em;
     color: rgb(50, 50, 50);
@@ -156,7 +156,8 @@ nav ul li a:hover {
 #logo{
 	color: rgb(123, 228, 149);
 	font-size:2.5em;
-	text-align: center;
+    text-align: center;
+    
 }
 
 #titulo h1 {
