@@ -397,6 +397,9 @@ footer {
     margin: 20px;
 }
 
+.card-text{
+    font-size: 18px;
+}
 /*Showroom/galeria*/
 #showroom{
     width: 100%;
