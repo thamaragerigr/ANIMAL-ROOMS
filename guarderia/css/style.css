@@ -840,3 +840,11 @@ footer {
   background: rgb(85, 195, 149);
   background: linear-gradient(180deg, rgba(85, 195, 149, 1) 0%, rgba(86, 197, 150, 1) 27%, rgba(46, 135, 131, 1) 100%);;
 }
+
+svg .curvaCuidados{
+  margin-top: 20px;
+    position: relative;
+    top:15px;
+    z-index: 0;
+    
+}
