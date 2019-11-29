@@ -1,11 +1,13 @@
-/*Color corporativo: #56c596; #2b8988 ; #7be495, #40b9b8
+/*Colores corporativo: #56c596; #2b8988 ; #7be495, #40b9b8
 Letras font-family: 'ABeeZee', sans-serif (titulo/botones);
       font-family: 'Source Sans Pro', sans-serif (texto normal);	*/
 
 
-/*Estructura básica del site*/
-
-*{/*reset de márgenes y padding*/
+/*------------------------------------*\
+  ESTRUCTURA BÁSICA (CLASES GENERALES)
+\*------------------------------------*/
+/*reset de márgenes y padding*/
+*{
     padding:0;
     margin:0;
 }
@@ -19,16 +21,14 @@ header {
     height: 40px;
 }
 
-
-h3 {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 1.8em;
-    color: rgb(50, 50, 50);
+/*H'S GENERALES*/
+h1 {
+    font-size:5vw;
     text-align: center;
+    color: white;
     font-weight: 900;
-    margin: 20px;
-
-
+    margin: 0;
+	
 }
 
 h2 {
@@ -41,11 +41,24 @@ h2 {
 
 }
 
-p {/*párrafo estandar*/
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2em;
-    font-weight: 100;
+h3 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.8em;
     color: rgb(50, 50, 50);
+    text-align: center;
+    font-weight: 900;
+    margin: 20px;
+    border-bottom: #7be495;
+
+}
+/*---------------------------------*/
+
+/*párrafo estandar*/
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: rgb(92, 92, 92);
     text-align: center;
     line-height: 25px;
 }
@@ -72,40 +85,36 @@ p {/*párrafo estandar*/
 
 }
 
+/*estados del botón*/
 .boton-general:hover {
     letter-spacing: 2.5px;
     border-radius: 10px;
 }
 
-
 .boton-general:active {
     background: rgb(123, 228, 149);
 }
-
 
 .boton-general:focus {
     outline: 0;
 
 }
-/*fin botón estandar*/
-
+/*---------------------------------*/
 
 /*menu/nav*/
-/*menu hamburguesa*/
 header{
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
 	z-index: 100;
 }
-nav{/*nav general*/
+nav{
 	z-index: 100;
 	color: black;
 	background: white;
 	height: 70px;
 	
 }
-
 nav button span{/*boton hamburguesa*/
 	color: rgb(214, 214, 214);
 	font-size: 25px;
@@ -113,7 +122,6 @@ nav button span{/*boton hamburguesa*/
 	transition: all .3s;
 	float: right;
 }
-
 
 nav button:focus {
 	outline: 0;
@@ -153,34 +161,24 @@ nav ul li a:hover {
 .dropdown-menu{/*apartado de servicios*/
 	margin-top: 20px;
 }
-/*menu hamburguesa*/
 
+
+/*HEADER*/
 /*'titulo' Incluye logo/Nombre/slogan*/
 #titulo {
     position: relative;
-    top: -100px;
+    top: -340px;
     left: 50%;
-	transform: translate(-50%, -110%);
+	transform: translate(-50%);
 	font-family: 'ABeeZee', sans-serif;
 }
 
 #logo{
-	color: rgb(123, 228, 149);
-	font-size:2.5em;
+	font-size:3em;
     text-align: center;
-    
 }
 
-#titulo h1 {
-    font-size:5vw;
-    text-align: center;
-    color: white;
-    font-weight: 900;
-    margin: 0;
-	
-}
-
-#titulo h4{
+#titulo h4{/*slogan del header*/
     margin-top: 5px;
 	font-size:2vw;
 	font-weight: 500;
@@ -188,15 +186,13 @@ nav ul li a:hover {
 	color: #7be495;
 }
 
-#titulo p {
+#titulo p {/*párrafo debajo del slogan*/
     text-align: center;
     font-size:2vw;
     color: white;
     margin-top: 5px;
     font-weight: 500;
-
 }
-
 
 #imgCabecera {/*imagen de header*/
     object-fit: cover;
@@ -208,19 +204,19 @@ nav ul li a:hover {
     filter: brightness(60%);
 }
 
-/*CONTENIDO*/
 
+/*CONTENIDO*/
 #contenido {
     text-align: center;
-    margin-top:-140px;
+    margin-top:-290px;
 }
+
 .container{
     width:100%;
 }
 
 /*FOOTER GENERAL*/
-/*curva de footer*/
-svg {
+svg {/*curva de footer*/
 	margin-top: 20px;
     position: relative;
     top:25px;
@@ -228,8 +224,8 @@ svg {
     
 }
 
-
 footer {
+    /*gradiente*/
     background: rgb(85, 195, 149);
     background: linear-gradient(180deg, rgba(85, 195, 149, 1) 0%, rgba(86, 197, 150, 1) 27%, rgba(46, 135, 131, 1) 100%);
     text-align: center;
@@ -237,15 +233,7 @@ footer {
     height: 250px;
 }
 
-.iconos-footer {
-    width: 400px;
-    padding: 50px 0px 20px 0px;
-    border-bottom: 2px white solid;
-    display: inline-block;
-    font-size: 20px;
-}
-
-.info-footer p {
+.info-footer p {/*parrafos dentro del footer*/
     font-family: 'ABeeZee', sans-serif;
     font-size: 1em;
     font-weight: 500;
@@ -253,7 +241,15 @@ footer {
     padding-top: 10px;
 }
 
-.fab  {
+.iconos-footer {/*area de iconos redes sociales*/
+    width: 400px;
+    padding: 50px 0px 20px 0px;
+    border-bottom: 2px white solid;/*linea inferior blanca en footer*/
+    display: inline-block;
+    font-size: 20px;
+}
+
+.fab  {/*iconos redes sociales*/
     color: white;
     padding: 10px;
     width: 40px;
@@ -269,6 +265,7 @@ footer {
 
 }
 
+/*Estados de iconos*/
 .fa:hover {
     opacity: 1;
     text-decoration: none;
@@ -301,10 +298,6 @@ footer {
 }
 /*FOOTER GENERAL*/
 
-/*Estructura básica del site*/
-
-
-
 /*Media queries del menu/slide/footer*/
 @media only screen and (max-width: 1000px) {
 
@@ -331,19 +324,20 @@ footer {
 
     
   }
-/*Media queries del menu/slide/footer*/
 
-
-
-
-
-
-
-/*HOME*/
+  
+/*------------------------------------*\
+  ESTILO DE APARTADO HOME
+\*------------------------------------*/
 /*general*/
-#contenido{
-    margin-top: -150px;
-}
+.icono-pata-de-perro:before {/*icono de pata de perro que va arriba de los subtitulos, por alguna razon no me permite colocarlo en el apartado general*/
+    font-size: 72px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7be495), to(#56c596));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial; /* reset Font Awesome's display:inline-block */
+  }​
+
 .info{
   text-align: center;
   margin: 20px;
@@ -364,14 +358,37 @@ footer {
 /*reviews*/
 #reviews{
     text-align: center;
-    margin: 80px;
+    margin: 0 80px 80px;
     z-index: 10;
 }
-.card{
-  max-width: 300px;
+
+#review-card{/*div general de cards de bootstrap (reviews)*/
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 
-.card-title{
+.foto-review {/*foto de los clientes*/
+  border-radius: 100px;
+}
+
+.card{/*cards de bootstrap*/
+  max-width: 300px;
+  margin: 20px;
+  -webkit-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+  -moz-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+  box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+  border: none;
+  border-radius: 30px;
+}
+
+.estrellas-review{/*estrellas de puntuación*/
+ width: 140px;
+ margin-top: -15px;
+}
+
+.card-title{/*nombre de los clientes en reviews*/
     font-family: 'ABeeZee', sans-serif;
     font-size: 1.2em;
     color: rgb(50, 50, 50);
@@ -379,12 +396,55 @@ footer {
     font-weight: 900;
     margin: 20px;
 }
-/*showroom*/
+
+/*Showroom/galeria*/
 #showroom{
     width: 100%;
     position: relative;
-    top: 30px;
+    top: 60px;
 }
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-item {
+    overflow: hidden;
+    margin: -100px;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*por si no tiene compatibilidad con el browser*/
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
 /*registro*/
 #registro {
     text-align: center;
@@ -392,31 +452,30 @@ footer {
     z-index: 10;
 }
 
-#hazte-miembro{
+#hazte-miembro{/*posicion de boton 'Hazte cliente'*/
    position: relative;
    top: 50px;
 }
-#hazte-miembro:hover{
+#hazte-miembro:hover{/*Esto es para evitar que el link tenga surayado y cambie de color al pasar por encima*/
     color: white;
     text-decoration: none;
 }
 
 
-
-
-
-/*RESERVAS*/
+/*------------------------------------*\
+  APARTADO DE RESERVAS
+\*------------------------------------*/
 /*tabs*/
 .tabs-1 {
     grid-area: tabone;
   }
+
   .tabs-2 {
     text-align: center;
     grid-area: tabtwo;
     padding-top: 25px;
   }
-  .tabs-2 p {
-  }
+  
   ul.tabs {
     text-align: center;
     color:lightseagreen;
@@ -426,6 +485,7 @@ footer {
     background: white;
     font-family:  'ABeeZee', sans-serif;
   }
+
   ul.tabs li { 
     text-align: center;  
     display: inline-block;
@@ -435,15 +495,16 @@ footer {
     font-family:  'ABeeZee', sans-serif;
     
   }
+
   ul.tabs li:hover {
     font-weight: bold;
   }
+
   ul.tabs li.current {
-  
     text-decoration: underline;
   }
+
   .tab-content {
-    
     height: 500px;
     margin-left: 507px;
     display: none;
@@ -455,13 +516,13 @@ footer {
     line-height: 1.8;
     font-family:  'ABeeZee', sans-serif;
   }
+
   .tab-content.current {
     display: inherit;
     /*margin: 0% 15% 0% 15%;*/
   }
 
   /*Boton de siguiente y anterior*/
-  
   #boton-reservas {
     text-decoration: none;
     display: inline-block;
@@ -495,6 +556,7 @@ footer {
     line-height: 30px; /* To center it vertically */
     color: white;
   }
+
   #myBar2{
     width: 30%;
     height: 30px;
@@ -502,21 +564,18 @@ footer {
     text-align: center; /* To center it horizontally (if you want) */
     line-height: 30px; /* To center it vertically */
     color: white;
-
-
   }
 
-  #myBar3
-  {
+  #myBar3{
     width: 50%;
     height: 30px;
     background-color: lightseagreen;
     text-align: center; /* To center it horizontally (if you want) */
     line-height: 30px; /* To center it vertically */
     color: white;
-
   }
-  /*FORMULARIO*/
+
+  /*formulario*/
 .errorMessage{
     color:red !important;
     font-size: 11px;
@@ -526,19 +585,16 @@ footer {
     display: none;
 }
 
-/*RESERVAS*/
 
-
-
-
-
-
-/*ESTILOS_CONTACTO*/
+/*------------------------------------*\
+  APARTADO DE CONTACTO
+\*------------------------------------*/
 .boton_reserva{
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
+
 .boton_reserva a{
     text-decoration: none;
     color: white;
@@ -555,9 +611,11 @@ footer {
 .cont_nos{
     color: grey;
 }
+
 .row .col-md-6 p{
     text-align: center;
 }
+
 .boton_check{
     padding-top:15px;
 }
