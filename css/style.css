@@ -167,6 +167,26 @@ div .dropdown-menu li a{
  
  } 
 
+ /*MODAL COOKIES*/
+ .contenedorcookie {
+  padding: 2rem 0rem;
+}
+
+.modal-dialog {
+  margin-top: 0rem;
+  max-width: 100%;
+}
+.modal-dialog .modal-content {
+  border-radius: 7px;
+}
+.modal-dialog .buttons .btn {
+  margin: 0.2rem;
+}
+.cookie-text{
+  text-align: left;
+  font-family: Arial 1em;
+}
+
  
 /*HEADER*/
 /*'titulo' Incluye logo/Nombre/slogan*/
@@ -203,6 +223,11 @@ div .dropdown-menu li a{
 #contenido {
     text-align: center;
     margin-top: 30px;
+}
+#contenidocancelar{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.95em; 
 }
 
 
