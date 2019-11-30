@@ -66,7 +66,7 @@ p {
     color: rgb(92, 92, 92);
     text-align: center;
     line-height: 25px;
-    max-width: 700px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -116,113 +116,95 @@ header{
 	width: 100%; 
 	z-index: 100;
 }
+
 nav{
 	z-index: 100;
-	color: black;
-	background: white;
-	height: 70px;
-	
 }
-nav button span{/*boton hamburguesa*/
-	color: rgb(214, 214, 214);
-	font-size: 25px;
-	float: right;
-	transition: all .3s;
-	float: right;
+.nav-item{
+    font-family: 'ABeeZee', sans-serif;
+    
 }
 
-nav button:focus {
-	outline: 0;
+.nav-link  {
+  color:  white !important;
+  margin: 10px 20px;
+  padding: 10px 25px !important;
+  transition: all 0.1s ease-in-out;
+  border-radius: 50px !important;
+  font-weight: 900;
+  letter-spacing: 1px;
 
 }
 
-#basicExampleNav{/*menu desplegable*/
-   background: white;
-   border-radius: 0px 0px 5px 5px;
-   width: 100%;
-}
+.nav-link:hover {
+  color: white !important;
+  /*gradiente*/
+  background: rgb(123, 228, 149);
+  background: linear-gradient(175deg, rgba(123, 228, 149, 1) 32%, rgba(64, 185, 184, 1) 100%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px !important;
 
-nav ul{
-	padding: 10px;
-}
-
-nav ul li {
-	padding: 10px;
-	margin: 5px;
-
-}
-nav ul li a {
-	font-family: 'ABeeZee', sans-serif;
-	color: black;
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 10px;
-	cursor: pointer;
-}
-
-nav ul li a:hover {
-	color: black;
-	text-decoration: none;
-	background: rgb(245, 245, 245);
-}
-
-.dropdown-menu{/*apartado de servicios*/
-	margin-top: 20px;
 }
 
 
+.navbar ul {
+ margin: auto;
+}
+
+div .dropdown-menu li a{
+  color: gray !important;
+}
+
+
+.solid-nav {
+  background-color:rgba(255, 255, 255, 0.9);
+    transition: background-color 0.2s linear;
+   
+  }
+
+ .solid-nav li a{
+  color: rgb(122, 122, 122) !important;
+ 
+ } 
+
+ 
 /*HEADER*/
 /*'titulo' Incluye logo/Nombre/slogan*/
 #titulo {
-    position: relative;
-    top: -370px;
-    left: 50%;
-	transform: translate(-50%);
-	font-family: 'ABeeZee', sans-serif;
+  position: absolute; 
+  top: 120px; 
+  left: 0; 
+  width: 100%; 
+  font-family: 'ABeeZee', sans-serif;
 }
 
 #logo{
-	font-size:3em;
-    text-align: center;
+  text-align: center;
 }
 
 #titulo h4{/*slogan del header*/
-    margin-top: 2px;
-	font-size:2vw;
+  margin-top: 2px;
+	font-size:40px;
 	font-weight: 500;
 	text-align: center;
 	color: #7be495;
 }
 
-#titulo p {/*párrafo debajo del slogan*/
-    text-align: center;
-    font-size:2vw;
-    color: white;
-    margin-top: 5px;
-    font-weight: 500;
-
-}
 
 #imgCabecera {/*imagen de header*/
     object-fit: cover;
-    max-height: 500px;
-	width: 100%;
-	position: relative;
-	top: 30px;
+    max-height: 600px;
+	  width: 100%;
     -webkit-filter: brightness(150%);
-    filter: brightness(60%);
+    filter: brightness(50%);
 }
-
 
 /*CONTENIDO*/
 #contenido {
     text-align: center;
-    margin-top:-290px;
+    margin-top: 30px;
 }
 
-.container{
-    width:100%;
-}
 
 /*FOOTER GENERAL*/
 svg {/*curva de footer*/
@@ -367,8 +349,8 @@ footer {
 }
 
 /*beneficios*/
-#beneficios{
-
+#beneficios img{
+  width: 100%;
 }
 /*reviews*/
 #reviews{
@@ -623,7 +605,7 @@ footer {
 }
 
 .claseh2ayu{
-    color:#15C75C;
+    color:#7be495;
 }
 
 .cont_nos{
@@ -645,27 +627,23 @@ footer {
 }
 
 .formulario_cont{
-    height: 350px; 
-    width: 400px;
+    margin: auto;
+    height: 450px; 
+    width: 500px;
     padding: 25px;
-    background: rgba(237,255,189,1);
-    background: -moz-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,255,189,1)), color-stop(56%, rgba(195,242,151,0.93)), color-stop(100%, rgba(195,242,151,0.87)));
-    background: -webkit-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
-    background: -o-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
-    background: -ms-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
-    background: linear-gradient(to right, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edffbd', endColorstr='#c3f297', GradientType=1 );
-    -webkit-border-radius: 27px;
-    -moz-border-radius: 27px;
     border-radius: 27px;
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 211, 50, 0.75);
-    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 211, 50, 0.75);
-    box-shadow:         7px 7px 5px 0px rgba(50, 211, 50, 0.75);
+  /*sombras*/
+  -webkit-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+  -moz-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+  box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+
 }
 
-.container_contacto{
-   margin-top: -150px;
+#contacto-contenido{
+  max-width: 80%;
+  align-items: center;
+  padding: 50px;
+  margin: auto;
 }
 
 

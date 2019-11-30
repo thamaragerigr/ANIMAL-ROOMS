@@ -36,77 +36,62 @@
   <body>
     <!--Comienzo de "capaPadre"-->
     <div id="capaPadre">
-      <!--Header/Cabecera----------------------------->
-      <header>
-        <!--Comienzo de Menu-->
+     <!--Comienzo de Menu-->
+     <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <!--Boton hamburguesa-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         
-<!--Navbar-->
-<nav class="navbar navbar-expand-md navbar-dark">
-
-    <!-- Navbar logo/icono -->
-    
-  
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span>
-          <i class="fas fa-bars"></i>
-      </span>
-    </button>
-  
-    <!-- contenido colapsable-->
-    <div class="collapse navbar-collapse " id="basicExampleNav">
-  
-      <!-- Links -->
-      <ul class="navbar-nav auto">
-
-        <li class="nav-item active">
-          <a href="index.html">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-       
-         <!-- Dropdown -->
-         <li class="dropdown nav-item">
-            <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Servicios</a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="servicios.html">Hotel</a>
-              <a class="dropdown-item" href="#">Guardería</a>
-              <a class="dropdown-item" href="#">Peluquería</a>
-              <a class="dropdown-item" href="#">Tienda</a>
-              <a class="dropdown-item" href="#">Adiestramiento</a>
-              <a class="dropdown-item" href="#">Club</a>
-              <a class="dropdown-item" href="#">Eventos</a>
-              <a class="dropdown-item" href="#">Clínica</a>
-            </div>
-          </li>
-
-        <li class="nav-item">
-          <a href="contacto.html">Contacto</a>
-        </li>
-  
-        <li class="nav-item">
-            <a  href="reservas.html">Reservas</a>
-         </li>
-
-         <li class="nav-item">
-            <a  href="area-clientes.html">Área de clientes</a>
-         </li>
-
-         <li class="nav-item">
-            <a  href="mapa.html">Mapa</a>
-          </li>
-      </ul>
-      <!-- Links -->
-    </div>
-    <!-- contenido colapsable -->
-  </nav>
-  <!--/.Navbar-->
-        <!--Fin de Menu-->
+          <!--Links-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <!--Apartado de servicios-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Adiestramiento</a>
+                    <a class="dropdown-item" href="servicios.html">Hotel-Resort</a>
+                    <a class="dropdown-item" href="#">Guardería</a>
+                    <a class="dropdown-item" href="#">Clínica veterinaria</a>
+                    <a class="dropdown-item" href="#">Eventos</a>
+                    <a class="dropdown-item" href="#">Tienda</a>
+                    <a class="dropdown-item" href="#">Transporte</a>
+                    <a class="dropdown-item" href="#">Peluquería y Spa</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <!--Apartado de reservas-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Reservas
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="reservas.html">Reserva ya</a>
+                    <a class="dropdown-item" href="cancelar.html">Cancelar reserva</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="area-clientes.html">Área de clientes</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="mapa.html">Mapa</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
       </header>
-      <!--Header/Cabecera----------------------------->
+     <!--Fin de Menu-->
 
+      
       <!--Slider-->
       <div id="content">
         <div id="slider">
@@ -124,33 +109,30 @@
                 </div>
             <h1>Contacto</h1>
             <h4>Un hogar más para tu mascota</h4>
-            <p>
-                Somos un centro de mascotas que cuenta con todo lo que necesites para cuidar de tu mejor amigo.
-            </p>
           </div>
         </div>
         <!--Fin de imagen/nombre-->
 	     
 
         <!--Comienzo de "Contenido"---------------------->
-        <div class="container_contacto">
+        <div class="contenido"">
 
-          <div class="row">
-           <div class="col-md-6">
-             <h2 class="claseh2con">Contacto</h2>
+          <div class="row" id="contacto-contenido">
+           <div class="col">
+             <h2>Contacto</h2>
              <h2 class="claseh2ayu">¿En que podemos ayudarle?</h2>
              <p class="cont_nos">Póngase en contacto con nosotros para cualquier duda.</p><br>
-             <strong><p><i class="fas fa-home"> C/Pedro Salinas 11, Madrid</strong></p></i>
-             <strong><p><i class="fas fa-envelope"> animalrooms@animalrooms.com</strong></p></i>
-             <strong><p><i class="fas fa-clock"> De 10:00 a 19:45 todos los días</strong></p></i>
-             <strong><p><i class="fas fa-phone-square-alt"> 915383838</strong></p></i>
+             <p><strong><i class="fas fa-home"> C/Pedro Salinas 11, Madrid</strong></p></i>
+             <p><strong><i class="fas fa-envelope"> animalrooms@animalrooms.com</strong></p></i>
+             <p><strong><i class="fas fa-clock"> De 10:00 a 19:45 todos los días</strong></p></i>
+             <p><strong><i class="fas fa-phone-square-alt"> 915383838</strong></p></i>
              <div class="boton_reserva">
-               <button type="button" class="btn btn-success"><a href="reservas.html">Reserva ya</button>
+               <button type="button" class="boton-general"><a href="reservas.html">¡Reserva ya!</button>
              </div><!--cierre boton reserva---------------------->
              </a>
             </div><!--cierre col md-6---------------------->
  
-               <div class="col-md-4">
+               <div class="col">
                  <form class="formulario_cont"action="#" method="POST">
                    <div class="form-group">
                      <input type="text" class="form-control" id="nombreCompleto"placeholder="Escribe tu nombre*">
@@ -163,7 +145,7 @@
                        <input type="checkbox"> <label> Acepto la política de privacidad</label>
                      </div><!--cierre boton check---------------------->
                      <div class="boton_send">
-                       <button type="submit" class="btn btn-success">Enviar</button>
+                       <button type="submit" class="boton-general">Enviar</button>
                      </div><!--cierre boton send---------------------->
                    </div><!--cierre form-group---------------------->
                  </form><!--cierre FORMULARIO---------------------->
@@ -173,13 +155,7 @@
            </div><!--Fin de Contenido--------------->
  
         
-       <!--Registro/Hazte Miembro--------------->
-        <div id="registro">
-          <h2>¡Conviértete en un Animal Roomer!</h2>
-          <p>Entérate de todas nuestras actividades y recibe beneficios exclusivos por ser miembro.</p>
-          <button class="boton-general">Hazte miembro</button>
-       </div>
-      <!--Fin de Registro/Hazte Miembro-------->
+       
       </div>
       <!--Fin de "contenido"------------------------->
     </div>
@@ -254,6 +230,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
+    <script src="js/home.js"></script>
   </body>
 </html>
