@@ -23,7 +23,7 @@ header {
 
 /*H'S GENERALES*/
 h1 {
-    font-size:5vw;
+    font-size:3vw;
     text-align: center;
     color: white;
     font-weight: 900;
@@ -54,6 +54,7 @@ h3 {
     font-weight: 900;
     margin: 20px;
     border-bottom: #7be495;
+
 
 }
 /*---------------------------------*/
@@ -169,7 +170,8 @@ div .dropdown-menu li a{
 
  /*MODAL COOKIES*/
  .contenedorcookie {
-  padding: 2rem 0rem;
+  padding: 0rem 0rem;
+
 }
 
 .modal-dialog {
@@ -178,13 +180,14 @@ div .dropdown-menu li a{
 }
 .modal-dialog .modal-content {
   border-radius: 7px;
+  
 }
 .modal-dialog .buttons .btn {
-  margin: 0.2rem;
+  margin: 0.4rem;
 }
 .cookie-text{
   text-align: left;
-  font-family: Arial 1em;
+  font-family: Calibri 1em;
 }
 
  
@@ -202,6 +205,7 @@ div .dropdown-menu li a{
 #logo{
   z-index:999;
   text-align: center;
+  
 }
 
 #titulo h4{/*slogan del header*/
@@ -217,7 +221,7 @@ div .dropdown-menu li a{
   z-index:1;
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 550px;
   -webkit-filter: brightness(150%);
   filter: brightness(50%);
 }
