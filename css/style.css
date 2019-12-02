@@ -115,12 +115,11 @@ header{
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
-  z-index: 100;
-  
+	z-index: 100;
 }
 
 nav{
-	z-index: 10000;
+	z-index: 100;
 }
 .nav-item{
     font-family: 'ABeeZee', sans-serif;
@@ -693,41 +692,25 @@ footer {
   margin: auto;
 }
 
-
-
 /*SERVICOS (HOTEL)*/
-#hotel-contenido{
-  padding: 0px 100px;
+#boton-giratorio{
+    font-size: 12px;
 }
-.botonesAnimales {
-  margin: auto;
-  margin-bottom: 60px;
-}
-
-.botonesAnimales a {
-   padding: 10px;
-   margin-bottom: 30px;
-}
-
   .perro{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
   .gato{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
   .roedor{
-    width: 70px;
-    height: 70px;
-  }
-  .pajaro{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
   .reptil{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
 /*BOTONES GIRATORIOS*/
 .wrapper{
