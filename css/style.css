@@ -392,6 +392,12 @@ footer {
 
 #home-servicios-grid{
   margin-top: 30px;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*beneficios*/
