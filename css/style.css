@@ -679,17 +679,25 @@ footer {
 }
 
 .formulario_cont{
-    margin: auto;
-    height: 450px; 
-    width: 500px;
+    height: 350px; 
+    width: 400px;
     padding: 25px;
+    background: rgba(237,255,189,1);
+    background: -moz-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,255,189,1)), color-stop(56%, rgba(195,242,151,0.93)), color-stop(100%, rgba(195,242,151,0.87)));
+    background: -webkit-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
+    background: -o-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
+    background: -ms-linear-gradient(left, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
+    background: linear-gradient(to right, rgba(237,255,189,1) 0%, rgba(195,242,151,0.93) 56%, rgba(195,242,151,0.87) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edffbd', endColorstr='#c3f297', GradientType=1 );
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
     border-radius: 27px;
-  /*sombras*/
-  -webkit-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
-  -moz-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
-  box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
-
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 211, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 211, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 211, 50, 0.75);
 }
+
 
 #contacto-contenido{
   max-width: 80%;
