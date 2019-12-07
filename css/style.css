@@ -398,25 +398,44 @@ footer {
   font-family: 'ABeeZee', sans-serif;
   font-size: 1.8em;
   text-align: center;
-  font-weight: 400;
   margin-left: auto;
   margin-right: auto;
 }
 
 #botonServiciosInicio{
   background: #56c596;
-  height: 200px;
   position: relative;
   z-index: 10;
+  font-family: 'ABeeZee', sans-serif;
+  line-height: 50px;
+  cursor: pointer;
+  height: 250px;
+  transition: all .3s;
+  padding-top: 50px;
 }
 
-#botonServiciosInicio a{text-decoration: none; color: black;}
+#botonServiciosInicio a{
+  text-decoration: none; 
+  color: white;
+  font-weight: 900;
+  font-size:.9em;
+  
+}
 
-#botonServiciosInicio img{height: 100px; margin-top: 20px}
+#botonServiciosInicio i{ 
+  margin-top: 20px;
+  color:white;
+  font-size:2em;
+}
 
-#botonServiciosInicio:hover{background: #7be495}
+#botonServiciosInicio:hover{
+  background: #7be495
+}
 
 /*beneficios*/
+#beneficios {
+  margin-top: 20px;
+}
 #beneficios img{
   width: 100%;
 }
@@ -471,10 +490,10 @@ footer {
     position: relative;
     top: 60px;
 }
-.container {
+ .container {
 	max-width: 100rem;
 	margin: 0 auto;
-	padding: 0 2rem 2rem;
+
 }
 
 .gallery {
@@ -919,11 +938,7 @@ footer {
 
 
 /*AREA  CLIENTES*/
-.container{
-	
-	margin-left: 450px;
-	
-}
+
 
 .formulario-clientes{
 margin-top: 200px;
