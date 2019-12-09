@@ -115,7 +115,7 @@ header{
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
-	z-index: 100;
+	z-index: 1000;
 }
 
 nav{
@@ -141,7 +141,6 @@ nav{
   color: white !important;
   /*gradiente*/
   background: rgb(123, 228, 149);
-  background: linear-gradient(175deg, rgba(123, 228, 149, 1) 32%, rgba(64, 185, 184, 1) 100%);
   transition: all 0.3s ease-in-out;
   border-radius: 50px !important;
 
@@ -151,6 +150,7 @@ nav{
   background: white;
   border-radius: 0px 0px 5px 5px;
   width: 100%;
+ 
 }
 
 
@@ -219,7 +219,7 @@ div .dropdown-menu li a{
   z-index:999;
   margin-top: 2px;
 	font-size:40px;
-	font-weight: 500;
+	font-weight: 900;
 	text-align: center;
 	color: #7be495;
 }
@@ -246,12 +246,7 @@ div .dropdown-menu li a{
   -webkit-filter: brightness(150%);
   filter: brightness(50%);
 }
-.carousel-control-prev{
-  height: 1000px;
-}
-.carousel-control-next{
-  height: 1000px;
-}
+
 
 /*CONTENIDO*/
 #contenido {
@@ -276,9 +271,14 @@ svg {/*curva de footer*/
 
 footer {
     /*gradiente*/
-    background: rgb(85, 195, 149);
-    background: linear-gradient(180deg, rgba(85, 195, 149, 1) 0%, rgba(86, 197, 150, 1) 27%, rgba(46, 135, 131, 1) 100%);
-    text-align: center;
+    background: -moz-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56c596), color-stop(17%, #56c596), color-stop(100%, #2b8988)); /* safari4+,chrome */
+background: -webkit-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* ie10+ */
+background: linear-gradient(0deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', endColorstr='#2b8988',GradientType=0 ); /* ie6-9 */
+   text-align: center;
     color: white;
     height: 250px;
 }
@@ -403,10 +403,11 @@ footer {
 #home-servicios-grid{
   margin-top: 30px;
   font-family: 'ABeeZee', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  /* width: 90%; */
 }
 
 #botonServiciosInicio{
@@ -414,11 +415,12 @@ footer {
   position: relative;
   z-index: 10;
   font-family: 'ABeeZee', sans-serif;
-  line-height: 50px;
   cursor: pointer;
-  height: 250px;
+  height: 200px;
   transition: all .3s;
-  padding-top: 50px;
+  margin: 0px;
+  padding-top: 20px;
+  /* border: 2px solid white; */
 }
 
 #botonServiciosInicio a{
@@ -430,7 +432,7 @@ footer {
 }
 
 #botonServiciosInicio i{ 
-  margin-top: 20px;
+  padding: 20px;
   color:white;
   font-size:2em;
 }
@@ -441,7 +443,7 @@ footer {
 
 /*beneficios*/
 #beneficios {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #beneficios img{
   width: 100%;
