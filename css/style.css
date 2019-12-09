@@ -672,6 +672,16 @@ footer {
     display: none;
 }
 
+/*modal enviar*/
+#modalReservas{
+  background-color: red;
+  width: 100%;
+}
+.modal_reservas{
+  background-color: red;
+  max-width: 100%;
+}
+
 
 /*------------------------------------*\
   APARTADO DE CONTACTO
