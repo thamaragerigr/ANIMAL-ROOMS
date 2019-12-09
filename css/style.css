@@ -620,9 +620,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 
   /*Boton de siguiente y anterior*/
   #boton-reservas {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+    padding: 15px;
+    margin: 20px;
+    font-weight: 900;
+    border: none;
+    border-radius: 50px;
+    /*gradiente*/
+    background: rgb(123, 228, 149);
+    background: linear-gradient(175deg, rgba(123, 228, 149, 1) 32%, rgba(64, 185, 184, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    /*sombras*/
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
+
   }
   
   #boton-reservas:hover {
@@ -645,30 +660,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   }  
 
   #myBar {
-    width: 10%;
+    width: 20%;
     height: 30px;
-    background-color: lightseagreen;
+    background-color: rgb(123, 228, 149);
     text-align: center; /* To center it horizontally (if you want) */
     line-height: 30px; /* To center it vertically */
     color: white;
+    border-radius: 10px;
   }
 
   #myBar2{
-    width: 30%;
+    width: 50%;
     height: 30px;
-    background-color: lightseagreen;
+    background-color: rgb(123, 228, 149);
     text-align: center; /* To center it horizontally (if you want) */
     line-height: 30px; /* To center it vertically */
     color: white;
+    border-radius: 10px;
   }
 
   #myBar3{
-    width: 50%;
+    width: 85%;
     height: 30px;
-    background-color: lightseagreen;
+    background-color: rgb(123, 228, 149);
     text-align: center; /* To center it horizontally (if you want) */
     line-height: 30px; /* To center it vertically */
     color: white;
+    border-radius: 10px;
   }
 
   /*formulario*/
