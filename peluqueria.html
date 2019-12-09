@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <!--CdNs y otros-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+    
+
+    <!--Fuentes (ABeeZee/Source Sans Pro)-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--Iconos del footer-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/afa329d86a.js" crossorigin="anonymous"></script>
+
+
+    <title>Peluqueria</title>
+  </head>
+  <body>
+    
+
+    <div id="capaPadre">
+     
+     <header>
+        <!--Comienzo de Menu-->
+        
+<!--Navbar-->
+<nav class="navbar navbar-expand-md navbar-dark">
+
+    <!-- Navbar logo/icono -->
+    
+  
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span>
+          <i class="fas fa-bars"></i>
+      </span>
+    </button>
+  
+    <!-- contenido colapsable-->
+    <div class="collapse navbar-collapse " id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav auto">
+
+        <li class="nav-item active">
+          <a href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+       
+         <!-- Dropdown -->
+         <li class="dropdown nav-item">
+            <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="servicios.html">Hotel</a>
+              <a class="dropdown-item" href="#">Guardería</a>
+              <a class="dropdown-item" href="#">Peluquería</a>
+              <a class="dropdown-item" href="#">Tienda</a>
+              <a class="dropdown-item" href="#">Adiestramiento</a>
+              <a class="dropdown-item" href="#">Club</a>
+              <a class="dropdown-item" href="#">Eventos</a>
+              <a class="dropdown-item" href="#">Clínica</a>
+            </div>
+          </li>
+
+        <li class="nav-item">
+          <a href="contacto.html">Contacto</a>
+        </li>
+  
+        <li class="nav-item">
+            <a  href="reservas.html">Reservas</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="area-clientes.html">Área de clientes</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="mapa.html">Mapa</a>
+          </li>
+      </ul>
+      <!-- Links -->
+    </div>
+    <!-- contenido colapsable -->
+  </nav>
+  <!--/.Navbar-->
+        <!--Fin de Menu-->
+      </header>
+      <!--Header/Cabecera----------------------------->
+
+      <!--Slider-->
+      <div id="content">
+        <div id="slider">
+          <img
+            id="imgCabecera"
+            src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          />
+          <!--Nombre/slogan-->
+        
+          <div id="titulo">
+              <div id="logo">
+                  <a href="index.html">
+                    <img src="images/logoblancoSVG.svg" style="height: 160px; width: 160px; z-index: 999;">
+                  </a>
+                </div>
+            <h1>Peluquería</h1>
+            <h4>Un hogar más para tu mascota</h4>
+            <p>
+                Somos un centro de mascotas que cuenta con todo lo que necesites para cuidar de tu mejor amigo.
+            </p>
+          </div>
+        </div>
+
+        <!--Fin de imagen/nombre-->
+        <div class="descripcion">
+          <h3>"¡Descubre nuestros servicios de Peluquería y Spa para mascotas!"</h3>
+          <p>El aseo es muy importante para el bienestar de tu mascota. Contamos con Baños relajantes, Cortes de pelo, Ozonoterapia y Bañoterapia… ¡Les encantará!<br>
+          Queremos que queden guapos, pero también que salgan de la pelu tranquilos y sin estrés.</p>
+        </div>
+
+        <div class="carousel-item active">
+          <img src="images/bañoPerro.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto">
+            <h3 class="tituloGuarderia">BAÑO Y MASAJES</h3><br>
+            <h3>Incluye baño con masaje, secado rápido, corte de uñas, limpieza de glándulas y perfume.</h3><br>
+            <p style="color: white;">Utilizamos champú y mascarillas o bálsamos, con cosmética de primera calidad, siempre mirando el tipo de pelo, corto, medio o largo y el tipo de hidratación que necesita.</p>
+          </div>
+        </div>
+
+      
+        <div class="carousel-item active" style="margin-top: 730px;">
+          <img src="images/cortePelo.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto2">
+            <h3 class="tituloArea">CORTE DE PELO</h3><br>
+            <h3>Corte a tijera o máquina. Técnica acorde al tipo de raza de pelo.</h3>
+            <p>Adaptándonos a la necesidad de cada cliente para un correcto mantenimiento, pero sin perder las formas para realzar los encantos de los pequeños de la casa.</p>
+          </div>
+        </div>
+        
+
+        <div class="carousel-item active" style="margin-top: 1460px;">
+          <img src="images/spa.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto">
+            <h3 class="tituloGuarderia">TRATAMIENTOS DE SPA PARA MASCOTAS</h3><br>
+            <p style="color: white;"><br>Bañoterapia: baño con productos específicos indicado para tratar problemas de piel en perros con seborrea, dermatitis atópica, alopecia…<br><br>
+              Ozonoterapia: es el suministro de ozono en el organismo de nuestras mascotas para tratar diferentes enfermedades comunes y habituales, como dermatitis atópica, alergias medioambientales o alimentarias, etc.<br><br>
+              <button class="boton-general">RESERVA YA</button></p>
+          </div>
+        </div>
+        
+
+        <div style="margin-top: 2390px;">
+          <h3>SERVICIO DE RECOGIDA</h3><br>
+          <p>DESDE LAS 8:30AM HASTA LAS 20:30PM<br>
+          <button class="boton-general">RESERVA YA</button></p>
+        </div>
+
+        <!--Botones giratorios-->
+        <div id="botonesGiratorios" style="margin-top: 150px;">
+          <h3 style="font-size: 50px; color: #56c596">TARIFAS</h3>
+          <div class="wrapper">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front">
+                  <div class="inner">
+                    <p id="tituloBotones">Peluquería de Perro -Baño</p>
+                    <p id="tituloBotones">15-30€</p>
+                    <span>CORTE: A consultar.</span>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="inner">
+                    <p id="tituloBotones">*Tarifa estándar orientativa, según el peso y condiciones del pelo.</p>
+                    <button class="boton-general">Más info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper2">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front">
+                  <div class="inner">
+                    <p id="tituloBotones">Peluquería Felina - Baño</p>
+                    <p id="tituloBotones">18€</p>
+                    <span>CORTE: 10€.</span>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="inner">
+                    <p id="tituloBotones">*Tarifa estándar orientativa.</p>
+                    <button class="boton-general">Más info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front">
+                  <div class="inner">
+                    <p id="tituloBotones">Peluquería Roedor - Baño</p>
+                    <p id="tituloBotones">10€</p>
+                    <span>CORTE: 6€</span>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="inner">
+                    <p id="tituloBotones">*Tarifa estándar orientativa.</p>
+                    <button class="boton-general">Más info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#56c596" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,250.7C672,245,768,203,864,170.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+    <footer>
+
+      <!--Contenido footer------------------------->
+        <div class="contenidoFooter">
+        <!--Seccion info----------------------->
+        
+
+            <div class="iconos-footer">
+            <a
+              title="Facebook"
+              href="https://www.facebook.com/misterpetresort/"
+              target="_blank"
+            ><i class="fab fa-facebook-f"></i></a>
+
+            <a
+              title="Twitter"
+              href="https://twitter.com/misterpetresort"
+              target="_blank"
+            ><i class="fab fa-twitter"></i></a>
+
+            <a
+              title="YouTube"
+              href="https://www.youtube.com/channel/UC0nd19TLBOKlDDpD5e5oNAQ?disable_polymer=true"
+              target="_blank"
+            ><i class="fab fa-youtube"></i></a>
+
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/company/mister-pet/"
+              target="_blank"
+            ><i class="fab fa-linkedin-in"></i></a>
+
+            <a
+              title="Instagram"
+              href="https://www.instagram.com/misterpet.resort/"
+              target="_blank"
+            ><i class="fab fa-instagram"></i></a>
+          </div><!--Iconos/redes sociales------>
+          <!--Fin Iconos/redes sociales-------------->
+
+
+          <div class="info-footer">
+          <div class="direccion">
+            <p>C/ Pedro Salinas 11 , Madrid | 91 546 53 57</p>
+          </div>
+
+          <div class="title">
+              <p>&copy; Animal Rooms</p>
+          </div>
+
+        </div> 
+           
+        
+        <!--Fin Seccion info----------------------------->
+      </div>
+    
+
+      <!--Fin Contenido footer------------------------------>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+          

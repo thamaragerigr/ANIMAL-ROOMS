@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <!--CdNs y otros-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+    
+
+    <!--Fuentes (ABeeZee/Source Sans Pro)-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--Iconos del footer-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/afa329d86a.js" crossorigin="anonymous"></script>
+
+
+    <title>Clinica Veterinaria</title>
+  </head>
+  <body>
+    
+
+    <div id="capaPadre">
+     
+     <header>
+        <!--Comienzo de Menu-->
+        
+<!--Navbar-->
+<nav class="navbar navbar-expand-md navbar-dark">
+
+    <!-- Navbar logo/icono -->
+    
+  
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span>
+          <i class="fas fa-bars"></i>
+      </span>
+    </button>
+  
+    <!-- contenido colapsable-->
+    <div class="collapse navbar-collapse " id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav auto">
+
+        <li class="nav-item active">
+          <a href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+       
+         <!-- Dropdown -->
+         <li class="dropdown nav-item">
+            <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="servicios.html">Hotel</a>
+              <a class="dropdown-item" href="#">Guardería</a>
+              <a class="dropdown-item" href="#">Peluquería</a>
+              <a class="dropdown-item" href="#">Tienda</a>
+              <a class="dropdown-item" href="#">Adiestramiento</a>
+              <a class="dropdown-item" href="#">Club</a>
+              <a class="dropdown-item" href="#">Eventos</a>
+              <a class="dropdown-item" href="#">Clínica</a>
+            </div>
+          </li>
+
+        <li class="nav-item">
+          <a href="contacto.html">Contacto</a>
+        </li>
+  
+        <li class="nav-item">
+            <a  href="reservas.html">Reservas</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="area-clientes.html">Área de clientes</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="mapa.html">Mapa</a>
+          </li>
+      </ul>
+      <!-- Links -->
+    </div>
+    <!-- contenido colapsable -->
+  </nav>
+  <!--/.Navbar-->
+        <!--Fin de Menu-->
+      </header>
+      <!--Header/Cabecera----------------------------->
+
+      <!--Slider-->
+      <div id="content">
+        <div id="slider">
+          <img
+            id="imgCabecera"
+            src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          />
+          <!--Nombre/slogan-->
+        
+          <div id="titulo">
+              <div id="logo">
+                  <a href="index.html">
+                    <img src="images/logoblancoSVG.svg" style="height: 160px; width: 160px; z-index: 999;">
+                  </a>
+                </div>
+            <h1>Clínica Veterinaria</h1>
+            <h4>Un hogar más para tu mascota</h4>
+            <p>
+                Somos un centro de mascotas que cuenta con todo lo que necesites para cuidar de tu mejor amigo.
+            </p>
+          </div>
+        </div>
+
+        <!--Fin de imagen/nombre-->
+        <div class="descripcion">
+          <h3>"Nuestra mayor preocupación es la salud de tu mascota"</h3>
+          <p>Nuestro Resort para mascotas dispone de una completa Clínica Veterinaria donde ofrecemos todo tipo de servicios: Consultas generales, vacunaciones, desparasitaciones, análisis de laboratorio, tratamientos, servicio de urgencias…</p>
+        </div>
+
+        <div id="home-servicios-grid" class="container" style="margin-top: 100px;">
+          <div class="row align-slef-center">
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="material-icons">local_hospital</i><br>CONSULTAS GENERALES</a></div>
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="material-icons">colorize</i><br>VACUNAS Y<br> DESPARASITACIÓN</a></div>
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="material-icons">share</i><br>LABORATORIO</a></div>
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="material-icons">healing</i><br>TRATAMIENTOS</a></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="material-icons">local_convenience_store</i><br>URGENCIAS</a></div>
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="fas fa-clinic-medical"></i><br>CIRUGÍA Y<br> HOSPITALIZACIÓN</a></div>
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="material-icons">note_add</i><br>RADIOLOGÍA</a></div>
+            <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><i class="material-icons">pets</i><br>ETOLOGÍA</a></div>
+          </div>
+        </div>
+
+        <div class="carousel-item active">
+          <img src="images/veterinario.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto">
+            <h3 class="tituloGuarderia">CONSULTAS GENERALES</h3><br>
+            <p style="color: white;">Realizamos consultas veterinarias ordinarias para cualquier mascota que necesite sus servicios, y las mascotas alojadas en el Hotel o que estén pasando el día con nosotros en el servicio de Guardería, que tienen Asistencia Veterinaria las 24h.<br><br>
+            Disponemos de 300m2 equipados con la más alta tecnología para poder atender de la manera más profesional a tu mascota, sea de la especie que sea.<br><br>
+            <button class="boton-general">PIDE CITA</button></p>
+          </div>
+        </div>
+
+        
+
+        <div class="carousel-item active" style="margin-top: 730px;">
+          <img src="images/vacuna.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto2">
+            <h3 class="tituloArea">VACUNAS</h3><br>
+            <h3>Disponemos de vacunas para perros, gatos, hurones y conejos.</h3>
+            <p>En nuestras consultas de vacunación realizamos siempre una exploración física general y elegimos la vacuna específica para tu mascota en función de la especie, raza, hábitat o edad.</p>
+          </div>
+        </div>
+        
+
+        <div class="carousel-item active" style="margin-top: 1460px;">
+          <img src="images/desparasitacion.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto">
+            <h3 class="tituloGuarderia">DESPARASITACIÓN</h3><br>
+            <h3>La prevención es clave para mantener y mejorar la salud de las mascotas.</h3><br>
+              <p style="color: white;">Uno de los puntos que consideramos más importantes después de la vacunación es la desparasitación, por ello un excelente plan de desparasitación es importantísimo para mantener nuestros animales sanos.<br><br>
+              <button class="boton-general">RESERVA YA</button></p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active" style="margin-top: 2190px;">
+          <img src="images/laboratorio.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto2">
+            <h3 class="tituloArea">LABORATORIO</h3><br>
+            <h3>Para actuar con la mayor rapidez posible.</h3>
+            <p>Disponemos de Laboratorio propio para obtener con mayor brevedad los resultados de las distintas pruebas que puedan realizarse, como análisis de sangre, de heces, pruebas cutáneas, leishmaniosis, infecciones por hongos... entre otras. </p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active" style="margin-top: 2920px;">
+          <img src="images/tratamiento.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto">
+            <h3 class="tituloGuarderia">TRATAMIENTOS</h3><br>
+            <h3>Alergias, Problemas nutricionales, Problemas oculares, Problemas auditivos, Problemas cardíacos y Problemas de pelo y piel, entre otros.</h3><br>
+              <p style="color: white;">Atendemos cualquier tipo de patología o enfermedad que se presente en el animal y le asesoramos sobre las diferentes alternativas para abordar el problema adaptándonos a la situación de cada mascota.<br><br>
+              Cuéntanos tu caso para poder adaptarnos a tus necesidades.</p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active" style="margin-top: 3650px;">
+          <img src="images/urgencias.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoUrgencias">
+            <h3 class="tituloArea">URGENCIAS</h3><br>
+            <h3>Servicio 24 horas.</h3>
+            <p>Preocupados por la salud y atención de nuestros pacientes, así como por la tranquilidad de nuestros clientes, ponemos a tu disposición el servicio de urgencias veterinarias, activo las 24 horas del día y los 365 días del año.<br><br>
+            Si tu mascota sufre alguna molestia durante las horas en las que la clínica permanece cerrada, ponte en contacto con nosotros para contarnos el problema o acude directamente a nuestro centro.<br><br>
+            Teléfono: 91 654 23 15 </p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active" style="margin-top: 4380px;">
+          <img src="images/cirugia.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoCirugia">
+            <h3 class="tituloGuarderia">CIRUGÍA Y HOSPITALIZACIÓN</h3><br>
+            <h3>CIRUGÍA</h3><br>
+              <p style="color: white;">Disponemos de quirófanos totalmente equipados con máquinas de anestesia inhalatoria y monitores multiparamétricos.<br>
+              En todas las intervenciones, por menores que sean, hay siempre además del veterinario cirujano uno o dos auxiliares técnicos que controlan en todo momento las constantes del paciente.</p><br>
+            <h3>HOSPITALIZACIÓN</h3><br>
+            <p style="color: white;">Nuestros veterinarios monitorizan y siguen de cerca a los pacientes hospitalizados para ofrecer la mejor opción terapéutica, el máximo confort y una rápida recuperación.<br>
+            Cada paciente cuenta con un cubículo individual con su ficha de hospitalización donde se registra todos los tratamientos administrados y sus constantes.</p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active" style="margin-top: 5110px;">
+          <img src="images/radiologia.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto2">
+            <h3 class="tituloArea">RADIOLOGÍA Y ECOGRAFÍA</h3><br>
+            <p>Contamos con los más avanzados sistemas de diagnóstico por imagen. Esta técnica poco invasiva ofrece mucha información, cada vez adquiere mayor relevancia a la hora de alcanzar un diagnóstico correcto.<br><br>
+            <button class="boton-general">PIDE CITA</button></p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active" style="margin-top: 5840px;">
+          <img src="images/etologia.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoEtologia">
+            <h3 class="tituloGuarderia">ETOLOGÍA</h3><br>
+            <h3>CONSULTA DE PROBLEMAS DE COMPORTAMIENTO</h3><br>
+              <p style="color: white;">Nuestro objetivo es ayudar a los propietarios a solucionar problemas de conducta de sus animales de compañía, utilizando los principios del aprendizaje para cambiar los comportamientos molestos de los animales.</p>
+            <h3>CURSOS</h3><br>
+            <p style="color: white;">Impartimos cursos de formación para los dueños de los animales que lo necesiten. Puede ser de manera presencial u online.<br><br>
+              <button class="boton-general">CONTACTA</button></p>
+          </div>
+        </div>
+      
+
+        <div style="margin-top: 6750px;">
+          <h3>SERVICIO DE RECOGIDA</h3><br>
+          <p>DESDE LAS 8:30AM HASTA LAS 20:30PM<br>
+          <button class="boton-general">RESERVA YA</button></p>
+        </div>
+
+        <!--Botones giratorios-->
+        <div id="botonesGiratorios" style="margin-top: 150px;">
+          <h3 style="font-size: 50px; color: #56c596">TARIFAS</h3>
+          <div class="wrapper">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front">
+                  <div class="inner">
+                    <p id="tituloBotones">Consulta Veterinaria</p>
+                    <p id="tituloBotones">20€</p>
+                    <span>8.30h a 20.30h*</span>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="inner">
+                    <p id="tituloBotones">*Sábados hasta las 14.30h. Los Domingos se considera Urgencias</p>
+                    <button class="boton-general">Más info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper2">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front">
+                  <div class="inner">
+                    <p id="tituloBotones">Urgencias 24h.</p>
+                    <p id="tituloBotones">30€</p>
+                    <span>A partir de las 20.30h</span>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="inner">
+                    <p id="tituloBotones">*Tarifa estándar orientativa.</p>
+                    <button class="boton-general">Más info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="textoInfo">
+          <p><em>*Imprescindible traer cartilla veterinaria.</em></p>
+        </div>
+
+      </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#56c596" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,250.7C672,245,768,203,864,170.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+    <footer>
+
+      <!--Contenido footer------------------------->
+        <div class="contenidoFooter">
+        <!--Seccion info----------------------->
+        
+
+            <div class="iconos-footer">
+            <a
+              title="Facebook"
+              href="https://www.facebook.com/misterpetresort/"
+              target="_blank"
+            ><i class="fab fa-facebook-f"></i></a>
+
+            <a
+              title="Twitter"
+              href="https://twitter.com/misterpetresort"
+              target="_blank"
+            ><i class="fab fa-twitter"></i></a>
+
+            <a
+              title="YouTube"
+              href="https://www.youtube.com/channel/UC0nd19TLBOKlDDpD5e5oNAQ?disable_polymer=true"
+              target="_blank"
+            ><i class="fab fa-youtube"></i></a>
+
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/company/mister-pet/"
+              target="_blank"
+            ><i class="fab fa-linkedin-in"></i></a>
+
+            <a
+              title="Instagram"
+              href="https://www.instagram.com/misterpet.resort/"
+              target="_blank"
+            ><i class="fab fa-instagram"></i></a>
+          </div><!--Iconos/redes sociales------>
+          <!--Fin Iconos/redes sociales-------------->
+
+
+          <div class="info-footer">
+          <div class="direccion">
+            <p>C/ Pedro Salinas 11 , Madrid | 91 546 53 57</p>
+          </div>
+
+          <div class="title">
+              <p>&copy; Animal Rooms</p>
+          </div>
+
+        </div> 
+           
+        
+        <!--Fin Seccion info----------------------------->
+      </div>
+    
+
+      <!--Fin Contenido footer------------------------------>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+          
