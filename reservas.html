@@ -1,128 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Animal Rooms</title>
     <!--Metas-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
     <!-- Bootstrap CSS, JS y otros par que funcione el modal de "enviar" -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Archivos externos-->
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
     <!---Archivos de Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--CdNs y otros-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
-    
+
 
     <!--Fuentes (ABeeZee/Source Sans Pro)-->
     <link href="https://fonts.googleapis.com/css?family=ABeeZee|Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <!--Iconos del footer-->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
     <script src="https://kit.fontawesome.com/afa329d86a.js" crossorigin="anonymous"></script>
 
-  </head>
+</head>
 
-  <body>
-    <!--Comienzo de "capaPadre"-->
-    <div id="capaPadre">
-     <!--Comienzo de Menu-->
-     <header class="header">
+<body>
+<!--Comienzo de "capaPadre"-->
+<div id="capaPadre">
+    <!--Comienzo de Menu-->
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <!--Boton hamburguesa-->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <!--Links-->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <!--Apartado de servicios-->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Servicios
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Adiestramiento</a>
-                      <a class="dropdown-item" href="servicios-hotel.html">Hotel-Resort</a>
-                      <a class="dropdown-item" href="guarderia/guarderia.html">Guardería</a>
-                    <a class="dropdown-item" href="#">Clínica veterinaria</a>
-                    <a class="dropdown-item" href="#">Eventos</a>
-                    <a class="dropdown-item" href="#">Tienda</a>
-                    <a class="dropdown-item" href="#">Transporte</a>
-                    <a class="dropdown-item" href="#">Peluquería y Spa</a>
-                  </div>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <!--Apartado de reservas-->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Reservas
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="reservas.html">Reserva ya</a>
-                    <a class="dropdown-item" href="cancelar.html">Cancelar reserva</a>
-                  </div>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="area-clientes.html">Área de clientes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="mapa.html">Mapa</a>
-                </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-     <!--Fin de Menu-->
+            <!--Boton hamburguesa-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      
+            <!--Links-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--Apartado de servicios-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Adiestramiento</a>
+                            <a class="dropdown-item" href="servicios-hotel.html">Hotel-Resort</a>
+                            <a class="dropdown-item" href="guarderia/guarderia.html">Guardería</a>
+                            <a class="dropdown-item" href="#">Clínica veterinaria</a>
+                            <a class="dropdown-item" href="#">Eventos</a>
+                            <a class="dropdown-item" href="#">Tienda</a>
+                            <a class="dropdown-item" href="#">Transporte</a>
+                            <a class="dropdown-item" href="#">Peluquería y Spa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <!--Apartado de reservas-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Reservas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="reservas.html">Reserva ya</a>
+                            <a class="dropdown-item" href="cancelar.html">Cancelar reserva</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="area-clientes.html">Área de clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">Mapa</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Fin de Menu-->
+
+
     <!--Slider-->
     <div id="content">
-      <div id="slider">
-        <img
-          id="imgCabecera"
-          src="https://images.pexels.com/photos/129634/pexels-photo-129634.jpeg?cs=srgb&dl=animal-bulldog-canine-129634.jpg&fm=jpg"
-        />
-        <!--Nombre/slogan-->
-      
-        <div id="titulo">
-            <div id="logo">
-                <a href="index.html">
-                    
-                      <img src="images/logoNuevo.svg" style="height: 130px; width: 130px; z-index: 999;">
-                </a>
-              </div>
-          <h1>Reservas</h1>
-          <h3 style="font-family:  'ABeeZee', sans-serif; font-weight:bold; color:white"> Solicitud de reserva</h3>
-          <h5 style="text-align: center; color: white;">Mediante este formulario puede enviar su solicitud de reserva para su mascota. <br>
-              Con la mayor brevedad posible, recibirá un correo o llamada indicándole <br> si hay disponibilidad para confirmar su reserva.</h5>
-          
-          
+        <div id="slider">
+            <img
+                    id="imgCabecera"
+                    src="https://images.pexels.com/photos/129634/pexels-photo-129634.jpeg?cs=srgb&dl=animal-bulldog-canine-129634.jpg&fm=jpg"
+            />
+            <!--Nombre/slogan-->
+
+            <div id="titulo">
+                <div id="logo">
+                    <a href="index.html">
+
+                        <img src="images/logoNuevo.svg" style="height: 130px; width: 130px; z-index: 999;">
+                    </a>
+                </div>
+                <h1>Reservas</h1>
+                <h3 style="font-family:  'ABeeZee', sans-serif; font-weight:bold; color:white"> Solicitud de
+                    reserva</h3>
+                <h5 style="text-align: center; color: white;">Mediante este formulario puede enviar su solicitud de
+                    reserva para su mascota. <br>
+                    Con la mayor brevedad posible, recibirá un correo o llamada indicándole <br> si hay disponibilidad
+                    para confirmar su reserva.</h5>
+
+
+            </div>
         </div>
-      </div>
-      <!--Fin de imagen/nombre-->
-  
+        <!--Fin de imagen/nombre-->
+
 
         <!--Comienzo de "contenido"---------------------->
         <div id="contenido">
@@ -131,224 +139,231 @@
         </div><!--fin de "contenido"---------------------->
 
         <!---PESTAÑAS DEL FORMULARIO Y FORMULARIO--->
-        <div class="container" style="margin-left:-170px; text-align: left; height: 30%;"> 
-          <div class="tabs-2">
-          </div>
-          <div class="tabs-1">
-            <ul class="tabs" style="margin-left:440px">
-              <li id="one" class="tab-link current" data-tab="tab-1">Datos usuario</li>
-              <li id="2" class="tab-link" data-tab="tab-2">Datos mascota</li>
-              <li id="3" class="tab-link" data-tab="tab-3">Servicio</li>
-              
-             
-            </ul>
-            
-             <p style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: regular; color:grey; margin-left:440px"> Los campos marcados con <span style=" color:red">*</span> son obligatorios</p>
-            
-             <div id="tab-1" class="tab-content current">
-              <form action="/action_page.php">
-                <div id="myProgress">
-                    <div id="myBar">10%</div>
-                  </div>
-                
-                  <br>
-                  <div class="form-group">
-                  Nombre del propietario <span style=" color:red">*</span><br>
-                  <input type="text" name="firstname" id="firstname" class="form-control form-control-sm" value=""  onkeyup="validarCampos('firstname')">
-                <div class="errorMessage d-none" id="firstnameValidation">El e-mail debe contener al menos una @</div>
-                  </div>
-                  <div class="form-group">
-                  Teléfono <span style=" color:red">*</span> <br>
-                  <input type="text" name="phone" id="phone"  class="form-control form-control-sm"  value=""  onkeyup="validarCampos('phone')">
-                <div class="errorMessage d-none" id="phoneValidation"></div>
-                  </div>
-                  <div class="form-group">
-                  Email <span style=" color:red">*</span> <br>
-                  <input type="text" id="email"  class="form-control form-control-sm" name="email" value="" onkeyup="validarCampos('email')">
-                <div class="errorMessage d-none" id="emailValidation">El e-mail debe contener al menos una @</div>
-                </div>
-                  Preferencia de contacto:
-                  <br>
-                  <input type="checkbox" name="opcion1" value="Por email">&nbsp; Por email &nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Por teléfono<br>
-                  <br>
-              </form>
-              <a href="reservas.html" class="next" id="boton-reservas">Siguiente &raquo;</a>
+        <div class="container">
+            <div class="tabs-2">
             </div>
-            <div id="tab-2" class="tab-content">
-              <form action="/action_page.php" method="GET">   
-                <div id="myProgress">
-                    <div id="myBar2">50%</div>
-                  </div>
-                  <br>
-                  <div class="form-group">
-                    <label>Número de mascotas: <span style=" color:red">*</span><br></label>
-                    <select class="form-control" id="control1" name="control1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+            <div class="tabs-1">
+                <ul class="tabs">
+                    <li id="tab-1" class="tab-link current" data-tab="1">Datos usuario</li>
+                    <li id="tab-2" class="tab-link" data-tab="2">Datos mascota</li>
+                    <li id="tab-3" class="tab-link" data-tab="3">Servicio</li>
+                </ul>
 
-                    </select>
-                </div>
+                <p style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: regular; color:grey;">
+                    Los campos marcados con <span style=" color:red">*</span> son obligatorios</p>
 
-              </form>
-              
-                  <br>
-                  Nombre de la primera mascota <span style=" color:red">*</span> <br>
-                  <input type="text"  class="form-control form-control-sm"  name="text" value="">
-                  <br>
-                  Raza primera mascota <span style=" color:red">*</span> <br>
-                  <input type="text"  class="form-control form-control-sm" name="text" value="">
-                  <br>
-                  
-                  Información adicional <br>
-                  <input type="text"  class="form-control form-control-sm"  name="text" value="">
-                  <br>
-               
-              </form><br>
-              <div>
-                <a href="reservas.html" class="previous" id="boton-reservas">&laquo;Anterior </a>
-                <a href="reservas.html" class="next" id="boton-reservas">Siguiente &raquo;</a>
-              </div>
-            </div>
-            
-            
-            <div id="tab-3" class="tab-content">
-              <form action="/action_page.php">
-                <div id="myProgress">
-                <div id="myBar3"> 100%</div>
-                <BR>
-                </div>
-                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Hotel (estancia de día y noche)<br>
-                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Guardería (día)
-                  <br>
-                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Clínica veterinaria
-                  <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Peluquería
-                  <br>
-                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Adiestramiento y etología
-                  <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Piscina canina
-
-                  <br>
-                  <input type="checkbox" name="opcion1" value="Por email">&nbsp;Paseos
-
-                  <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Autolavado
-                  <br>
-                  <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Transporte
-                  <br>
-                
-                  <br>
-                  <!--<button type="submit" class="btn btn-outline-info">Enviar</button>-->
-                                    <!-- Button to Open the Modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                      Enviar
-                    </button>
-
-                    <!-- The Modal -->
-        
-                    <div class="modal fade" id="myModal">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                        
-                          <!-- Modal Header -->
-                          <div class="modal-header"style="text-align:center;">
-                            
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          </div>
-                          
-                          <!-- Modal body -->
-                          <div class="modal-body" style="text-align: center; font-size: 1em;">
-                            La reserva se ha registrado correctamente.<br>
-                            En breve le llegará un correo de confirmación.
-                          </div>
-                              
-                            
-                          
+                <div id="tab-content-1" class="tab-content current">
+                    <form action="/action_page.php">
+                        <div id="myProgress">
+                            <div id="myBar">10%</div>
                         </div>
-                      </div>
-                    </div>
- 
-              </form><br>
-              <div>
-                <a href="reservas.html" class="previous" id="boton-reservas">&laquo;Anterior </a>
+
+                        <br>
+                        <div class="form-group">
+                            Nombre del propietario <span style=" color:red">*</span><br>
+                            <input type="text" name="firstname" id="firstname" class="form-control form-control-sm"
+                                   value="" onkeyup="validarCampos('firstname')">
+                            <div class="errorMessage d-none" id="firstnameValidation">El e-mail debe contener al menos
+                                una @
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Teléfono <span style=" color:red">*</span> <br>
+                            <input type="text" name="phone" id="phone" class="form-control form-control-sm" value=""
+                                   onkeyup="validarCampos('phone')">
+                            <div class="errorMessage d-none" id="phoneValidation"></div>
+                        </div>
+                        <div class="form-group">
+                            Email <span style=" color:red">*</span> <br>
+                            <input type="text" id="email" class="form-control form-control-sm" name="email" value=""
+                                   onkeyup="validarCampos('email')">
+                            <div class="errorMessage d-none" id="emailValidation">El e-mail debe contener al menos
+                                .tab-contenuna @
+                            </div>
+                        </div>
+                        Preferencia de contacto:
+                        <br>
+                        <input type="checkbox" name="opcion1" value="Por email">&nbsp; Por email &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Por teléfono<br>
+                        <br>
+                    </form>
+                </div>
+                <div id="tab-content-2" class="tab-content">
+                    <form action="/action_page.php" method="GET">
+                        <div id="myProgress">
+                            <div id="myBar2">50%</div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Número de mascotas: <span style=" color:red">*</span><br></label>
+                            <select onchange="nMascotas(event)" class="form-control" id="control1" name="control1">
+                                <option disabled selected>Selecciona número de mascotas</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <div id="contadorMascotas"></div>
+
+                    </form><br>
+
+                </div>
+
+
+                <div id="tab-content-3" class="tab-content">
+                    <form action="/action_page.php">
+                        <div id="myProgress">
+                            <div id="myBar3"> 100%</div>
+                            <BR>
+                        </div>
+                        <input type="checkbox" name="opcion1" value="Por email">&nbsp;Hotel (estancia de día y
+                        noche)<br>
+                        <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Guardería (día)
+                        <br>
+                        <input type="checkbox" name="opcion1" value="Por email">&nbsp;Clínica veterinaria
+                        <br>
+                        <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Peluquería
+                        <br>
+                        <input type="checkbox" name="opcion1" value="Por email">&nbsp;Adiestramiento y etología
+                        <br>
+                        <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Piscina canina
+
+                        <br>
+                        <input type="checkbox" name="opcion1" value="Por email">&nbsp;Paseos
+
+                        <br>
+                        <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Autolavado
+                        <br>
+                        <input type="checkbox" name="opcion2" value="Telefono">&nbsp;Transporte
+                        <br>
+
+                        <br>
+                        <!--<button type="submit" class="btn btn-outline-info">Enviar</button>-->
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#prueba">
+                            Enviar
+                        </button>
+
+                        <!-- The Modal -->
+
+
+                    </form>
+                    <br>
+
+                </div>
+                <div class="button-container">
+                    <a id="prevReservas" class="previous boton-reservas d-none"
+                       onclick="anteriorTab()">&laquo;Anterior </a>
+                    <a id="nextReservas" class="next boton-reservas" onclick="siguienteTab()">Siguiente &raquo;</a>
                 </div>
             </div>
-          </div>
         </div>
-        <!-- container -->
+    </div>
+</div>
+<!-- container -->
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#56c596" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,250.7C672,245,768,203,864,170.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    
-        <footer>
-    
-          <!--Contenido footer------------------------->
-            <div class="contenidoFooter">
-            <!--Seccion info----------------------->
-            
-    
-                <div class="iconos-footer">
-                <a
-                  title="Facebook"
-                  href="https://www.facebook.com/misterpetresort/"
-                  target="_blank"
-                ><i class="fab fa-facebook-f"></i></a>
-    
-                <a
-                  title="Twitter"
-                  href="https://twitter.com/misterpetresort"
-                  target="_blank"
-                ><i class="fab fa-twitter"></i></a>
-    
-                <a
-                  title="YouTube"
-                  href="https://www.youtube.com/channel/UC0nd19TLBOKlDDpD5e5oNAQ?disable_polymer=true"
-                  target="_blank"
-                ><i class="fab fa-youtube"></i></a>
-    
-                <a
-                  title="Linkedin"
-                  href="https://www.linkedin.com/company/mister-pet/"
-                  target="_blank"
-                ><i class="fab fa-linkedin-in"></i></a>
-    
-                <a
-                  title="Instagram"
-                  href="https://www.instagram.com/misterpet.resort/"
-                  target="_blank"
-                ><i class="fab fa-instagram"></i></a>
-              </div><!--Iconos/redes sociales------>
-              <!--Fin Iconos/redes sociales-------------->
-    
-    
-              <div class="info-footer">
-              <div class="direccion">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#56c596" fill-opacity="1"
+          d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,250.7C672,245,768,203,864,170.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+
+<footer>
+
+    <!--Contenido footer------------------------->
+    <div class="contenidoFooter">
+        <!--Seccion info----------------------->
+
+
+        <div class="iconos-footer">
+            <a
+                    title="Facebook"
+                    href="https://www.facebook.com/misterpetresort/"
+                    target="_blank"
+            ><i class="fab fa-facebook-f"></i></a>
+
+            <a
+                    title="Twitter"
+                    href="https://twitter.com/misterpetresort"
+                    target="_blank"
+            ><i class="fab fa-twitter"></i></a>
+
+            <a
+                    title="YouTube"
+                    href="https://www.youtube.com/channel/UC0nd19TLBOKlDDpD5e5oNAQ?disable_polymer=true"
+                    target="_blank"
+            ><i class="fab fa-youtube"></i></a>
+
+            <a
+                    title="Linkedin"
+                    href="https://www.linkedin.com/company/mister-pet/"
+                    target="_blank"
+            ><i class="fab fa-linkedin-in"></i></a>
+
+            <a
+                    title="Instagram"
+                    href="https://www.instagram.com/misterpet.resort/"
+                    target="_blank"
+            ><i class="fab fa-instagram"></i></a>
+        </div><!--Iconos/redes sociales------>
+        <!--Fin Iconos/redes sociales-------------->
+
+
+        <div class="info-footer">
+            <div class="direccion">
                 <p>C/ Pedro Salinas 11 , Madrid | 91 546 53 57</p>
-              </div>
-    
-              <div class="title">
-                  <p>&copy; Animal Rooms</p>
-              </div>
-    
-            </div> 
-               
-            
-            <!--Fin Seccion info----------------------------->
-          </div>
-          <!--Fin Contenido footer------------------------------>
-        </footer>
-    
-    
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-         <script src="js/reservas.js"></script>
-         <script src="js/home.js"></script>
-  </body>
+            </div>
+
+            <div class="title">
+                <p>&copy; Animal Rooms</p>
+            </div>
+
+        </div>
+
+
+        <!--Fin Seccion info----------------------------->
+    </div>
+    <!--Fin Contenido footer------------------------------>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/reservas.js"></script>
+<script src="js/home.js"></script>
+</body>
 </html>
+
+
+<div class="modal fade" id="prueba" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header" style="text-align:center;">
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body" style="text-align: center; font-size: 1em;">
+                La reserva se ha registrado correctamente.<br>
+                En breve le llegará un correo de confirmación.
+            </div>
+
+        </div>
+    </div>
+</div>
