@@ -574,7 +574,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   
   ul.tabs {
     text-align: center;
-    color:lightseagreen;
+    color: rgba(64, 185, 184, 1);
     font-size: 1.75em;
     margin: 0% 5% 0% 5%;
     list-style: none;
@@ -698,6 +698,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 .d-none {
     display: none;
 }
+
+/*ventana modal de enviar*/
 
 
 /*------------------------------------*\
