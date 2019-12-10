@@ -48,12 +48,12 @@ h2 {
 
 h3 {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 1.8em;
-    color: rgb(50, 50, 50);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-weight: 900;
-    margin: 20px;
+    font-weight: 200;
     border-bottom: #7be495;
+    line-height: 12px;
 
 
 }
@@ -411,7 +411,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 }
 
 #botonServiciosInicio{
-  background: #56c596;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7be495), to(#56c596));
+   
+   
   position: relative;
   z-index: 10;
   font-family: 'ABeeZee', sans-serif;
@@ -420,7 +422,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   transition: all .3s;
   margin: 0px;
   padding-top: 20px;
-  /* border: 2px solid white; */
+  border: 2px solid white; 
 }
 
 #botonServiciosInicio a{
@@ -438,7 +440,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 }
 
 #botonServiciosInicio:hover{
-  background: #7be495
+  background: linear-gradient(175deg, rgba(64, 185, 184, 1)  32%,rgba(123, 228, 149, 1) 100%);
+   
 }
 
 /*beneficios*/
@@ -446,7 +449,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   margin-top: 40px;
 }
 #beneficios img{
-  width: 100%;
+  width: 90%;
 }
 /*reviews*/
 #reviews{
