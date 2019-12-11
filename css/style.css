@@ -401,28 +401,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 /*servicios*/
 
 #home-servicios-grid{
-  margin-top: 30px;
+  margin-top: 50px;
   font-family: 'ABeeZee', sans-serif;
   font-size: 1.5em;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  /* width: 90%; */
+  width: 80%;
 }
 
 #botonServiciosInicio{
-  background: -webkit-gradient(linear, left top, left bottom, from(#7be495), to(#56c596));
-   
-   
+  background: linear-gradient(175deg, #7be495  1%,#56c596 100%);
   position: relative;
   z-index: 10;
   font-family: 'ABeeZee', sans-serif;
   cursor: pointer;
   height: 200px;
+  width: 200px;
   transition: all .3s;
   margin: 0px;
-  padding-top: 20px;
-  border: 2px solid white; 
+  padding-top: 10px;
+  border: 5px solid white; 
+
 }
 
 #botonServiciosInicio a{
@@ -430,6 +428,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   color: white;
   font-weight: 900;
   font-size:.9em;
+  z-index: 3000;
   
 }
 
@@ -439,9 +438,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   font-size:2em;
 }
 
-#botonServiciosInicio:hover{
-  background: linear-gradient(175deg, rgba(64, 185, 184, 1)  32%,rgba(123, 228, 149, 1) 100%);
-   
+#botonServiciosInicio:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3em;
+  background-image: linear-gradient(175deg, #56c596  1%, #7be495 100%);
+  transition: opacity 0.3s ease-out;
+  z-index: 2;
+  opacity: 0;
+}
+#botonServiciosInicio:hover:after {
+  opacity: 1;
+}
+
+#botonServiciosInicio span {
+  position: relative;
+  z-index: 3;
 }
 
 /*beneficios*/
