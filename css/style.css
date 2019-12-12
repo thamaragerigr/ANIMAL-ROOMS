@@ -1022,12 +1022,67 @@ ul.tabs li.current {
 }
 
 
-/*AREA  CLIENTES*/
+/* ESTILO AREA  CLIENTES*/
 
 
-.formulario-clientes {
-    margin-top: 200px;
+#titulo-clientes{
+    margin-top: -150px;
+    color: #56c596;
+    margin-left: 170px;
 
+}
+
+.formulario-clientes{
+    margin-left: 400px;
+    width: 300px;
+
+}
+
+#usuario-clientes{
+    font-family: 'ABeeZee';
+}
+
+#password-clientes{
+    font-family: 'ABeeZee';
+}
+
+.nombre-usuario{
+     font-family: 'ABeeZee';
+}
+
+.col-md-4{
+    position: center;
+    margin-bottom: 50px;
+}
+
+#boton-clientes{
+    background-color: #56c596;
+    border-color: #56c596;
+    font-family: 'ABeeZee';
+}
+
+b{
+    font-family: 'ABeeZee';
+}
+
+.form-check-label{
+    font-family: 'ABeeZee';
+}
+
+#boton-clientes{
+    background-color: #40b9b8;
+}
+
+#color{
+    background-color: #56c596;
+    border-radius: 70px;
+    height: 300px;
+    margin-bottom: 80px;
+    margin-top: 
+}
+
+.form-group{
+    margin-top: 30px;
 }
 
 
