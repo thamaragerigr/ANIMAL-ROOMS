@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Archivos externos -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <!--CdNs y otros-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+    
+
+    <!--Fuentes (ABeeZee/Source Sans Pro)-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--Iconos del footer-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/afa329d86a.js" crossorigin="anonymous"></script>
+
+
+    <title>Tienda</title>
+  </head>
+  <body>
+    
+
+    <div id="capaPadre">
+     
+     <!--Comienzo de Menu-->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <!--Boton hamburguesa-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <!--Links-->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <!--Apartado de servicios-->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Servicios
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Adiestramiento</a>
+                          <a class="dropdown-item" href="servicios-hotel.html">Hotel-Resort</a>
+                          <a class="dropdown-item" href="guarderia/guarderia.html">Guardería</a>
+                        <a class="dropdown-item" href="#">Clínica veterinaria</a>
+                        <a class="dropdown-item" href="#">Eventos</a>
+                        <a class="dropdown-item" href="#">Tienda</a>
+                        <a class="dropdown-item" href="#">Transporte</a>
+                        <a class="dropdown-item" href="#">Peluquería y Spa</a>
+                      </div>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <!--Apartado de reservas-->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reservas
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="reservas.html">Reserva ya</a>
+                        <a class="dropdown-item" href="cancelar.html">Cancelar reserva</a>
+                      </div>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="area-clientes.html">Área de clientes</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="mapa.html">Mapa</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+         <!--Fin de Menu-->
+      <!--Header/Cabecera----------------------------->
+
+      <!--Nombre/slogan-->
+    
+           <div id="titulo">
+              <div id="logo">
+                  <a href="index.html">
+                    <img src="images/logoNuevo.svg" style="height: 130px; width: 130px; z-index: 999;">
+                  </a>
+              </div>
+                <h1>TIENDA</h1><br>
+                <h4>Un hogar más para tu mascota</h4> 
+                <br>
+                <h3> <br>El resort para tu animal de compañía con hotel, clínica, peluquería y spa, <br><br> centro educativo, piscina, bar canino y mucho más. <br> <br><br> C/ Pedro Salinas 11 , Madrid<br><br> Télf. 91 546 53 57</h3>
+            </div>
+         
+        <!--Fin de imagen/nombre-->
+
+      <!--Slider-->
+      <div id="content">
+        <div id="slider">
+          <img
+            id="imgCabecera"
+            src="images/perro-comiendo.jpg"
+          />
+          <!--Nombre/slogan-->
+        </div>
+
+        
+        <div class="descripcion" style="margin-top: 100px;">
+          <h3 style="color: #56c596; font-size: 2.5em;">"Alimentación, accesorios y ¡Mucho más!"</h3><br><br>
+          <p>En nuestras instalaciones contamos con una gran tienda para mascotas con todo tipo de alimentación y accesorios de primera calidad.</p>
+        </div>
+
+        <div class="carousel-item active">
+          <img src="images/tienda.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto">
+            <h3 class="tituloGuarderia" style="font-size: 2.5em;">ALIMENTACIÓN</h3><br><br>
+            <p style="color: white;">Trabajamos productos de alimentación 100% naturales, no solo a nivel de ingredientes, sino también a nivel de procesos de fabricación.<br><br>
+            Disponemos de las mejores marcas del mercado respecto a comida natural: Taste of the Wild, Acana, Nutro, Fish4Dogs, True Instinct, Orijen...entre otras.<br><br>
+            Además un experto le ayudará a elegir el producto más adecuado para su mascota.</p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item active" style="margin-top: 710px;">
+          <img src="images/chuchesPerro.png" id="imgGuarderia" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block" id="textoFoto2">
+            <h3 class="tituloArea">ACCESORIOS</h3><br><br>
+            <h3>Juguetes, ropa, chuches ¡y más!</h3>
+            <p>Puedes encontrar chuches para tu mascotas, como:  galletas, barritas, láminas, huesos… todas deliciosas y variadas. Puedes utilizarlas para complementar la alimentación, para el cuidado dental, como entretenimiento o como premios para perros con los que reforzar el adiestramiento. ¡Echa un vistazo y escoge lo mejor para tu mejor amigo!</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 1590px;"></div>
+
+      </div>
+      
+
+        <!-- Wave SVG Animation -->
+  <div class="waves">
+    <svg width="100%" height="200px" fill="none">
+      <path 
+        fill="#56c596" 
+        d="
+        M0 67
+        C 273,183
+          822,-40
+          1920.00,106 
+        V 359 
+        H 0 
+        V 67
+        Z">
+      <animate 
+        repeatCount="indefinite" 
+        fill="#56c596" 
+        attributeName="d" 
+        dur="15s" 
+        values="
+          M0 77 
+          C 473,283
+            822,-40
+            1920,116 
+          V 359 
+          H 0 
+          V 67 
+          Z; 
+          M0 77 
+          C 473,-40
+            1222,283
+            1920,136 
+          V 359 
+          H 0 
+          V 67 
+          Z; 
+          M0 77 
+          C 973,260
+            1722,-53
+            1920,120 
+          V 359 
+          H 0 
+          V 67 
+          Z; 
+          M0 77 
+          C 473,283
+            822,-40
+            1920,116 
+          V 359 
+          H 0 
+          V 67 
+          Z
+            ">
+        </animate>
+      </path>
+    </svg>
+  </div>
+
+    <footer>
+
+      <!--Contenido footer------------------------->
+        <div class="contenidoFooter">
+        <!--Seccion info----------------------->
+        
+
+            <div class="iconos-footer">
+            <a
+              title="Facebook"
+              href="https://www.facebook.com/misterpetresort/"
+              target="_blank"
+            ><i class="fab fa-facebook-f"></i></a>
+
+            <a
+              title="Twitter"
+              href="https://twitter.com/misterpetresort"
+              target="_blank"
+            ><i class="fab fa-twitter"></i></a>
+
+            <a
+              title="YouTube"
+              href="https://www.youtube.com/channel/UC0nd19TLBOKlDDpD5e5oNAQ?disable_polymer=true"
+              target="_blank"
+            ><i class="fab fa-youtube"></i></a>
+
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/company/mister-pet/"
+              target="_blank"
+            ><i class="fab fa-linkedin-in"></i></a>
+
+            <a
+              title="Instagram"
+              href="https://www.instagram.com/misterpet.resort/"
+              target="_blank"
+            ><i class="fab fa-instagram"></i></a>
+          </div><!--Iconos/redes sociales------>
+          <!--Fin Iconos/redes sociales-------------->
+
+
+          <div class="info-footer">
+          <div class="direccion">
+            <p>C/ Pedro Salinas 11 , Madrid | 91 546 53 57</p>
+          </div>
+
+          <div class="title">
+              <p>&copy; Animal Rooms</p>
+          </div>
+
+        </div> 
+           
+        
+        <!--Fin Seccion info----------------------------->
+      </div>
+    
+
+      <!--Fin Contenido footer------------------------------>
+
+    </footer>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
