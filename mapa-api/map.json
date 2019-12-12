@@ -1,0 +1,366 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -3.662290,  40.457720 ]
+      },
+      "properties": {
+       "name": "Animal Rooms",
+       "address": " Calle Pedro Salinas, 11, 28043 Madrid",
+       "website": "https://es-la.facebook.com/public/Peluqueria-Canina-Pet-Shop",
+       "servicios": "Hotel",
+       "icon": "../mapa-api/iconos-mapa/animal-rooms.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -3.717451,  40.469264 ]
+      },
+      "properties": {
+       "name": "Pet Shop",
+       "address": "Calle Valdesangil, 9, 28039 Madrid",
+       "website": "https://es-la.facebook.com/public/Peluqueria-Canina-Pet-Shop",
+       "servicios": "Hotel",
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -3.649130, 40.476251 ]
+      },
+      "properties": {
+        "name": "Zoolife",
+        "address": "Av. de Menéndez Pelayo, 9, 28009 Madrid",
+        "website": "https://www.zoolife.es/",
+        "servicios": "Hotel",
+        "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.668233, 40.478529]
+      },
+      "properties": {
+        "name": "TopKnot-Centro Canino",
+        "address": "Calle Donoso Cortés, 37, 28040 Madrid",
+        "website": "https://mis-mascotas-que-cosas.negocio.site/",
+        "servicios": "Hotel",
+        "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.678278, 40.428051 ]
+      },
+      "properties": {
+       "name": "Hospital Veterinario Retiro",
+       "address": "Av. de Menéndez Pelayo, 9, 28009 Madrid",
+       "website": "http://hospitalveterinarioretiro.com/",
+       "servicios": "Clínica",
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.676636, 40.427496 ]
+      },
+      "properties": {
+        "name": "PuLyGaR: Servicio Integral de Mascotas",
+        "address": "Calle de Ayala, 92, 28001 Madrid",
+        "website": "https://www.srperro.com/pulygar-chueca",
+        "servicios": "Clínica",
+        "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.647863, 40.433556 ]
+      },
+      "properties": {
+        "name": "Clínica Veterinaria Mundo Mascota",
+        "address": "Calle de Alcalá, 339, 28027 Madrid",
+        "website": "https://veterinarios-madrid.es/clinica-veterinaria-mundo-mascota-quintana-madrid/",
+        "servicios": "Clínica",
+        "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.698272705078125, 40.40408495539547 ]
+      },
+      "properties": {
+       "name": "Peluqueria Canina Zar",
+       "address": "Calle de López de Hoyos, 363, 28043 Madrid",
+       "website": "https://peluqueria-canina-zar.negocio.site/",
+       "servicios": "Peluquería",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.6793899536132812, 40.434143560495514 ]
+      },
+      "properties": {
+        "name": "Barbudogs Peluquería Canina",
+        "address": "Calle del Alcalde Redondo Aceña, 22, 28050 Madrid",
+        "website": "http://www.barbudogs.es/",
+        "servicios": "Peluquería",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.7102890014648433, 40.4297009604458 ]
+      },
+      "properties": {
+        "name": "Nicolas Herrero. Peluquería canina",
+        "address": "Calle Marqués de Sta. Ana, 30, 28004 Madrid",
+        "website": "http://www.nicolasherrero.com/",
+        "servicios": "Peluquería",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -3.7466812133789062, 40.401209080760594 ]
+      },
+      "properties": {
+       "name": "Tiendanimal",
+       "address": "Calle de López de Hoyos, 100, 28002 Madrid",
+       "website": "https://www.tiendanimal.es/",
+       "servicios": "Tienda",         
+      "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.726425170898438, 40.4090520858275 ]
+      },
+      "properties": {
+        "name": "By Mascota MAD",
+        "address": "Calle de Castelló, 10, 28001 Madrid",
+        "website": "https://bymascota.com/tiendas/tiendas-mascotas-madrid/",
+        "servicios": "Tienda",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.7223052978515625, 40.38996584652129 ]
+      },
+      "properties": {
+        "name": "Interzoo",
+        "address": "Calle de las Maldonadas, 8, 28005 Madrid",
+        "website": "https://www.interzoo.es/",
+        "servicios": "Tienda",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.7247085571289062,
+          40.45713585685654]
+      },
+      "properties": {
+       "name": "Dog & Life Adiestramiento Canino Madrid",
+       "address": "Calle del General Díaz Porlier, 36, 28001 Madrid",
+       "website": "http://adiestramiento-canino.com/",
+       "servicios": "Adiestramiento",         
+      "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.647090,
+          40.477960 ]
+      },
+      "properties": {
+        "name": "DogSchool Escuela de Adiestramiento Canino",
+        "address": "Calle Sta. Susana, 37, 28033 Madrid",
+        "website": "https://www.dogschool.es/",
+        "servicios": "Adiestramiento",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.719610,
+          40.473080]
+      },
+      "properties": {
+        "name": "NOBLECAN Adiestramiento canino en Madrid",
+        "address": "Calle la Serna del Monte, 5, 28035 Madrid",
+        "website": "https://www.noblecan.com/",
+        "servicios": "Adiestramiento",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.910730,
+          40.530760 ]
+      },
+      "properties": {
+       "name": "MISTER PET RESORT Residencia de Mascotas",
+       "address": "Av. de Atenas, 46, 28290 Las Rozas de Madrid, Madrid",
+       "website": "https://misterpetresort.com/",
+       "servicios": "Club",         
+      "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.815080,
+          40.360310 ]
+      },
+      "properties": {
+        "name": "Club Agility WELPE",
+        "address": "Complejo Deportivo Canaleja, Av. los Castillos, S/N, Alcorcón, Madrid",
+        "website": "https://grupo-agility-w-e-l-p-e.webnode.es/",
+        "servicios": "Club",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.797530,
+          40.436070 ]
+      },
+      "properties": {
+        "name": "Qué guapos",
+        "address": "Calle Finlandia, 6, 28224 Pozuelo de Alarcón, Madrid",
+        "website": "http://queguapos.net/",
+        "servicios": "Club",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.681000,
+          40.455270]
+      },
+      "properties": {
+       "name": "Kubalu Events",
+       "address": "Plaza Valparaíso, 2, 28016 Madrid",
+       "website": "http://hospitalveterinarioretiro.com/",
+       "servicios": "Eventos",         
+       "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.666450,
+          40.398100 ]
+      },
+      "properties": {
+        "name": "Espacio Cubierto",
+        "address": "Calle de la Sierra de los Filabres, 24, 28038 Madrid",
+        "website": "https://espaciocubierto.negocio.site/",
+        "servicios": "Eventos",         
+        "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.671910,
+          40.444330]
+      },
+      "properties": {
+        "name": "Rubén Campos",
+        "address": "Calle de Ros de Olano, 7, Local, 28002 Madrid",
+        "website": "https://www.rubencampos.es/",
+        "servicios": "Eventos",         
+        "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.677050,
+          40.450540 ]
+      },
+      "properties": {
+       "name": "WagWag",
+       "address": "Calle del Príncipe de Vergara, 208, 28002 Madrid",
+       "website": "https://www.wagwag.es/",
+       "servicios": "Guardería",         
+        "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -3.677050,
+          40.413540 ]
+      },
+      "properties": {
+        "name": "La Perroteca - Guardería Canina - Residencia de Perros Felices",
+        "address": "Av. de Menéndez Pelayo, 22, 28007 Madrid",
+        "website": "http://www.laperroteca.com/",
+        "servicios": "Guardería",         
+         "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    },
+    {
+    "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.712070,
+          40.436440]
+      },
+      "properties": {
+        "name": "Guaurdería",
+        "address": "Calle Donoso Cortés, 58, 28015 Madrid",
+        "website": "https://guaurderia.com/",
+        "servicios": "Guardería",         
+         "icon": "../mapa-api/iconos-mapa/hospital.png"
+      }
+    }
+  ]
+}

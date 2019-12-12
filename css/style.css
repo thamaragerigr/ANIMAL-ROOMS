@@ -115,11 +115,13 @@ header{
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
-	z-index: 1000;
+  z-index: 1000;
+
 }
 
 nav{
-	z-index: 100;
+  z-index: 100;
+  
 }
 .nav-item{
     font-family: 'ABeeZee', sans-serif;
@@ -139,12 +141,10 @@ nav{
 
 .nav-link:hover {
   color: white !important;
-  /*gradiente*/
-  background: rgb(123, 228, 149);
-  transition: all 0.3s ease-in-out;
-  border-radius: 50px !important;
-
+  background: #7be495 ;
+  transition: all 0.3s ease-out;
 }
+
 
 #basicExampleNav{/*menu desplegable*/
   background: white;
@@ -271,13 +271,7 @@ svg {/*curva de footer*/
 
 footer {
     /*gradiente*/
-    background: -moz-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* ff3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56c596), color-stop(17%, #56c596), color-stop(100%, #2b8988)); /* safari4+,chrome */
-background: -webkit-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* opera 11.10+ */
-background: -ms-linear-gradient(90deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* ie10+ */
-background: linear-gradient(0deg, #2b8988 0%, #56c596 83%, #56c596 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', endColorstr='#2b8988',GradientType=0 ); /* ie6-9 */
+    background: linear-gradient(180deg, rgba(123, 228, 149, 1) 10%, rgba(64, 185, 184, 1) 100%);
    text-align: center;
     color: white;
     height: 250px;
@@ -318,35 +312,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 }
 
 /*Estados de iconos*/
-.fa:hover {
-    text-decoration: none;
-}
-
-.fa-facebook-f:hover {
-    background: #39569c;
-    color: white;
-}
-
-.fa-twitter:hover {
-    background: #2bc4ff;
-    color: white;
-}
-
-.fa-linkedin-in:hover {
-    background: #0072b1 ;
-    color: white;
-}
-
-.fa-youtube:hover {
-    background: #de0924;
-    color: white;
-
-}
-
-.fa-instagram:hover {
-    background: #E1306C;
-    color: white;
-}
+.fa:hover {text-decoration: none;}
+.fa-facebook-f:hover {background: #39569c;color: white;}
+.fa-twitter:hover {background: #2bc4ff;color: white;}
+.fa-linkedin-in:hover {background: #0072b1;color: white;}
+.fa-youtube:hover {background: #de0924;color: white;}
+.fa-instagram:hover {background: #E1306C;color: white;}
 /*FOOTER GENERAL*/
 
 /*Media queries del menu/slide/footer*/
@@ -370,13 +341,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
         position: relative;
         left: 50%;
         transform: translate(-50%);
-    
     }
-
-    
   }
 
-  
 /*------------------------------------*\
   ESTILO DE APARTADO HOME
 \*------------------------------------*/
@@ -405,7 +372,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   font-family: 'ABeeZee', sans-serif;
   font-size: 1.5em;
   text-align: center;
-  width: 80%;
+  width: 75%;
 }
 
 #botonServiciosInicio{
@@ -418,9 +385,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   width: 200px;
   transition: all .3s;
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 30px;
   border: 5px solid white; 
-
+  border-radius: 10px;
+ 
 }
 
 #botonServiciosInicio a{
@@ -429,7 +397,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   font-weight: 900;
   font-size:.9em;
   z-index: 3000;
-  
+
 }
 
 #botonServiciosInicio i{ 
@@ -445,11 +413,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 0.3em;
   background-image: linear-gradient(175deg, #56c596  1%, #7be495 100%);
   transition: opacity 0.3s ease-out;
   z-index: 2;
   opacity: 0;
+  border-radius: 5px;
 }
 #botonServiciosInicio:hover:after {
   opacity: 1;
@@ -465,7 +433,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
   margin-top: 40px;
 }
 #beneficios img{
-  width: 90%;
+  width: 80%;
 }
 /*reviews*/
 #reviews{
@@ -478,16 +446,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .foto-review {/*foto de los clientes*/
   border-radius: 100px;
+  width: 100px;
 }
 
 .card{/*cards de bootstrap*/
   max-width: 300px;
-  margin: 20px;
+  margin: 40px;
   -webkit-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
   -moz-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
   box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
@@ -514,7 +483,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 }
 /*Showroom/galeria*/
 #showroom{
-    width: 100%;
+    width: 80%;
     position: relative;
     top: 60px;
 }
@@ -526,20 +495,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c596', end
 
 .gallery {
 	display: flex;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
+  
 }
 
 .gallery-item {
     overflow: hidden;
-    margin: -100px;
+    
+    border-radius: 5px;
 }
 
 .gallery-image {
 	display: block;
 	width: 100%;
 	height: 100%;
-    object-fit: cover;
-	transition: transform 400ms ease-out;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+  transform: scale(1.08);
+ 
+ 
 }
 
 .gallery-image:hover {

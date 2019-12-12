@@ -1,0 +1,354 @@
+ /* Optional: Hace que la 'sample page' llene toda la ventana */
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Siempre especificar la altura del mapa para definir el 
+  tamaño del div que contiene el mapa*/
+  #map {
+   height: 100%;
+  }
+  
+  /*Estilos del menu*/
+  .boton-mapa-menu {
+    position: absolute; 
+    z-index: 10000; 
+    top: 60px; 
+    left: 88%; 
+    color: gray;
+  }
+
+  .boton-mapa-menu button{
+    font-size: 15px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 900;
+    font-family:  'ABeeZee', sans-serif;;
+  }
+
+  
+  /*menu/nav*/
+
+  
+  header{
+      position: fixed; 
+      top: 0px; 
+      width: 100%; 
+      z-index: 1000;
+  }
+
+  .nav-item{
+      font-family: 'ABeeZee', sans-serif;   
+  }
+  
+  .nav-link  {
+    color:  white !important;
+    margin: 5px 20px;
+    padding: 5px 25px !important;
+    transition: all 0.1s ease-in-out;
+    border-radius: 50px !important;
+    font-weight: 900;
+    letter-spacing: 1px;
+  
+  }
+  
+  .nav-link:hover {
+    color: white !important;
+    /*gradiente*/
+    background: rgb(123, 228, 149);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px !important;
+  
+  }
+  
+  #basicExampleNav{/*menu desplegable*/
+    background: white;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+   
+  }
+  
+  
+  .navbar ul {
+   margin: auto;
+
+  }
+  
+  div .dropdown-menu li a{
+    color: gray !important;
+  }
+  
+  
+  .solid-nav {
+    background-color:rgba(255, 255, 255, 0.9);
+      transition: background-color 0.2s linear;
+     
+    }
+  
+   .solid-nav li a{
+    color: rgb(122, 122, 122) !important;
+   
+   } 
+  
+  /*comienzo botón estandar*/
+  .boton-general {
+      font-family: 'ABeeZee', sans-serif;
+      font-size: 1em;
+      color: white;
+      letter-spacing: 1px;
+      padding: 15px;
+      margin: 20px;
+      font-weight: 900;
+      border: none;
+      border-radius: 50px;
+      /*gradiente*/
+      background: rgb(123, 228, 149);
+      background: linear-gradient(175deg, rgba(123, 228, 149, 1) 32%, rgba(64, 185, 184, 1) 100%);
+      transition: all 0.3s ease-in-out;
+      /*sombras*/
+      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.12);
+      -webkit-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
+      -moz-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
+  
+  }
+  
+  /*estados del botón*/
+  .boton-general:hover {letter-spacing: 2.5px;border-radius: 10px;}
+  .boton-general:focus {outline: 0;}
+  .boton-activo{letter-spacing: 2.5px;border-radius: 10px;}
+  #boton-mapa-api{/*Posicion del boton '¿que buscas?'*/
+    z-index: 1000;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    width: 300px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  #apartado-api{/*Apartado donde aparecen los filtros*/
+    width: 300px;
+    height: 600px;
+    z-index: 900;
+    position: absolute;
+    top: 95px;
+    left: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+    -moz-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+    box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
+  }
+  
+  #form{/*div de checkboxes*/
+    position: relative;
+    top: 70px;
+    left: 20px;
+    width: 260px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;
+  }
+  
+  
+  .contenedor-mapa-servicios {/*clase para cada checkbox*/
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(233, 233, 233);
+  }
+  
+  /* Infowindows estilos*/
+  .infowindow {animation: sweep .3s ease-in-out;}/* animacion para cuando aparece */
+  .infowindow h3{
+    font-family: 'ABeeZee', sans-serif;
+    background: linear-gradient(175deg, rgba(123, 228, 149, 1) 32%, rgba(64, 185, 184, 1) 100%); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  .infowindow p{
+    font-family: 'ABeeZee', sans-serif;
+    color: rgb(180, 180, 180);
+    margin:6px;
+    font-size: 12px;
+  }
+  .infowindow a{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(123, 228, 149, 1);
+    transition: .3s;
+    text-decoration: none;
+  }
+  .infowindow a:hover{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(51, 189, 154);
+  }
+  
+  /*Efectos de keyframes*/
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+  
+  @keyframes slideInDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-60%);
+    visibility: visible;
+    } }
+
+  #listado{
+    color: rgb(190, 190, 190);
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    
+  }
+  
+  .sidebar {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:20px;left:0;
+    overflow:hidden;
+    z-index: 1000;
+  
+  }
+  .quiet {
+    color:#888;
+  }
+  .map {
+    position:absolute;
+    left:33.3333%;
+    width:66.6666%;
+    top:0;bottom:0;
+  }
+  .heading {
+    background:#fff;
+    border-bottom:1px solid #eee;
+    height:40px;
+    line-height:60px;
+    padding:0 10px;
+  }
+  #listings{
+    overflow: scroll;
+    height: 500px;
+  }
+  .listado-servicio{
+   padding-left: 20px;
+   padding-right:20px ;
+  }
+  
+  .listado-servicio a{
+    text-decoration: none;
+    background: linear-gradient(15deg, rgba(123, 228, 149, 1) 0%, rgba(64, 185, 184, 1) 100%); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  
+  .listado-servicio p{
+    color: rgb(190, 190, 190);
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .listado-servicio #descripcion{
+    border-bottom: rgb(226, 226, 226) 1px solid;
+    padding-bottom: 20px;
+    
+  }
+  
+  .listings {
+    height:100%;
+    overflow:auto;
+    padding-bottom:60px;
+    
+  }
+  
+  .listings .item.active {
+    background-color:#f8f8f8;
+  }
+  
+  ::-webkit-scrollbar {
+    width:5px;
+    border-left:0;
+    background:rgba(255, 255, 255, 0.1);
+  }
+  ::-webkit-scrollbar-track {
+    background:none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:rgba(123, 228, 149, 1);
+    border-radius:0;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: 0;
+    border: none;
+    margin-top: 23px;
+    color: green;
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(218, 218, 218);
+    opacity: 1; /* Firefox */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  #myUL li a {
+    margin-top: 0px; /* Prevent double borders */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    display: block; /* Make it into a block element to fill the whole list */
+    
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+  
+  #myUL li p {
+    margin-top: 3px; /* Prevent double borders */
+  
+  }
+  
+  #myUL li a p {
+    margin-top: 3px; /* Prevent double borders */
+    color: gray;
+  }
+  
+  

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <link rel="shortcut icon" 
+href="images/logoNuevo_letras.png">
     <title>Animal Rooms</title>
     <!--Metas-->
     <meta charset="UTF-8" />
@@ -19,6 +21,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--Fuentes (ABeeZee/Source Sans Pro)-->
     <link href="https://fonts.googleapis.com/css?family=ABeeZee|Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -100,7 +104,7 @@
         <div class="notice d-flex justify-content-between align-items-center">
           <div class="cookie-text">Este Web utiliza cookies propias y de terceros para ofrecerle una mejor experiencia y servicio. Al navegar o utilizar nuestros servicios el usuario acepta el uso que hacemos de las cookies.</div>
           <div class="buttons d-flex flex-column flex-lg-row">
-            <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal" style="font-family: AbeeZee;">Acepto</a>
+            <a href="#a" class="btn btn-sm" data-dismiss="modal" style="font-family: AbeeZee; background: #56c596; color: white;">Acepto</a>
             <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal" style="font-family: AbeeZee;">Rechazo</a>
           </div>
         </div>
@@ -153,7 +157,7 @@
               <img src="https://images.unsplash.com/photo-1568483720721-2f5e5e0db2ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Chicago">
             </div>
             <div class="carousel-item">
-              <img src="https://images.pexels.com/photos/923360/pexels-photo-923360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="New York">
+              <img src="https://images.pexels.com/photos/32870/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="New York">
             </div>
             <div class="carousel-item">
               <img src="https://images.pexels.com/photos/2737393/pexels-photo-2737393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="New York">
@@ -165,7 +169,7 @@
               <img src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?cs=srgb&dl=animal-cat-cute-46024.jpg&fm=jpg" alt="New York">
             </div>
             <div class="carousel-item">
-              <img src="https://images.unsplash.com/photo-1513639725746-c5d3e861f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="New York">
+              <img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a015-helenal-12.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=d5dad3a6d387753f1a2dd9140b2130c1" alt="New York">
             </div>
           </div>
         
@@ -184,7 +188,7 @@
         <!--Comienzo de "contenido"---------------------->
         <div id="contenido">
            <!--Comienzo de "servicios"---------------------->
-           <div id="home-servicios">
+           <div id="home-servicios" >
               <div id="info-reviews" class="info">
                   <i class="fas fa-paw icono-pata-de-perro"></i>
                   <h2>Tenemos todo lo que &nbsp;<span class="info-verde">necesitas</span></h2>
@@ -192,15 +196,14 @@
                 </div>
 
                 <div id="home-servicios-grid" class="container">
-                <div class="row align-slef-center">
-                    <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-hotel"></i><br>HOTEL<br>
-                    </span></a></div>
+                <div class="row align-slef-center" data-aos="fade-up" data-aos-once="true" >
+                    <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-hotel"></i><br>HOTEL<br></span></a></div>
                     <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-clinic-medical"></i><br>CLÍNICA</span></a></div>
                     <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-baseball-ball"></i><br>GUARDERÍA</span></a></div>
                     <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-graduation-cap"></i><br>ADIESTRAMIENTO</span></a></div>
                   </div>
 
-                  <div class="row align-items-center">
+                  <div class="row align-items-center" data-aos="fade-up" data-aos-once="true">
                       <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-shopping-basket"></i><br>TIENDA</span></a></div>
                       <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-cut"></i><br>PELUQUERÍA</span></a></div>
                       <div class="col-sm-3" id="botonServiciosInicio"><a href="#"><span><i class="fas fa-address-card"></i><br>CLUB</span></a></div>
@@ -213,14 +216,14 @@
 		
     
           <!--Comienzo de "beneficios"---------------------->
-          <div id="beneficios">
-              <div id="info-reviews" class="info">
+          <div id="beneficios" >
+              <div id="info-reviews" class="info" data-aos="fade-up" data-aos-once="true">
                   <i class="fas fa-paw icono-pata-de-perro"></i>
                   <h2>Nuestros &nbsp;<span class="info-verde">servicios</span></h2>
                   <p>Animal Rooms ofrece todo tipo de servicios para mascotas, donde buscamos el bienestar de todos los animales que pasan por nuestro centro.</p>
                 </div>
 
-                <div>
+                <div data-aos="flip-up" data-aos-once="true"  data-aos-duration="500">
                   <img src="images/home/beneficios-grande.png" alt="" srcset="">
                 </div>
           </div>
@@ -230,7 +233,7 @@
           <!--Comienzo de "reviews"---------------------->
           <div id="reviews">
             <!-- Comienzo Informacion/ pequeña descripción--------------->
-            <div id="info-reviews" class="info">
+            <div id="info-reviews" class="info" data-aos="fade-up" data-aos-once="true">
               <i class="fas fa-paw icono-pata-de-perro"></i>
               <h2>Nuestros clientes nos &nbsp;<span class="info-verde">aman</span></h2>
               <p>Ofrecemos un servicio especializado en atención a mascotas. Por eso, a nuestros clientes les encanta repetir con nosotros. </p>
@@ -239,7 +242,7 @@
             <!--Comienzo cards de bootstrap para reviews--------------->
             <div id="review-card" class="d-flex justify-content-around row" style="margin: auto;">
             <!--Comienzo card Miguel------->
-            <div class="card col-lg-4">
+            <div class="card col-lg-4" data-aos="zoom-out" data-aos-once="true"  data-aos-duration="500">
               <div class="card-body">
                 <img class="foto-review" src="images/home/review-miguel.jpg" alt="Foto de cliente" width="130px">
                 <h5 class="card-title">Miguel</h5>
@@ -250,7 +253,7 @@
 
 
             <!--Comienzo card Nuria------->
-            <div class="card col-lg-4">
+            <div class="card col-lg-4" data-aos="zoom-out" data-aos-once="true"  data-aos-duration="500">
                 <div class="card-body">
                     <img class="foto-review" src="images/home/review-nuria.jpg" alt="Foto de cliente" width="130px">
                   <h5 class="card-title">Nuria</h5>
@@ -261,7 +264,7 @@
 
 
               <!--Comienzo card Marco------->
-              <div class="card col-lg-4">
+              <div class="card col-lg-4" data-aos="zoom-out" data-aos-once="true"  data-aos-duration="500">
                   <div class="card-body">
                     <img class="foto-review" src="images/home/review-marco.jpg" alt="Foto de cliente" width="130px">
                     <h5 class="card-title">Marco</h5>
@@ -278,32 +281,32 @@
 
 
 
-      <div id="showroom" class="container">
+      <div id="showroom" class="container" data-aos="fade-up" data-aos-once="true">
        
           <div class="gallery">
         
             <div class="gallery-item">
-              <img class="gallery-image" src="images/home/showroom1.jpeg" alt="Mascota">
+              <img class="gallery-image" src="images/home/perro1.jpg" alt="Mascota">
             </div>
         
             <div class="gallery-item">
-              <img class="gallery-image" src="images/home/showroom2.jpeg" alt="Mascota">
+              <img class="gallery-image" src="https://cdn.goodgallery.com/54b27ce0-12c0-4fa2-b6e0-e5f626f156ea/s/0400/2fc9rs9o/cat-portraits-studio-malvern-pet-photographer.jpg" alt="Mascota">
             </div>
         
             <div class="gallery-item">
-              <img class="gallery-image" src="images/home/showroom3.jpeg" alt="Mascota">
+              <img class="gallery-image" src="images/home/perro3.jpg" alt="Mascota">
             </div>
         
             <div class="gallery-item">
-              <img class="gallery-image" src="images/home/showroom4.jpeg" alt="Mascota">
+              <img class="gallery-image" src="images/home/pajaro4.jpeg" alt="Mascota">
             </div>
         
             <div class="gallery-item">
-              <img class="gallery-image" src="images/home/showroom5.jpeg" alt="Mascota">
+              <img class="gallery-image" src="images/home/perro2.jpg" alt="Mascota">
             </div>
         
             <div class="gallery-item">
-              <img class="gallery-image" src="images/home/showroom6.jpeg" alt="Mascota">
+              <img class="gallery-image" src="images/home/perro6.jpg" alt="Mascota">
             </div>
         
           </div>
@@ -325,12 +328,12 @@
     </div>
     <!--Fin de "capaPadre"------------------------->
 
-
+ 
      <!-- Wave SVG Animation -->
-  <div class="waves">
+  <div class="waves" >
     <svg width="100%" height="200px" fill="none">
       <path 
-        fill="#56c596" 
+        fill="rgba(123, 228, 149, 1)" 
         d="
         M0 67
         C 273,183
