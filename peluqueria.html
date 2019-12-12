@@ -8,12 +8,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Archivos externos -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
      <!--CdNs y otros-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
     
 
@@ -23,8 +25,7 @@
     <!--Iconos del footer-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://kit.fontawesome.com/afa329d86a.js" crossorigin="anonymous"></script>
 
@@ -34,104 +35,92 @@
   <body>
     
 
-    <div id="capaPadre">
+    <div id="capaPadre" style="overflow: hidden;">
      
-     <header>
-        <!--Comienzo de Menu-->
-        
-<!--Navbar-->
-<nav class="navbar navbar-expand-md navbar-dark">
-
-    <!-- Navbar logo/icono -->
-    
-  
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span>
-          <i class="fas fa-bars"></i>
-      </span>
-    </button>
-  
-    <!-- contenido colapsable-->
-    <div class="collapse navbar-collapse " id="basicExampleNav">
-  
-      <!-- Links -->
-      <ul class="navbar-nav auto">
-
-        <li class="nav-item active">
-          <a href="index.html">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-       
-         <!-- Dropdown -->
-         <li class="dropdown nav-item">
-            <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Servicios</a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="servicios.html">Hotel</a>
-              <a class="dropdown-item" href="#">Guardería</a>
-              <a class="dropdown-item" href="#">Peluquería</a>
-              <a class="dropdown-item" href="#">Tienda</a>
-              <a class="dropdown-item" href="#">Adiestramiento</a>
-              <a class="dropdown-item" href="#">Club</a>
-              <a class="dropdown-item" href="#">Eventos</a>
-              <a class="dropdown-item" href="#">Clínica</a>
-            </div>
-          </li>
-
-        <li class="nav-item">
-          <a href="contacto.html">Contacto</a>
-        </li>
-  
-        <li class="nav-item">
-            <a  href="reservas.html">Reservas</a>
-         </li>
-
-         <li class="nav-item">
-            <a  href="area-clientes.html">Área de clientes</a>
-         </li>
-
-         <li class="nav-item">
-            <a  href="mapa.html">Mapa</a>
-          </li>
-      </ul>
-      <!-- Links -->
-    </div>
-    <!-- contenido colapsable -->
-  </nav>
-  <!--/.Navbar-->
-        <!--Fin de Menu-->
-      </header>
+     <!--Comienzo de Menu-->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <!--Boton hamburguesa-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <!--Links-->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <!--Apartado de servicios-->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Servicios
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Adiestramiento</a>
+                          <a class="dropdown-item" href="servicios-hotel.html">Hotel-Resort</a>
+                          <a class="dropdown-item" href="guarderia/guarderia.html">Guardería</a>
+                        <a class="dropdown-item" href="#">Clínica veterinaria</a>
+                        <a class="dropdown-item" href="#">Eventos</a>
+                        <a class="dropdown-item" href="#">Tienda</a>
+                        <a class="dropdown-item" href="#">Transporte</a>
+                        <a class="dropdown-item" href="#">Peluquería y Spa</a>
+                      </div>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <!--Apartado de reservas-->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reservas
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="reservas.html">Reserva ya</a>
+                        <a class="dropdown-item" href="cancelar.html">Cancelar reserva</a>
+                      </div>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="area-clientes.html">Área de clientes</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="mapa.html">Mapa</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+         <!--Fin de Menu-->
       <!--Header/Cabecera----------------------------->
+
+      <!--Nombre/slogan-->
+    
+           <div id="titulo">
+              <div id="logo">
+                  <a href="index.html">
+                    <img src="images/logoNuevo.svg" style="height: 130px; width: 130px; z-index: 999;">
+                  </a>
+              </div>
+                <h1>PELUQUERÍA</h1><br>
+                <h4>Un hogar más para tu mascota</h4> 
+                <br>
+                <h3> <br>El resort para tu animal de compañía con hotel, clínica, peluquería y spa, <br><br> centro educativo, piscina, bar canino y mucho más. <br> <br><br> C/ Pedro Salinas 11 , Madrid<br><br> Télf. 91 546 53 57</h3>
+            </div>
+         
+        <!--Fin de imagen/nombre-->
 
       <!--Slider-->
       <div id="content">
         <div id="slider">
           <img
             id="imgCabecera"
-            src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src="images/cabeceraPelu.jpg"
           />
           <!--Nombre/slogan-->
-        
-          <div id="titulo">
-              <div id="logo">
-                  <a href="index.html">
-                    <img src="images/logoblancoSVG.svg" style="height: 160px; width: 160px; z-index: 999;">
-                  </a>
-                </div>
-            <h1>Peluquería</h1>
-            <h4>Un hogar más para tu mascota</h4>
-            <p>
-                Somos un centro de mascotas que cuenta con todo lo que necesites para cuidar de tu mejor amigo.
-            </p>
-          </div>
         </div>
-
         <!--Fin de imagen/nombre-->
-        <div class="descripcion">
-          <h3>"¡Descubre nuestros servicios de Peluquería y Spa para mascotas!"</h3>
+        <div class="descripcion" style="margin-top: 100px;">
+          <h3 style="color: #56c596; font-size: 2.5em;">"¡Descubre nuestros servicios de Peluquería y Spa para mascotas!"</h3><br><br>
           <p>El aseo es muy importante para el bienestar de tu mascota. Contamos con Baños relajantes, Cortes de pelo, Ozonoterapia y Bañoterapia… ¡Les encantará!<br>
           Queremos que queden guapos, pero también que salgan de la pelu tranquilos y sin estrés.</p>
         </div>
@@ -139,14 +128,15 @@
         <div class="carousel-item active">
           <img src="images/bañoPerro.png" id="imgGuarderia" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block" id="textoFoto">
-            <h3 class="tituloGuarderia">BAÑO Y MASAJES</h3><br>
-            <h3>Incluye baño con masaje, secado rápido, corte de uñas, limpieza de glándulas y perfume.</h3><br>
-            <p style="color: white;">Utilizamos champú y mascarillas o bálsamos, con cosmética de primera calidad, siempre mirando el tipo de pelo, corto, medio o largo y el tipo de hidratación que necesita.</p>
+            <h3 class="tituloGuarderia" style="font-size: 2.5em;">BAÑO Y MASAJES</h3><br><br>
+            <h3 style="font-size: 1.5em;">Incluye baño con masaje, secado rápido, corte<br><br> de uñas, limpieza de glándulas y perfume.</h3><br><br>
+            <p style="color: white;">Utilizamos champú y mascarillas o bálsamos, con cosmética de primera calidad, siempre mirando el tipo de pelo, corto, medio o largo y el tipo de hidratación que necesita.<br><br>
+            <button class="boton-general">RESERVA YA</button></p>
           </div>
         </div>
 
       
-        <div class="carousel-item active" style="margin-top: 730px;">
+        <div class="carousel-item active" style="margin-top: 710px;">
           <img src="images/cortePelo.png" id="imgGuarderia" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block" id="textoFoto2">
             <h3 class="tituloArea">CORTE DE PELO</h3><br>
@@ -156,10 +146,10 @@
         </div>
         
 
-        <div class="carousel-item active" style="margin-top: 1460px;">
+        <div class="carousel-item active" style="margin-top: 1419px;">
           <img src="images/spa.png" id="imgGuarderia" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block" id="textoFoto">
-            <h3 class="tituloGuarderia">TRATAMIENTOS DE SPA PARA MASCOTAS</h3><br>
+            <h3 class="tituloGuarderia" style="font-size: 2.5em;">TRATAMIENTOS DE SPA<br><br><br> PARA MASCOTAS</h3><br>
             <p style="color: white;"><br>Bañoterapia: baño con productos específicos indicado para tratar problemas de piel en perros con seborrea, dermatitis atópica, alopecia…<br><br>
               Ozonoterapia: es el suministro de ozono en el organismo de nuestras mascotas para tratar diferentes enfermedades comunes y habituales, como dermatitis atópica, alergias medioambientales o alimentarias, etc.<br><br>
               <button class="boton-general">RESERVA YA</button></p>
@@ -168,14 +158,14 @@
         
 
         <div style="margin-top: 2390px;">
-          <h3>SERVICIO DE RECOGIDA</h3><br>
+          <h3 class="tituloArea">SERVICIO DE RECOGIDA</h3><br><br>
           <p>DESDE LAS 8:30AM HASTA LAS 20:30PM<br>
           <button class="boton-general">RESERVA YA</button></p>
         </div>
 
         <!--Botones giratorios-->
         <div id="botonesGiratorios" style="margin-top: 150px;">
-          <h3 style="font-size: 50px; color: #56c596">TARIFAS</h3>
+          <h3 class="tarifas">TARIFAS</h3>
           <div class="wrapper">
             <div class="col" ontouchstart="this.classList.toggle('hover');">
               <div class="container">
@@ -240,11 +230,103 @@
           </div>
         </div>
 
+
+        <div class="container" style="max-width: 300%; margin-top: 300px;">
+          <div class="row" id="aliment" style="height: 400px;">
+            <div class="col-md-6" id="fondoCol">
+              <h3 class="tituloGuarderia" style="font-size: 2.5em; margin-top: 100px;">ALIMENTACIÓN</h3><br>
+              <p style="color: white;"><br>Debe llevar su comida habitual y comerá las mismas veces que en casa, para no alterar su rutina alimentaria.<br><br>
+                <strong><em>SERVICIO ANIMALS ROOMS:</em></strong> Comida preparada en cocina y premios durante el día.</p>
+            </div>
+
+            <div class="col-md-6" id="fondoCol">
+              <h3 class="tituloGuarderia" style="font-size: 2.5em; margin-top: 100px;">CUIDADOS</h3><br>
+              <p style="color: white; margin-bottom: 100px;"><br>Si tu mascota necesita medicación, nuestro veterinario se encargará de suministrárselo y de hacerle una revisión veterinaria.<br><br>
+                <b>SERVICIO ANIMALS ROOMS:<b> Cepillado en peluquería una vez al día.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 100px;">
+          <h3 class="tituloArea">VETERINARIO</h3><br><br>
+          <p>ASISTENCIA 24H.<br>
+          <button class="boton-general">RESERVA YA</button></p>
+        </div>
+
+
+        <div class="container" style="margin-top: 10%;">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 style="color: #56c596; font-size: 2em;">ES NECESARIO LLEVAR:</h3>
+              <p><br>Cartilla veterinaria: con microchip, vacuna de la rabia y desparasitaciones en regla.<br>La comida que necesite durante su estancia.</p><br><br>
+            </div>
+
+            <div class="col-md-6">
+              <p class="noAceptamos"><br><br><em>* No aceptamos ningún animal agresivo con personas y/o perros, ni con enfermedades contagiosas, ni con graves problemas de ansiedad.</em></p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#56c596" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,250.7C672,245,768,203,864,170.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+
+      <!-- Wave SVG Animation -->
+  <div class="waves">
+    <svg width="100%" height="200px" fill="none">
+      <path 
+        fill="#56c596" 
+        d="
+        M0 67
+        C 273,183
+          822,-40
+          1920.00,106 
+        V 359 
+        H 0 
+        V 67
+        Z">
+      <animate 
+        repeatCount="indefinite" 
+        fill="#56c596" 
+        attributeName="d" 
+        dur="15s" 
+        values="
+          M0 77 
+          C 473,283
+            822,-40
+            1920,116 
+          V 359 
+          H 0 
+          V 67 
+          Z; 
+          M0 77 
+          C 473,-40
+            1222,283
+            1920,136 
+          V 359 
+          H 0 
+          V 67 
+          Z; 
+          M0 77 
+          C 973,260
+            1722,-53
+            1920,120 
+          V 359 
+          H 0 
+          V 67 
+          Z; 
+          M0 77 
+          C 473,283
+            822,-40
+            1920,116 
+          V 359 
+          H 0 
+          V 67 
+          Z
+            ">
+        </animate>
+      </path>
+    </svg>
+  </div>
 
     <footer>
 
@@ -306,13 +388,11 @@
       <!--Fin Contenido footer------------------------------>
 
     </footer>
-
-    <!-- Optional JavaScript -->
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
-
-          
