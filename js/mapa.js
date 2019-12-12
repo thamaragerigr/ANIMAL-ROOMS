@@ -12,16 +12,18 @@ $(document).ready(function(){
     //Efecto de boton ¿Que buscas?
     $("#boton-mapa-api").click(function(){
       //Se le agrega la clase cuando se abre el #apartado-api
-          $("#boton-mapa-api").toggleClass("boton-activo");
+      $("#boton-mapa-api").toggleClass("boton-activo");
     });
     
     $(".boton-mapa-menu").click(function(){
-      $("header").slideToggle({height: "20px"});
+      $("header").slideToggle();
+      $(".boton-mapa-menu").animate({
+        top: '20px',
+      });
     });
+
+ 
   });
-  
-  /*Se crea la variable 'link' donde se guardarán las coordenadas de cada local, luego se 
-  utilizará para cambiar el centro del mapa cuando se haga click en él*/
   
   /*---------------------JS del sidebar------------------------------*/
   function sidebarListing() {
@@ -44,18 +46,18 @@ $(document).ready(function(){
              //el valor 'descripcion' de cada local
              let descripcion = geojson.features[i].properties.address;
              
-             
              //En el div #listings se agrega otro div (#listado-servicio)
              $("#listings").append('<div class="listado-servicio"></div>'); 
              //En el div #myUL se agrega un elemento li por cada feature en el geojson
              $("#myUL").append('<li class="servicios-listado">'+'</li>'); 
              //lo que se mostrará en el sidebar
-             $(".servicios-listado").append('<div class="listado-servicio">' + '<a class="link" href="">' + nombre  + '<p>' + servicios + '</p>' + '</a>' + '<p id="descripcion">' + descripcion + '</p>'+ '</div>'); 
-  
-             
+             $(".servicios-listado").append('<div class="listado-servicio">' + '<a class="links-mapa" href="#">' + nombre  + '<p>' + servicios + '</p>' + '</a>' + '<p id="descripcion">' + descripcion + '</p>'+ '</div>'); 
+        
+            
+          
             }
-     })
-   }
+          })
+       }
   
    sidebarListing();
   /*---------------------JS GOOGLE MAPS API------------------------------*/ 
@@ -255,10 +257,16 @@ $(document).ready(function(){
           return false;
         });
   
-      //   google.maps.addListener(link, 'click', function() {
-      //     map.setCenter(event.feature.getGeometry().get());
-      //     infowindow.open(map,event);
-      //  });
+         //El mapa hace zoom cuando se clickea en un marcador
+        map.data.addListener('click', function() {
+        map.setZoom(13);
+        }); 
+
+        $(".links-mapa").click(function(){
+          $(".links-mapa").css("background", "red");
+        });
+  
+   
     }); 
   
     // Iconos personalizados para los marcadores
@@ -266,89 +274,22 @@ $(document).ready(function(){
       return {icon:feature.getProperty('icon')};
     });
   
-    //El mapa hace zoom cuando se clickea en un marcador
-    map.data.addListener('click', function() {
-      map.setZoom(14);
-    }); 
   
-    var labels = '123456';
-    var labelIndex = 0;
-    
-    var locations = fetch('../mapa-api/map.json')
-    .then(function(response) {
-       return response.json();
-     })
-     .then(function(myJson){});
-  
-    
-    var marker, i;
-    var markers = [];
-    for (i = 0; i < locations.length; i++) {
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map,
-        label: labels[labelIndex++ % labels.length],
-      });
-      markers.push(marker);
-    };
-    
   
     
   };
+
+
+  $(".links-mapa").each(function(i){
+    $(this).on('click', function(){
+        google.maps.event.trigger(google.maps.InfoWindow()[i], 'click');
+    });
+});
+   
   
-  
-   /*---------------------Funcion de cambio de centro del mapa ------------------------------*/
-  
-  //  locations.eachLayer(function(locale) {
-  //   var prop = locale.feature.properties;
-  //   var popup = '<h3>Our Farms</h3><div>' + prop.title;
-  //   var listing = listings.appendChild(document.createElement('div'));
-  //   listing.className = 'item';
-  //   var link = listing.appendChild(document.createElement('a'));
-  //   link.href = '#';
-  //   link.className = 'title';
-  //   link.innerHTML = prop.title;
-  //   if (prop.location) {
-  //     link.innerHTML += '<br /><small class="quiet">' + prop.location + '</small>';
-  //     popup += '<br /><small class="quiet">' + prop.location + '</small>';
-  //   }
-  //   var map2 = L.mapbox.tileLayer('mapbox.emerald');
-  //   var details = listing.appendChild(document.createElement('div'));
-  //   if (prop.crop) {
-  //     details.innerHTML += ' Crop: ' + prop.crop;
-  //     popup += '<br />Crop: ' + prop.crop;
-  //   }
-  //   link.onclick = function() {
-  //     setActive(listing);
-  //     map.setView(locale.getLatLng(), 16);
-  //     map.addLayer(map2);
-  //     locale.openPopup();
-  //     locale.setIcon(L.mapbox.marker.icon({
-  //               'marker-color': '#ff8888',
-  //               'marker-size': 'large'
-  //           }));
-  //     return false;
-  //   };
-  //   locale.on('click', function(e) {
-  //     map.panTo(locale.getLatLng());
-  //     setActive(listing);
-  //     locale.setIcon(L.mapbox.marker.icon({
-  //               'marker-color': '#ff8888',
-  //                'marker-size': 'large'
-  //            })); 
-  //   });
-  //     map.on('click', function(e) {
-  //     locale.setIcon(L.mapbox.marker.icon({
-  //                   'marker-color': '#1087bf',
-  //                   'marker-size': 'large'
-  //               }));
-  //   });
-  //     popup += '</div>';
-  //     locale.bindPopup(popup);
-  //   });
-  
-  
+ 
   /*Relacionar clase 'link' con el infowondows*/
+
    /*---------------------Funcion de barra de búsqueda------------------------------*/
   function barraDeBusqueda() {
     // Variables declaradas
@@ -372,35 +313,7 @@ $(document).ready(function(){
   
   
    /*---------------------Funcion de filtrar------------------------------*/
-  // function filtrar(){
-  //   fetch('map.json')
-  //   .then(function(response) {
-  //     return response.json();
-  //   })
-  //   .then(function(myJson) {
-  //     //guardar el geojson en una variable para ser usado
-  //     let geojson = myJson;
-  //     //cada uno de los locales dentro del json
-  //     let features = geojson.features;
-  //     //las checkboxes 
-  //     let checkbox = document.querySelector('input'); 
-  //     //los nombres de las checkboxes (hotel. clinica...)
-  //     let checkboxName =  document.querySelector('input').name; 
-  //     //for loop que pase por todos los features del json
-  //     for (let i = 0; i < features.length; i++) {
-  //       //el valor 'servicios' de cada local
-  //       let servicios = geojson.features[i].properties.servicios;
-  //       //si la checkbox esta checkeada y el nombre del servicio es igual a la checkbox...
-  //       if(servicios == checkboxName || servicios === 0){
-  //         console.log(servicios);
-  //       }else{
-  //         console.log(features[i].properties.servicios + '/no funciona');
-  //       }
-  
-  //     }
-  //   });
-  
-  // }
+
   
   /*pseudocodigo
   funcion filtrat(){

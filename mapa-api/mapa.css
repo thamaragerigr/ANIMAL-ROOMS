@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   /*Siempre especificar la altura del mapa para definir el 
   tamaño del div que contiene el mapa*/
   #map {
@@ -17,23 +17,26 @@
     z-index: 10000; 
     top: 60px; 
     left: 88%; 
-    color: gray;
   }
 
   .boton-mapa-menu button{
     font-size: 15px;
     background: white;
+    opacity: 0.9;
     border: none;
     border-radius: 5px;
     padding: 10px 30px;
     font-weight: 900;
-    font-family:  'ABeeZee', sans-serif;;
+    font-family:  'ABeeZee', sans-serif;
+    color: rgb(138, 138, 138);
+    letter-spacing: 1px;
+    outline: 0;
   }
 
-  
+  .boton-activo-menu{
+    
+  }
   /*menu/nav*/
-
-  
   header{
       position: fixed; 
       top: 0px; 
@@ -72,7 +75,6 @@
    
   }
   
-  
   .navbar ul {
    margin: auto;
 
@@ -82,17 +84,16 @@
     color: gray !important;
   }
   
-  
   .solid-nav {
     background-color:rgba(255, 255, 255, 0.9);
       transition: background-color 0.2s linear;
      
-    }
+  }
   
-   .solid-nav li a{
+  .solid-nav li a{
     color: rgb(122, 122, 122) !important;
    
-   } 
+  } 
   
   /*comienzo botón estandar*/
   .boton-general {
@@ -120,6 +121,7 @@
   .boton-general:hover {letter-spacing: 2.5px;border-radius: 10px;}
   .boton-general:focus {outline: 0;}
   .boton-activo{letter-spacing: 2.5px;border-radius: 10px;}
+
   #boton-mapa-api{/*Posicion del boton '¿que buscas?'*/
     z-index: 1000;
     position: absolute;
@@ -153,7 +155,6 @@
     font-weight: 200;
     font-size: 0.9em;
   }
-  
   
   .contenedor-mapa-servicios {/*clase para cada checkbox*/
     display: block;
@@ -225,15 +226,18 @@
     z-index: 1000;
   
   }
+
   .quiet {
     color:#888;
   }
+
   .map {
     position:absolute;
     left:33.3333%;
     width:66.6666%;
     top:0;bottom:0;
   }
+
   .heading {
     background:#fff;
     border-bottom:1px solid #eee;
@@ -241,10 +245,12 @@
     line-height:60px;
     padding:0 10px;
   }
+
   #listings{
     overflow: scroll;
     height: 500px;
   }
+
   .listado-servicio{
    padding-left: 20px;
    padding-right:20px ;
@@ -313,7 +319,6 @@
     outline: 0;
     border: none;
     margin-top: 23px;
-    color: green;
   }
   
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -326,7 +331,6 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
   }
   
   #myUL li a {
@@ -334,17 +338,11 @@
     text-decoration: none; /* Remove default text underline */
     font-size: 18px; /* Increase the font-size */
     display: block; /* Make it into a block element to fill the whole list */
-    
   }
   
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
+  #myUL li a:hover:not(.header) {background-color: #eee; /* Add a hover effect to all links, except for headers */}
   
-  #myUL li p {
-    margin-top: 3px; /* Prevent double borders */
-  
-  }
+  #myUL li p {margin-top: 3px; /* Prevent double borders */}
   
   #myUL li a p {
     margin-top: 3px; /* Prevent double borders */

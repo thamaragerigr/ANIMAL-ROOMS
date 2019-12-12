@@ -482,7 +482,7 @@ footer {
 
 .card{/*cards de bootstrap*/
   max-width: 300px;
-  margin: 40px;
+  margin: 100px  40px 40px;
   -webkit-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
   -moz-box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
   box-shadow: 2px 9px 11px 0px rgba(0,0,0,0.07);
@@ -491,17 +491,6 @@ footer {
 }
 .foto-review { /*foto de los clientes*/
     border-radius: 100px;
-}
-
-.card { /*cards de bootstrap*/
-    max-width: 300px;
-    margin: 20px;
-    -webkit-box-shadow: 2px 9px 11px 0px rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: 2px 9px 11px 0px rgba(0, 0, 0, 0.07);
-    box-shadow: 2px 9px 11px 0px rgba(0, 0, 0, 0.07);
-    border: none;
-    border-radius: 30px;
-
 }
 
 .estrellas-review { /*estrellas de puntuación*/
@@ -531,10 +520,6 @@ footer {
    
 }
 
-.container {
-    max-width: 100rem;
-    margin: 0 auto;
-}
 
 .gallery {
 	display: flex;
@@ -553,11 +538,11 @@ footer {
   object-fit: cover;
   transition: transform 400ms ease-out;
   transform: scale(1.08);
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 400ms ease-out;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
 
 }
 
