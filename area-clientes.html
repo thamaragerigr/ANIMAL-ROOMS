@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="shortcut icon" 
-href="images/logoNuevo_letras.png">
     <title>Animal Rooms</title>
     <!--Metas-->
     <meta charset="UTF-8" />
@@ -16,6 +14,8 @@ href="images/logoNuevo_letras.png">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    
 
     <!--CdNs y otros-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -38,134 +38,180 @@ href="images/logoNuevo_letras.png">
   <body>
     <!--Comienzo de "capaPadre"-->
     <div id="capaPadre">
-    <!--Comienzo de Menu-->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <!--Boton hamburguesa-->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <!--Header/Cabecera----------------------------->
+      <header>
+        <!--Comienzo de Menu-->
         
-          <!--Links-->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <!--Apartado de servicios-->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Servicios
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="guarderia/guarderia.html">Guardería</a>
-                    <a class="dropdown-item" href="servicios-hotel.html">Hotel-Resort</a>
-                    <a class="dropdown-item" href="#">Adiestramiento</a>
-                    <a class="dropdown-item" href="#">Clínica veterinaria</a>
-                    <a class="dropdown-item" href="#">Eventos</a>
-                    <a class="dropdown-item" href="#">Tienda</a>
-                    <a class="dropdown-item" href="#">Transporte</a>
-                    <a class="dropdown-item" href="#">Peluquería y Spa</a>
-                  </div>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <!--Apartado de reservas-->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Reservas
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="reservas.html">Reserva ya</a>
-                    <a class="dropdown-item" href="cancelar.html">Cancelar reserva</a>
-                  </div>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="area-clientes.html">Área de clientes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="mapa.html">Mapa</a>
-                </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-     <!--Fin de Menu-->
+<!--Navbar-->
+<nav class="navbar navbar-expand-md navbar-dark">
 
-      
-
-        
-
-      <!--Slider-->
-      <div id="content">
-        <div id="slider">
-          <img
-            id="imgCabecera"
-            src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          />
-          <!--Nombre/slogan-->
-        
-          <div id="titulo">
-              <div id="logo">
-                  <a href="index.html">
-                    <img src="images/logoNuevo.svg" style="height: 130px; width: 130px; z-index: 999;">
-                  </a>
-                </div>
-            <h1>Área de clientes</h1>
-            <h4>Un hogar más para tu mascota</h4>
-          </div>
-        </div>
-        <!--Fin de imagen/nombre-->
-	     
-
-        <!--Comienzo de "contenido"---------------------->
-        <div id="contenido" style="margin: 20px auto;">
-
-        <div class="container" style="margin: 20px auto;">
-  	<h2>Accede a nuestra área de clientes</h2>
-		<div class="row">
-		 <div class="col-md-4" style="margin: 20px auto;">
-
-			<form class="formulario" action="#" method="POST" >
-			<div class="form-group">
-			<label for="Usuario"><b>Nombre de usuario</b></label>
-			<input type="text" class="form-control" id="Usuario" placeholder="Introduce tu usuario" minlegth="4" maxlength="9" required pattern="[A-Za-z0-9]+">
-			</div>
-			
-				<div class="form-group">
-			<label for="password"><b>Contraseña</b></label>
-			<input type="password" class="form-control" id="password" placeholder="Contraseña" minlegth="5" maxlength="15" required pattern="[A-Za-z0-9]+">
-			</div>
-			
-				<div class="form-group form-check">
-			<input type="checkbox" class="form-check-input" id="exampleCheck1">
-			<label class="form-check-label" for="boton-pequeño">Recuérdame</label>
-			</div>
-			
-				<button type="submit" class="boton-general" onclick="validar()">Enviar</button>
-			</form>
-			</div><!--cierre col-md-4---------------->
-		</div><!--cierre div row--------------------->
-	 </div><!--cierre container----------------------->
+    <!-- Navbar logo/icono -->
     
-    <!--Fin de "contenido"------------------------->
+  
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span>
+          <i class="fas fa-bars"></i>
+      </span>
+    </button>
+  
+    <!-- contenido colapsable-->
+    <div class="collapse navbar-collapse " id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav auto">
+
+        <li class="nav-item active">
+          <a href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+       
+         <!-- Dropdown -->
+         <li class="dropdown nav-item">
+            <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="servicios.html">Hotel</a>
+              <a class="dropdown-item" href="#">Guardería</a>
+              <a class="dropdown-item" href="#">Peluquería</a>
+              <a class="dropdown-item" href="#">Tienda</a>
+              <a class="dropdown-item" href="#">Adiestramiento</a>
+              <a class="dropdown-item" href="#">Club</a>
+              <a class="dropdown-item" href="#">Eventos</a>
+              <a class="dropdown-item" href="#">Clínica</a>
+            </div>
+          </li>
+
+        <li class="nav-item">
+          <a href="contacto.html">Contacto</a>
+        </li>
+  
+        <li class="nav-item">
+            <a  href="reservas.html">Reservas</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="area-clientes.html">Área de clientes</a>
+         </li>
+
+         <li class="nav-item">
+            <a  href="mapa.html">Mapa</a>
+          </li>
+      </ul>
+      <!-- Links -->
+    </div>
+    <!-- contenido colapsable -->
+  </nav>
+  <!--/.Navbar-->
+        <!--Fin de Menu-->
+         </header>
+         <!--Header/Cabecera----------------------------->
+
+        <!--Slider-->
+            <div id="content">
+              <div id="slider">
+                 <img
+            id="imgCabecera" src="imagenes/cabecera.jpg"/>
+           
+          
+                  
+                <!--Nombre/slogan-->
+              
+                <div id="titulo">
+                    <div id="logo">
+                        <a href="index.html">
+                            <img src="images/logoNuevo.svg" style="height: 130px; width: 130px; z-index: 999;">
+                        </a>
+                      </div>
+                  <h1>Área de clientes</h1>
+                  <h4>Un hogar más para tu mascota</h4>
+                  <!-- <p>
+                      Somos un centro de mascotas que cuenta con todo lo que necesites para cuidar de tu mejor amigo.
+                  </p> -->
+                </div>
+              </div>
+              <!--Fin de imagen/nombre-->
+
+
+              <!--Comienzo de "contenido"---------------------->
+        <section id="color">
+        <div id="contenido">
+
+
+         <!-- <h1 id="title-clientes"><b>Accede a nuestra área de clientes</h1></b> -->
+         <div class="container">
+
+           <div class="row">
+            
+            <!-- <p>Con ella podrás disfrutar de nuestros servicios Premium</p> -->
+
+            <h2 id="titulo-clientes">Con tu cuenta podrás acceder a todos nuestros servicios</h2>
+            
+            
+            <div class="col-md-4">
+
+            <form class="formulario-clientes" action="#" method="POST">
+                <div class="form-group">
+                <label for="usuario-clientes"><b>Nombre de usuario</b></label>
+                <input type="text" class="form-control" id="usuario-clientes" placeholder="Introduce tu usuario" minlegth="4" maxlength="9" required pattern="[A-Za-z0-9]+">
+                
+              </div>
+              <div class="form-group">
+                <label for="password-clientes"><b>Contraseña</b></label>
+                <input type="password" class="form-control" id="password-clientes" placeholder="Contraseña" minlegth="5" maxlength="15" required pattern="[A-Za-z0-9]+">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="boton-pequeño">Recuérdame</label>
+              </div>
+              <button type="submit" class="btn btn-primary" id="boton-clientes" onclick="validar()">Enviar</button>
+            </form>
+          </div><!--cierre col-md-4---------------->
+        
+        </div><!--cierre div row--------------------->
+
+      </div><!--cierre container------------------------->
+
+      </section>
+
+
+         </div>
+          <div id="reviews">
+          </div>
+
+      <br>
+      <br>
+       <div id="showroom">
+         <img id="showroom" src="imagenes/showroom.png" alt="Showroom" srcset="">
+       </div>
+
+
+        
+       <!--Registro/Hazte Miembro--------------->
+        <div id="registro">
+          <h2>¡Conviértete en un Animal Roomer!</h2>
+          <p>Entérate de todas nuestras actividades y recibe beneficios exclusivos por ser miembro.</p>
+          <a  id="hazte-miembro" href="area-clientes.html" class="boton-general">Hazte miembro</a>
+       </div>
+      <!--Fin de Registro/Hazte Miembro-------->
+      </div>
+      <!--Fin de "contenido"------------------------->
     </div>
     <!--Fin de "capaPadre"------------------------->
 
 
-    
      <!-- Wave SVG Animation -->
   <div class="waves">
     <svg width="100%" height="200px" fill="none">
       <path 
-        fill="rgba(123, 228, 149, 1)" 
+        fill="#56c596" 
         d="
         M0 67
         C 273,183
           822,-40
           1920.00,106 
-
         V 359 
         H 0 
         V 67
@@ -180,37 +226,30 @@ href="images/logoNuevo_letras.png">
           C 473,283
             822,-40
             1920,116 
-
           V 359 
           H 0 
           V 67 
           Z; 
-
           M0 77 
           C 473,-40
             1222,283
             1920,136 
-
           V 359 
           H 0 
           V 67 
           Z; 
-
           M0 77 
           C 973,260
             1722,-53
             1920,120 
-
           V 359 
           H 0 
           V 67 
           Z; 
-
           M0 77 
           C 473,283
             822,-40
             1920,116 
-
           V 359 
           H 0 
           V 67 
@@ -220,7 +259,6 @@ href="images/logoNuevo_letras.png">
       </path>
     </svg>
   </div>
-
     <footer>
 
       <!--Contenido footer------------------------->
@@ -279,13 +317,11 @@ href="images/logoNuevo_letras.png">
       <!--Fin Contenido footer------------------------------>
     </footer>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/home.js"></script>
-    
+ 
   </body>
 </html>
