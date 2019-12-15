@@ -795,10 +795,11 @@ ul.tabs li.current {
 
 .contacto_formulario {
     margin: auto;
-    height: 350px;
+    height: 370px;
     width: 500px;
     padding: 25px;
     background-color: lightgreen;
+    border-radius:10px;
     /*sombras*/
    -webkit-box-shadow: 10px 10px 37px 0px rgba(123,228,149,1);
     -moz-box-shadow: 10px 10px 37px 0px rgba(123,228,149,1);
@@ -806,11 +807,13 @@ ul.tabs li.current {
 }
 
 #contacto-contenido {
+    font-family: 'ABeeZee';
     max-width: 80%;
     align-items: center;
     padding: 50px;
     margin: auto;
 }
+
 
 /*SERVICOS (HOTEL)*/
 #boton-giratorio {
