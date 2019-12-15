@@ -1022,24 +1022,37 @@ ul.tabs li.current {
 }
 
 
-/* ESTILO AREA  CLIENTES*/
+/******  ESTILO AREA  CLIENTES  ******/
 
 
 #titulo-clientes{
    
-    color: white;
-    margin: auto ;
-
+    border-bottom: 1px solid rgb(165, 165, 165);
+    padding-bottom: 15px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.8em;
+    color:/*#3bb358;*/white;
+    text-align: center;
+    font-weight: 900;
+    margin: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+   
 }
+
 
 #imagen-area-clientes img{
   width: 80%;
   margin: auto;
+
 }
 
 .formulario-clientes{
-    margin-left: 400px;
+    margin-left: 200px;
     width: 300px;
+    margin-top: 60px;
 
 }
 
@@ -1055,35 +1068,53 @@ ul.tabs li.current {
      font-family: 'ABeeZee';
 }
 
+#imagen-area-clientes{
+    width: 100%;
+
+}
+
 .col-md-4{
     position: center;
     margin-bottom: 50px;
 }
 
 #boton-clientes{
-    background-color: #56c596;
-    border-color: #56c596;
-    font-family: 'ABeeZee';
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+    padding: 15px;
+    margin: 20px;
+    font-weight: 900;
+    border: none;
+    border-radius: 50px;
+    background: rgb(123, 228, 149);
+    background: linear-gradient(175deg, rgba(123, 228, 149, 1) 32%, rgba(64, 185, 184, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
 }
 
 b{
     font-family: 'ABeeZee';
+
 }
 
 .form-check-label{
     font-family: 'ABeeZee';
 }
 
-#boton-clientes{
-    background-color: #40b9b8;
-}
 
 #color{
-    background-color: #56c596;
+    background-color: #98d9bd;
     border-radius: 70px;
-    height: 300px;
+    height: 400px;
     margin-bottom: 80px;
-    margin-top: 
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+
 }
 
 .form-group{
