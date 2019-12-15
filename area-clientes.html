@@ -36,84 +36,68 @@
   </head>
 
   <body>
-    <!--Comienzo de "capaPadre"-->
-    <div id="capaPadre">
-      <!--Header/Cabecera----------------------------->
-      <header>
+      <!--Comienzo de "capaPadre"-->
+      <div id="capaPadre">
         <!--Comienzo de Menu-->
-        
-<!--Navbar-->
-<nav class="navbar navbar-expand-md navbar-dark">
-
-    <!-- Navbar logo/icono -->
-    
-  
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span>
-          <i class="fas fa-bars"></i>
-      </span>
-    </button>
-  
-    <!-- contenido colapsable-->
-    <div class="collapse navbar-collapse " id="basicExampleNav">
-  
-      <!-- Links -->
-      <ul class="navbar-nav auto">
-
-        <li class="nav-item active">
-          <a href="index.html">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-       
-         <!-- Dropdown -->
-         <li class="dropdown nav-item">
-            <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Servicios</a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="servicios.html">Hotel</a>
-              <a class="dropdown-item" href="#">Guardería</a>
-              <a class="dropdown-item" href="#">Peluquería</a>
-              <a class="dropdown-item" href="#">Tienda</a>
-              <a class="dropdown-item" href="#">Adiestramiento</a>
-              <a class="dropdown-item" href="#">Club</a>
-              <a class="dropdown-item" href="#">Eventos</a>
-              <a class="dropdown-item" href="#">Clínica</a>
-            </div>
-          </li>
-
-        <li class="nav-item">
-          <a href="contacto.html">Contacto</a>
-        </li>
-  
-        <li class="nav-item">
-            <a  href="reservas.html">Reservas</a>
-         </li>
-
-         <li class="nav-item">
-            <a  href="area-clientes.html">Área de clientes</a>
-         </li>
-
-         <li class="nav-item">
-            <a  href="mapa.html">Mapa</a>
-          </li>
-      </ul>
-      <!-- Links -->
-    </div>
-    <!-- contenido colapsable -->
-  </nav>
-  <!--/.Navbar-->
-        <!--Fin de Menu-->
+        <header class="header">
+           <nav class="navbar navbar-expand-lg navbar-light">
+             <!--Boton hamburguesa-->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           
+             <!--Links-->
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                 <li class="nav-item active">
+                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                 </li>
+                 <!--Apartado de servicios-->
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Servicios
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="#">Adiestramiento</a>
+                         <a class="dropdown-item" href="servicios-hotel.html">Hotel-Resort</a>
+                         <a class="dropdown-item" href="guarderia/guarderia.html">Guardería</a>
+                       <a class="dropdown-item" href="#">Clínica veterinaria</a>
+                       <a class="dropdown-item" href="#">Eventos</a>
+                       <a class="dropdown-item" href="#">Tienda</a>
+                       <a class="dropdown-item" href="#">Transporte</a>
+                       <a class="dropdown-item" href="#">Peluquería y Spa</a>
+                     </div>
+                   </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="contacto.html">Contacto</a>
+                 </li>
+                 <!--Apartado de reservas-->
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Reservas
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="reservas.html">Reserva ya</a>
+                       <a class="dropdown-item" href="cancelar.html">Cancelar reserva</a>
+                     </div>
+                   </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="area-clientes.html">Área de clientes</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="mapa.html">Mapa</a>
+                   </li>
+               </ul>
+             </div>
+           </nav>
          </header>
-         <!--Header/Cabecera----------------------------->
-
+        <!--Fin de Menu-->
+     
         <!--Slider-->
             <div id="content">
               <div id="slider">
                  <img
-            id="imgCabecera" src="imagenes/cabecera.jpg"/>
+            id="imgCabecera" src="images/cabeceraVet.jpg"/>
            
           
                   
@@ -139,18 +123,23 @@
         <section id="color">
         <div id="contenido">
 
-
+        
          <!-- <h1 id="title-clientes"><b>Accede a nuestra área de clientes</h1></b> -->
          <div class="container">
+         
 
-           <div class="row">
-            
+           <div class="row" style="margin: auto; width: 600px;">
+
+            <div class="col-md-6">
+              
             <!-- <p>Con ella podrás disfrutar de nuestros servicios Premium</p> -->
 
             <h2 id="titulo-clientes">Con tu cuenta podrás acceder a todos nuestros servicios</h2>
             
             
-            <div class="col-md-4">
+            </div>
+            
+            <div class="col-md-6">
 
             <form class="formulario-clientes" action="#" method="POST">
                 <div class="form-group">
@@ -177,14 +166,8 @@
       </section>
 
 
-         </div>
-          <div id="reviews">
-          </div>
-
-      <br>
-      <br>
-       <div id="showroom">
-         <img id="showroom" src="imagenes/showroom.png" alt="Showroom" srcset="">
+       <div>
+         <img id="imagen-area-clientes" src="images/showroom.png" alt="Showroom" srcset="">
        </div>
 
 
@@ -322,6 +305,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
+     <script src="js/home.js"></script>
   </body>
 </html>

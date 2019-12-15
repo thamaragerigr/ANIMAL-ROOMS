@@ -1026,10 +1026,15 @@ ul.tabs li.current {
 
 
 #titulo-clientes{
-    margin-top: -150px;
-    color: #56c596;
-    margin-left: 170px;
+   
+    color: white;
+    margin: auto ;
 
+}
+
+#imagen-area-clientes img{
+  width: 80%;
+  margin: auto;
 }
 
 .formulario-clientes{
