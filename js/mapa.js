@@ -15,12 +15,6 @@ $(document).ready(function(){
       $("#boton-mapa-api").toggleClass("boton-activo");
     });
 
-    // $(".boton-mapa-menu").click(function(){
-    //   $("header").slideToggle();
-    //   $(".boton-mapa-menu").animate({
-    //     top: '20px',
-    //   });
-    // });
   });
 
   /*---------------------JS GOOGLE MAPS API------------------------------*/
@@ -226,21 +220,15 @@ $(document).ready(function(){
       //  document.querySelectorAll(".links-mapa").
 
       // Trigger a click event on each marker when the corresponding marker link is clicked
-        $('.marker-link').on('click', function () {
-        google.maps.event.trigger(markers[$(this).data('event')], 'click');
-        });
+      //   $('.marker-link').on('click', function () {
+      //   google.maps.event.trigger(markers[$(this).data('event')], 'click');
+      //   });
 
-        for (let i = 0; i < array.length; i++) {
-          const element = array[i];
+      //   for (let i = 0; i < array.length; i++) {
+      //     const element = array[i];
           
-        }
+      //   }
     });
-
-
-      // function myClick(id){
-  //       google.maps.event.trigger(markers[id], 'click');
-  //   }
-  /*Relacionar clase 'link' con el infowondows*/
 
 
     // Iconos personalizados para los marcadores
@@ -277,7 +265,7 @@ $(document).ready(function(){
            //En el div #myUL se agrega un elemento li por cada feature en el geojson
            $("#myUL").append('<li class="servicios-listado">'+'</li>');
            //lo que se mostrará en el sidebar
-           $(".servicios-listado").append('<div class="listado-servicio">' + '<a class="links-mapa" href="#">' + nombre  + '<p>' + servicios + '</p>' + '</a>' + '<p id="descripcion">' + descripcion + '</p>'+ '</div>');
+           $(".servicios-listado").append('<div class="listado-servicio">' + '<a class="links-mapa" href="#" onclick=abreInfowindow()>' + nombre  + '<p>' + servicios + '</p>' + '</a>' + '<p id="descripcion">' + descripcion + '</p>'+ '</div>');
           }
         });
      }
@@ -285,7 +273,9 @@ $(document).ready(function(){
  sidebarListing();
 
 
- 
+ function abreInfowindow(){
+  google.maps.event.trigger(markers[id], 'click');a
+ }
    /*---------------------Funcion de barra de búsqueda------------------------------*/
   function barraDeBusqueda() {
     // Variables declaradas
