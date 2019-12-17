@@ -1131,6 +1131,7 @@ ul.tabs li.current {
     padding: 15px;
     margin: 20px;
     font-weight: 900;
+    margin-bottom: 50px;
     border: none;
     border-radius: 50px;
     background: rgb(123, 228, 149);
@@ -1163,9 +1164,14 @@ b{
 }
 
 .form-group{
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
 }
 
+.form-check-input{
+    margin-bottom: 10px;
+}
 
 
 /******************SERVICIOS******************/
@@ -1783,7 +1789,7 @@ input .datapicker{
     margin-top: 5px;
 }
 
-label{
+.label-box{
     font-family: 'ABeeZee';
     margin-top: 25px;
 }
@@ -1805,8 +1811,6 @@ textarea{
     padding-top: 8px;
     margin-top: 30px;
 }
-
-
 
 
 
