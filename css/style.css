@@ -548,7 +548,49 @@ footer {
 
 .gallery-image:hover {
     transform: scale(1.15);
+    cursor: pointer;
 }
+
+
+.imageselect .imagebox figure {
+    position: relative;
+    overflow: hidden
+}
+
+.imageselect .imagebox figcaption {
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 20px;
+    -webkit-transform: translateY(140%);
+    -moz-transform: translateY(140%);
+    -ms-transform: translateY(140%);
+    -o-transform: translateY(140%);
+    transform: translateY(140%);
+    -moz-transition: -moz-transform 0.5s ease;
+    -o-transition: -o-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease
+}
+
+.imageselect .imagebox .caption-title {
+    margin-bottom: 0;
+    color: rgb(87, 87, 87);
+    font-size: 1em;
+}
+
+
+.imageselect .imagebox:hover figcaption {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+
 
 /*por si no tiene compatibilidad con el browser*/
 @supports (display: grid) {
@@ -1126,7 +1168,7 @@ b{
 
 
 
-/******************SERVICOS******************/
+/******************SERVICIOS******************/
 
 /*BOTONES GIRATORIOS*/
 
@@ -1601,6 +1643,5 @@ box-shadow: 4px 9px 73px -8px rgba(0,0,0,0.75);
   border: 0;
   cursor: pointer;
 }
-
 
 
