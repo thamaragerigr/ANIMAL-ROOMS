@@ -1789,7 +1789,7 @@ input .datapicker{
     margin-top: 5px;
 }
 
-label{
+.label-box{
     font-family: 'ABeeZee';
     margin-top: 25px;
 }
@@ -1811,8 +1811,6 @@ textarea{
     padding-top: 8px;
     margin-top: 30px;
 }
-
-
 
 
 
