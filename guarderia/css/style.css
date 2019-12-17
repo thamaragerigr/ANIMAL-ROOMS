@@ -203,7 +203,7 @@ nav ul li a:hover {
   max-height: 500px;
 	width: 100%;
 	position: relative;
-	top: 30px;
+	/*top: 30px; */
   -webkit-filter: brightness(150%);
   filter: brightness(60%);
 }
@@ -847,4 +847,67 @@ svg .curvaCuidados{
     top:15px;
     z-index: 0;
     
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    z-index: 100;
+    background-color: transparent !important;
+}
+
+.nav-item {
+    font-family: 'ABeeZee', sans-serif;
+
+}
+
+.nav-link {
+    color: white !important;
+    margin: 10px 20px;
+    padding: 10px 25px !important;
+    transition: all 0.1s ease-in-out;
+    border-radius: 50px !important;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+}
+
+.nav-link:hover {
+    color: white !important;
+    /*gradiente*/
+    background: rgb(123, 228, 149);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px !important;
+
+}
+
+#basicExampleNav { /*menu desplegable*/
+    background: white;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+}
+
+
+.navbar ul {
+    margin: auto;
+}
+
+div .dropdown-menu li a {
+    color: gray !important;
+}
+
+
+.solid-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.2s linear;
+
+}
+
+.solid-nav li a {
+    color: rgb(122, 122, 122) !important;
+
 }

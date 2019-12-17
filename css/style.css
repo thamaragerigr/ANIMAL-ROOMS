@@ -1747,12 +1747,14 @@ input{
 
 }
 
-/*#div-contenedor{
+/*
+#div-contenedor{
+
     margin: auto; 
     margin-top: 40px;
     width: 900px;
     height: 300px;
-    /*border: 1px solid;*/
+
     margin-left: 40px;
     background-color: red;
 
