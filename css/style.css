@@ -1434,8 +1434,8 @@ box-shadow: 4px 33px 57px -9px rgba(0,0,0,0.75);
 #textoFoto {
 width: 40%;
 text-justify: auto;
-margin-left: 550px;
-margin-top: -550px;
+margin-left: 850px;
+margin-top: -700px;
 position: relative;
 
 }
@@ -1445,8 +1445,8 @@ position: relative;
 #textoFoto2 {
 width: 40%;
 text-justify: auto;
-margin-left: -100px;
-margin-top: -500px;
+margin-left: -200px;
+margin-top: -700px;
 position: relative;
 
 }
@@ -1507,7 +1507,7 @@ box-shadow: 4px 9px 73px -8px rgba(0,0,0,0.75);
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: 100;
 }
 
 .chat-box {
