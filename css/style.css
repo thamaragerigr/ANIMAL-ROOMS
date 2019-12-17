@@ -1644,4 +1644,169 @@ box-shadow: 4px 9px 73px -8px rgba(0,0,0,0.75);
   cursor: pointer;
 }
 
+/***  ESTILO SEGUNDA PÁGINA AREA CLIENTES  ***/
+
+.titulo-usuario{
+    margin-left: -200px;
+    font-family: 'ABeeZee';
+    font-size: 25px;
+    color: #56c596;
+}
+.info-usuario {
+    margin-left: 6px;
+    float: left;
+    text-decoration: none;
+    font-family: 'ABeeZee';
+    color: blue;
+    margin-top: 15px;
+}
+
+.titulo-area{
+    color: #56c596;
+    padding-top: 15px;
+    font-size: 1.8em;
+
+}
+
+select .dos{
+    margin-left: 5px;
+    border-radius: 20px;
+    width: 45px;
+}
+
+.titulo-segundo-div{
+    margin-left: -119px;
+
+}
+
+/*.datos{
+    margin-left: -150px;
+}*/
+
+input{
+    /*margin-left: 480px;*/
+    
+}
+
+.datos-1{
+    margin-right:-120px;
+    font-size: 1.3em;
+    color: white;
+}
+
+.datos-2{
+    margin-left: -179px;
+    font-size: 1.3em;
+    color: white;
+}
+
+.datos-3{
+    margin-left: -57px;
+    font-size: 17px;
+    color: white;
+}
+
+.datos-4{
+    margin-left: -227px;
+    font-size: 17px;
+    color: white;
+}
+
+#datos-usuario{
+
+}
+
+
+#div-derecho{
+    margin-top: -570px;
+    background-color: /*#56c596;*//*#EBF5F2;*/#EBF5FB ;
+    width: 600px;
+    margin-left: 600px;
+    border-radius: 30px;
+    height: 800px;
+    padding: 40px;
+
+}
+
+#div-izquierdo{
+    width: 450px;
+    height: 570px;
+    background-color:/*#E3F2FD;*//*#9BDFCB;*/#7be495;
+    margin-left: 80px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 30px;
+    margin-top: 50px;
+
+}
+
+/*#div-contenedor{
+    margin: auto; 
+    margin-top: 40px;
+    width: 900px;
+    height: 300px;
+    /*border: 1px solid;*/
+    margin-left: 40px;
+    background-color: red;
+
+}*/
+
+input .datapicker{
+    width: auto;
+    margin-left: 200px;
+    border-radius: 5px;
+}
+
+
+.titulo-primer-div{
+    margin-left: -65px;
+}
+
+.lista-usuario{
+    list-style: none;
+}
+
+.titulo-tercer-div{
+    margin-left: -40px;
+    width: auto;
+}
+
+.foto-cliente{
+    margin-left:  70px;
+}
+
+.box{
+    float: left;
+    margin-left: 30px;
+    font-family: 'ABeeZee';
+    margin-top: 5px;
+}
+
+label{
+    font-family: 'ABeeZee';
+    margin-top: 25px;
+}
+
+#lista-cambios{
+    list-style: none;
+}
+
+.parrafo-clientes{
+    margin-right: 620px;
+}
+
+textarea{
+    margin-right: 150px;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-top: 8px;
+    margin-top: 30px;
+}
+
+
+
+
 
