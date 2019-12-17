@@ -33,14 +33,14 @@ function validar(){
     para que sea un nombre válido. Si no tiene más de dos dígitos, la variable todo_correcto
     devolverá false.*/
 
-    if(document.getElementById('Usuario').value.length < 4 ){
+    if(document.getElementById('usuario-clientes').value.length < 4 ){
         todo_correcto = false;
         alert("Usuario incorrecto. Este campo tiene que tener entre 4 y 9 caracteres.");
     }
 
     /*Validar contraseña*/
 
-    if(document.getElementById('password').value.length < 5 ){
+    if(document.getElementById('password-clientes').value.length < 5 ){
     	todo_correcto = false;
       alert("Contraseña incorrecta. Este campo tiene que tener entre 5 y 15 caracteres.")
     }
